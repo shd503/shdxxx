@@ -1,0 +1,1 @@
+new6|||empty|||empty|||0|||0|||6|||id|||16|||30|||0|||<ul>|||<LI>【资讯】<A href=show.php?id={#id}>{#title}</A></LI>|||</ul>

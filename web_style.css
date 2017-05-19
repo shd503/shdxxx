@@ -1,0 +1,18 @@
+div, address, iframe, ul, ol,h1, h2, h3, h4, h5, h6, p, pre, caption,form, legend, fieldset, textarea{margin: 0;padding: 0;font-weight: normal;font-style: normal;font-family: inherit;font-size: 100%;}
+ul,li{list-style:none;}
+body{background-color:#FFFFFF;MARGIN: 0px;font-size: 9pt;line-height: 18px;word-break:break-all;}
+td {font-size: 9pt;line-height: 20px;}
+a:link{color: #000000;text-decoration: none;}
+a:visited {color: #000000;text-decoration: none;}
+a:hover {color: #FF0000;text-decoration: underline;}
+img{vertical-align:bottom;vertical-align:middle;vertical-align:top}
+.main{width:960px;margin:0 auto;text-align:left}
+.pagetop{border-bottom:solid 2px #cc0000;margin-bottom:8px}
+.nav{}
+.nav li{float:left;display:block;margin:0 8px}
+.nav a:link , .nav a:visited{color: #000000;}
+.nav a:hover, .nav a:active{color: #FF0000;}
+.textad1{color:#999999;background-color:#FFFFFF}
+.textad1 a:link, .textad1 a:hover,.textad1 a:visited{color:#FF0000}
+.textad2{color:#999999;background-color:#F8F8F8}
+.textad2 a:link, .textad2 a:hover,.textad2 a:visited{color:#333333}

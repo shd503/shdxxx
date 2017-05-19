@@ -1,0 +1,1 @@
+{"appid":"100357722","appkey":"f175112c7518cb7d13b4f1a53a9510fb","callback":"http://3158.zzcms.net/3/qq_connect2.0/callback.php","scope":"get_user_info,get_info","errorReport":true,"storageType":"file","host":"http://3158.zzcms.net","user":"root","password":"yourpass001","database":"sjw"}

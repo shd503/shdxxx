@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>{#pagetitle}</title>
+<meta content="{#pagedescription}" name="description" />
+<meta content="{#pagekeywords}" name="keywords" />
+<link href="/template/{#siteskin}/style.css" rel="stylesheet" type="text/css">
+<link href="/template/{#siteskin}/jdimg4.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/js/jdimg4.js"></script>
+</head>
+<body>
+{#sitetop}
+<div class="main">
+<!--顶部广告，这里用自定义标签调用，也可用固定标签调用见底部广告-->
+{@adshow.zsclass_top}
+<div class="pagebody">
+<div class="left">
+<ul>
+<li id="leftleft">
+<div class="titles">最新{#bigclassname}</div>
+<div class="content1">{@zsshow.new2}</div>
+</li>
+<li id="leftright">
+{@zsshow.jdimg4}
+</li>
+</ul>
+</div>
+<div class="right">
+<div class="titles">热门{#bigclassname}</div>
+<div class="content1">
+{@zsshow.hot}
+</div>
+
+</div>
+</div>
+
+<div class='titles'>招商A区</div> 
+<div class="content1">{#showad:5,0,yes,yes,no,220,60,0,{#bigclassname},A_img}</div>
+
+<div class="pagebody"> 
+<div class='titlezs'><span>{#zssmallclass}</span><h3>{#bigclass}</h3></div>  		  
+<div class="content1">
+{@zsshow.showzsimg}        
+</div>
+</div>
+{#showad:1,0,no,no,no,1200,60,60,{#bigclassname},底部}
+
+<div id="dl5"><span>{#sitename}温馨恭贺双方合作愉快！诚信经营，财富共享。</span></div>
+<div id="dlstepbox">
+<div id="dlstep">
+<li id="dlstepli1">
+<div id="dlsteptitlein"><span>1&nbsp;</span>登陆网站</div>
+<div id="dlstepcontentin">输入{#siteurl}<br />网上搜索</div>
+</li>
+<li  id="dlstepli2">
+<div id="dlsteptitlein"><span>2&nbsp;</span>寻找意向产品</div>
+<div id="dlstepcontentin">点击广告位查找<br />热门产品查找<br />根据搜索查找</div>
+</li>
+<li id="dlstepli3">
+<div  id="dlsteptitlein"><span>3&nbsp;</span>留言，电话咨询</div>
+<div id="dlstepcontentin">电话咨询厂家<br />页面留言咨询<br />在线咨询</div>
+</li>
+<li id="dlstepli4">
+<div id="dlsteptitlein"><span>4&nbsp;</span>双方洽谈</div>
+<div id="dlstepcontentin">双方沟通相关事宜<br />代理要求<br />厂家政策支持</div>
+</li>
+<li id="dlstepli5">
+<div  id="dlsteptitlein"><span>5&nbsp;</span>合作成功</div>
+<div  id="dlstepcontentin">进行考察核实<br />签订合同<br />代理成功</div>
+</li>
+</div>
+</div>
+{#sitebottom}
+</div>
+</body>
+</html>

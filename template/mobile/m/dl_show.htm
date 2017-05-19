@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>{#pagetitle}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="description" content="pagedescription">
+<meta name="keywords" content="pagekeywords">
+<link href="/template/{#siteskin}/style.css" rel="stylesheet" type="text/css">
+<script src="/js/msgbox.js" type="text/javascript" language="JavaScript"></script>
+<script>
+function window.onload() 
+{
+    if(top.location != self.location)
+    {
+        var a = window.parent.document.getElementsByTagName('iframe'); 
+        for (var i=0; i<a.length; i++)
+        {
+            if (a[i].name == self.name)
+            { 
+                a[i].height = document.body.scrollHeight+10;
+                return;
+             }
+        }
+     }
+} 
+</script>
+</head>
+<body>
+{#sitetop}
+ <div class="station">
+    <h3>
+	{#station}
+	</h3>
+</div>
+
+<div class="left_content">    
+<div class="box">
+        <div class="boxTitle"> 代理信息</div>
+<ul>
+         <li>代理品种：{#cp}</li>
+         <li>代理区域：{#city}</li>
+          <li>发布时间：{#sendtime}</li>        
+</ul>
+<div>代理简介：{#content}</div>
+{#woyaodl}
+</div>
+<div class="box">
+<div class="boxTitle"> 联系方式</div>
+{#contact} 
+</div>
+
+</div>
+<div class="box" style='text-align:center'><a href="javascript:history.back()">返回列表</a></div>
+{#sitebottom}
+</body>
+</html>
