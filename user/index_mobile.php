@@ -30,12 +30,12 @@ include("check.php");
     <input type='hidden' name='canshu' value='<?php echo $canshu;?>' />
   </form>
   <?php
-  $sql="select * from zzcms_user where username='".@$username."'";
-  $rs=mysql_query($sql);
-  $row=mysql_fetch_array($rs);
+  /* $sql="select * from zzcms_user where username='".@$username."'";
+   $rs=mysql_query($sql);
+   $row=mysql_fetch_array($rs);
   if ($row["content"]=="" || $row["content"]=="该公司暂无简介信息"){
-    echo "<script>location.href='daohang_company.php'</script>";
-  }
+     echo "<script>location.href='daohang_company.php'</script>";
+   }*/
   ?>
   <SCRIPT>
     function gotopage(){
@@ -45,17 +45,12 @@ include("check.php");
 </head>
 
 <body  <?php if ($gotopage<>""){echo "onLoad='gotopage()'";}?>  >
-<div class="main">
+<div class="main_mobile">
   <?php
-  include ("top.php");
+  include ("top_mobile.php");
   ?>
   <div class="pagebody">
-    <div class="left">
-      <?php
-      include ("left.php");
-      ?>
-    </div>
-    <div class="right">
+    <div class="left_mobile">
       <?php
       $sql="select * from zzcms_message where sendto='' or  sendto='".@$username."'  order by id desc";
       $rs=mysql_query($sql);

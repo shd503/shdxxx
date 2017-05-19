@@ -8,8 +8,12 @@ a:hover {color: #FF3300;text-decoration: underline;}
 
 /*主容器*/
 .main{width:1200px;margin:0 auto;text-align:left;}
+.main_mobile{width:100%;margin:0 auto;text-align:left;}
+
 .pagebody {width: 100%;}
 .left {width: 160px;float: left;}
+.left_mobile {width: 100%;float: left;}
+
 .right {width: 1030px;float: right;}
 .lefttitle{
 	padding:10px 0 0 0px;
