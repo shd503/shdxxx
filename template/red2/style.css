@@ -1,6 +1,6 @@
 ﻿div, address, iframe, ul, ol,h1, h2, h3, h4, h5, h6, p, pre, caption,form, legend, fieldset, textarea{margin: 0;padding: 0;font-weight: normal;font-style: normal;font-family: inherit;font-size: 100%;}
 ul,li{list-style:none;}
-body{background-color:#FFFFFF;MARGIN: 0px;font-size: 9pt;line-height: 20px;word-break:break-all;font-family: Arial, Helvetica, sans-serif,宋体,simsun;}
+body{background-color:#f3f2f1;MARGIN: 0px;font-size: 10pt;line-height: 20px;word-break:break-all;font-family: "微软雅黑";}
 a{color: #444444;text-decoration: none;}
 a:hover {color: #FF0000;text-decoration: underline;}
 img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
@@ -9,11 +9,11 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .InfoTitle span{font-size:9pt;color:#666666}
 .InfoContent{font-size:14px;line-height:22px;color:#666666;margin-bottom:10px;padding:0px 0px 8px 56px;border-bottom:solid 1px #E8E8E8}
 /*导行条*/
-.nav {background-color:#d51216;margin-bottom:0px}
-.nav ul {height: 35px;overflow: hidden;margin: 0px 0px;}
+.nav {background-color:#E66440;margin-bottom:0px}
+.nav ul {height: 50px;overflow: hidden;margin: 0px 0px;}
 .nav li {float: left;display: inline;}
 /*display:block就是将元素显示为块级元素。只有这样下面才能控制其宽度。*/
-.nav a {color: #FFFFFF;float:left;display:block;width:94px;height:35px;line-height:35px;text-align:center;font-weight:bold;font-size:14px;text-decoration: none;}
+.nav a {color: #FFFFFF;float:left;display:block;width:94px;height:50px;line-height:50px;text-align:center;font-weight:bold;font-size:14px;text-decoration: none;}
 .nav a:hover{color: #CC0000;background-color:#F1F1F1;}
 /*副导航条*/
 .item2 {clear:both;background-color:#f1f1f1;padding:5px;margin-bottom:8px}
@@ -92,7 +92,26 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .titlezs h3{width:160px;font-size:14px;font-family: "微软雅黑";text-align:center;height:35px;line-height:35px;background-color:#d51216}
 .titlezs span{float:right;padding-top:2px;width:750px;background-color:#dddddd}
 .titlezs span li{float:left;margin:0px 1px;padding:2px;min-width:60px;text-align:center;height:23px;line-height:23px;}
-.titlezs span li a{color:#CC0000;background-color:#FCF2F2;padding:1px;border:1px solid #F0B2B2;display:block;text-align:center}
+.titlezs span li a{color:#fff;background-color:#ac6f93;padding:1px;border:1px solid #F0B2B2;display:block;text-align:center}
+
+.titlezs_1{background-color:#9e4075;clear:both;}
+.titlezs_1 h3{width:160px;font-size:20px;font-family: "微软雅黑";text-align:center;height:45px;line-height:45px;background-color:#9e4075}
+.titlezs_1 span{float:right;padding-top:7px;width:750px;background-color:#9e4075}
+.titlezs_1 span li{float:left;margin:0px 1px;padding:2px;min-width:60px;text-align:center;height:23px;line-height:23px;}
+.titlezs_1 span li a{color:#CC0000;background-color:#FCF2F2;padding:1px;border:1px solid #F0B2B2;display:block;text-align:center}
+
+.titlezs_2{background-color:#c1314d;clear:both;}
+.titlezs_2 h3{width:160px;font-size:20px;font-family: "微软雅黑";text-align:center;height:45px;line-height:45px;background-color:#c1314d}
+.titlezs_2 span{float:right;padding-top:7px;width:750px;background-color:#c1314d}
+.titlezs_2 span li{float:left;margin:0px 1px;padding:2px;min-width:60px;text-align:center;height:23px;line-height:23px;}
+.titlezs_2 span li a{color:#fff;background-color:#ac6f93;padding:1px;border:1px solid #F0B2B2;display:block;text-align:center}
+
+.titlezs_3{background-color:#4c5e8c;clear:both;}
+.titlezs_3 h3{width:160px;font-size:20px;font-family: "微软雅黑";text-align:center;height:45px;line-height:45px;background-color:#4c5e8c}
+.titlezs_3 span{float:right;padding-top:7px;width:750px;background-color:#4c5e8c}
+.titlezs_3 span li{float:left;margin:0px 1px;padding:2px;min-width:60px;text-align:center;height:23px;line-height:23px;}
+.titlezs_3 span li a{color:#fff;background-color:#7f8ca8;padding:1px;border:1px solid #F0B2B2;display:block;text-align:center}
+
 
 .titles3 {background:url(image/kb2px.gif) repeat-y right 0;background-color:#E4393C;color:#ffffff;height:35px;line-height:35px;font-size: 18px;font-family: "微软雅黑";padding:0 10px;}
 

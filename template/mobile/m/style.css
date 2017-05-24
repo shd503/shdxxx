@@ -1,7 +1,7 @@
 @charset "utf-8";
 div, address, iframe, ul, ol,h1, h2, h3, h4, h5, h6, p, pre, caption,form, legend, fieldset, textarea{margin: 0;padding: 0;font-weight: normal;font-style: normal;font-family: inherit;font-size: 100%;}
 ul,li{list-style:none;}
-body{color: #444444;background-color:#FFFFFF;margin:0px;font-size: 14px;line-height:20px;word-break:break-all;font-family: Arial, Helvetica, sans-serif,宋体,simsun;}
+body{color: #444444;background-color:#FFFFFF;margin:0px;font-size: 13px;line-height:20px;word-break:break-all;font-family: Arial, Helvetica, sans-serif,宋体,simsun;}
 a{color: #444444;text-decoration: none;}
 a:hover {color: #FF0000;text-decoration: underline;}
 img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0;max-width:100%;}
@@ -63,10 +63,10 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0;max-
 
 .buttonlogin{border:solid 1px #dddddd;color:#000;background-color: #f1f1f1;height:20px;font-size:9pt;}
 /*指示位置条*/
-.station2,.station{border:solid 1px #dddddd;border-bottom-width:0px;height:35px;line-height:35px;background:url(image/stationbg.gif);}
+.station2,.station{border:solid 1px #dddddd;border-bottom-width:0px;height:25px;line-height:25px;background:url(image/stationbg.gif);}
 .station{border:solid 1px #dddddd;margin-bottom:10px}
 .station li,.station2 li{float:left}
-.station a,.station2 a{background:url(image/station_a.png) no-repeat right center;padding:0px 20px 0px 5px;display:block;}
+.station a,.station2 a{background:url(image/station_a.png) no-repeat right center;padding:0px 15px 0px 5px;display:block;}
 .station .start a,.station2 .start a{background:url(image/station_a2.png) no-repeat right center;padding:0px 20px 0px 5px;display:block;}
 .station sapn,.station2 span {float:right;padding:6px 6px 0 0}
 

@@ -1,4 +1,4 @@
-zsitem|||0|||8|||1|||<div>|||<div class='titlezs'> 
+zsitem|||0|||8|||1|||<div>|||<div class='titlezs_{#i}'>
 <span>	
 {#zssmallclass:10}
 </span> 
