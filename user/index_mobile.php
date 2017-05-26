@@ -7,7 +7,7 @@ include("check.php");
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-  <link href="style/<?php echo siteskin_usercenter?>/style.css" rel="stylesheet" type="text/css">
+  <link href="style/<?php echo siteskin_usercenter?>/style_mobile.css" rel="stylesheet" type="text/css">
   <title>用户中心</title>
   <?php
   //接收通过此页跳转页的代码
@@ -45,12 +45,12 @@ include("check.php");
 </head>
 
 <body  <?php if ($gotopage<>""){echo "onLoad='gotopage()'";}?>  >
-<div class="main_mobile">
+<div class="main">
   <?php
   include ("top_mobile.php");
   ?>
   <div class="pagebody">
-    <div class="left_mobile">
+    <div class="left">
       <?php
       $sql="select * from zzcms_message where sendto='' or  sendto='".@$username."'  order by id desc";
       $rs=mysql_query($sql);
@@ -70,8 +70,8 @@ include("check.php");
         <div class="admintitle">用户信息</div>
         <table width="100%" border="0" cellpadding="3" cellspacing="1">
           <tr>
-            <td width="13%" height="50" align="right" bgcolor="#FFFFFF" class="border2">注册时间：</td>
-            <td width="87%" bgcolor="#FFFFFF" class="border2">
+            <td width="20%" height="50" align="right" bgcolor="#FFFFFF" class="border2">注册时间：</td>
+            <td width="80%" bgcolor="#FFFFFF" class="border2">
               <?php
               $sql="select * from zzcms_user where username='".@$username."'";
               $rs=mysql_query($sql);
@@ -79,31 +79,31 @@ include("check.php");
               echo "<b>".@$username ."</b><br>".$row["regdate"];
               ?> </td>
           </tr>
-          <tr>
+          <!--<tr>
             <td height="50" align="right" bgcolor="#FFFFFF" class="border">您的金币：</td>
-            <td bgcolor="#FFFFFF" class="border"><b><?php echo $row["totleRMB"]?>个</b><br>
+            <td bgcolor="#FFFFFF" class="border"><b><?php /*echo $row["totleRMB"]*/?>个</b><br>
               说明： <a href="/one/help.php#1032" target="_blank">关于金币</a></td>
-          </tr>
+          </tr>-->
           <tr>
             <td height="50" align="right" bgcolor="#FFFFFF" class="border2">登录次数：</td>
             <td bgcolor="#FFFFFF" class="border2"><b><?php echo $row["logins"]?>次</b><br>
               提示：若感到登录次数不对，那么请及时 <a href="managepwd.php" target="_self">[更换登录密码]</a> </td>
           </tr>
-          <tr>
+          <!--<tr>
             <td height="50" align="right" bgcolor="#FFFFFF" class="border">上次登录IP：<br></td>
             <td bgcolor="#FFFFFF" class="border"><b>
-                <?php if ($row["showloginip"]<>"") {echo $row['showloginip'] ;}else{ echo "空" ;}?>
+                <?php /*if ($row["showloginip"]<>"") {echo $row['showloginip'] ;}else{ echo "空" ;}*/?>
               </b><br>
               提示：若并没有用此IP登录过网站，那么请及时 <a href="managepwd.php" target="_self">[更换登录密码]</a>
             </td>
           </tr>
           <tr>
             <td height="50" align="right" bgcolor="#FFFFFF" class="border2">上次登录时间：</td>
-            <td bgcolor="#FFFFFF" class="border2"><b><?php echo $row["showlogintime"]?>
+            <td bgcolor="#FFFFFF" class="border2"><b><?php /*echo $row["showlogintime"]*/?>
 
               </b><br>
               提示：若在以上时间并没有登录过网站，那么请及时 <a href="managepwd.php" target="_self">[更换登录密码]</a></td>
-          </tr>
+          </tr>-->
         </table>
         <?php
         $sql="select id from zzcms_dl where saver='".@$username."' and looked=0 and del=0 and passed=1";

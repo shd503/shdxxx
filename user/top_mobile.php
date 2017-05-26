@@ -11,9 +11,9 @@
 <!--      <li><a href="dls_message_manage.php"  target="_self"><span>查看留言</span></a></li>-->
 <!--      <li><a href="adv2.php"  target="_self"><span>广告设置</span></a></li>-->
 <!--      <li><a href="licence.php" target="_self"><span>公司资质</span></a></li>-->
-      <li><a href="pay_manage.php" target="_self"><span>财务管理</span></a></li>
-      <li><a href="manage.php"  target="_self"><span>会员资料</span></a></li>
-      <li><a href="managepwd.php"  target="_self"><span>修改密码</span></a></li>
+<!--      <li><a href="pay_manage.php" target="_self"><span>财务管理</span></a></li>-->
+      <li><a href="manage_mobile.php"  target="_self"><span>会员资料</span></a></li>
+      <li><a href="managepwd_mobile.php"  target="_self"><span>修改密码</span></a></li>
     </ul>
 	</div>
 </div>
@@ -25,7 +25,7 @@ echo " | <a href='".getpageurlzs(@$username)."'  target='_blank'><img src='/imag
 		?>
         | <a href="logout.php" target="_top"><img src="/image/ding.gif" width="11" height="13" border="0">
         安全退出</a> ] </span>
-		您好！<strong><?php echo @$_COOKIE["UserName"];?></strong>( <?php echo ShowUserSf();?>) 
+		您好！<strong><?php echo @$_COOKIE["UserName"];?></strong>( <?php echo ShowUserSf();?>)
 <?php
 function ShowUserSf(){
 	if (@$_COOKIE["UserName"]<>"" ){
@@ -45,7 +45,7 @@ function ShowUserSf(){
 			if ($row["groupid"]>1){
 			$str=$str . " 服务时间：".$row["startdate"]." 至 ".$row["enddate"];
 			}elseif ($row["groupid"]==1){
-			$str=$str . "<a href='/one/vipuser.php' target='_blank'>查看我的权限</a>";
+//			$str=$str . "<a href='/one/vipuser.php' target='_blank'>查看我的权限</a>";
 			}
 		}else{
 			$str="用户不存在！";

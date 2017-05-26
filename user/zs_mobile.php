@@ -7,7 +7,7 @@ include("check.php");
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <link href="style/<?php echo siteskin_usercenter?>/style.css" rel="stylesheet" type="text/css">
+    <link href="style/<?php echo siteskin_usercenter?>/style_mobile.css" rel="stylesheet" type="text/css">
     <script src="/js/gg.js" type="text/javascript"></script>
     <script src="/js/swfobject.js" type="text/javascript"></script>
     <script language = "JavaScript">
@@ -77,12 +77,12 @@ include("check.php");
     </script>
 </head>
 <body>
-<div class="main_mobile">
+<div class="main">
     <?php
     include("top_mobile.php");
     ?>
     <div class="pagebody">
-        <div class="left_mobile">
+        <div class="left">
             <?php
             $sql="select * from zzcms_main where editor='" .$username. "'";
             $rs = mysql_query($sql);
@@ -93,18 +93,18 @@ include("check.php");
                 <form action="zssave.php" method="post" name="myform" id="myform" onSubmit="return CheckForm();">
                     <table width="100%" border="0" cellpadding="3" cellspacing="1">
                         <tr>
-                            <td align="right" class="border" >项目名称<font color="#FF0000">（必填）</font>：</td>
+                            <td align="right" class="border" >项目名称<font color="#FF0000">(*)</font>：</td>
                             <td class="border" > <input name="name" type="text" id="name" class="biaodan" value="<?php echo $row["proname"]?>" size="60" maxlength="45" >
                                 <br>
                                 (只能写产品名称)</td>
                         </tr>
                         <tr>
                             <td width="18%" align="right" valign="top" class="border2" ><br>
-                                所属类别 <font color="#FF0000">（必填）</font>：</td>
+                                所属类别 <font color="#FF0000">(*)</font>：</td>
                             <td width="85%" class="border2" > <table width="100%" border="0" cellpadding="0" cellspacing="1">
                                     <tr>
                                         <td> <fieldset class="fieldsetstyle">
-                                                <legend>请选择所属大类</legend>
+                                                <legend>所属大类</legend>
                                                 <?php
                                                 $sqlB = "select * from zzcms_zsclass where parentid='A' order by xuhao asc";
                                                 $rsB = mysql_query($sqlB,$conn);
@@ -133,7 +133,7 @@ include("check.php");
                                                 }else{
                                                     echo "<div id='E_con$n' style='display:none;'>";
                                                 }
-                                                echo "<fieldset class='fieldsetstyle'><legend>请选择所属小类</legend>";
+                                                echo "<fieldset class='fieldsetstyle'><legend>所属小类</legend>";
                                                 $sqlS="select * from zzcms_zsclass where parentid='$rowB[classzm]' order by xuhao asc";
                                                 $rsS = mysql_query($sqlS,$conn);
                                                 $nn=0;
@@ -158,7 +158,7 @@ include("check.php");
                                 </table></td>
                         </tr>
                         <tr>
-                            <td align="right" class="border2" >简介<font color="#FF0000"> （必填）</font>：</td>
+                            <td align="right" class="border2" >简介<font color="#FF0000">(*)</font>：</td>
                             <td class="border2" > <textarea name="gnzz" cols="60" rows="4" id="gnzz"><?php echo $row["prouse"]?></textarea>            </td>
                         </tr>
 
@@ -196,7 +196,7 @@ include("check.php");
                         }
                         ?>
                         <tr>
-                            <td align="right" class="border" >说明 <font color="#FF0000">（必填）</font>：</td>
+                            <td align="right" class="border" >说明 <font color="#FF0000">(*)</font>：</td>
                             <td class="border" >
 			
 <textarea name="sm"  id="sm">
