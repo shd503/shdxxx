@@ -7,6 +7,7 @@ include("check.php");
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
   <link href="style/<?php echo siteskin_usercenter?>/style_mobile.css" rel="stylesheet" type="text/css">
   <title>用户中心</title>
   <?php

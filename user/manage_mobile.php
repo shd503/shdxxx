@@ -7,6 +7,7 @@ include("check.php");
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
     <title>修改注册信息</title>
     <link href="style/<?php echo siteskin_usercenter?>/style_mobile.css" rel="stylesheet" type="text/css">
     <script src="/js/gg.js" type="text/javascript"></script>
@@ -211,7 +212,7 @@ if ($action=="modify") {
                         <table width="100%" border="0" cellpadding="3" cellspacing="1">
                             <tr>
                                 <td width="20%" align="right" class="border2">公司名称：</td>
-                                <td width="80%" class="border2"><?php echo $row["comane"]?></td>
+                                <td width="70%" class="border2"><?php echo $row["comane"]?></td>
                             </tr>
                             <tr class="border" >
                                 <td align="right" class="border2">所在地区：</td>
@@ -245,7 +246,7 @@ if ($action=="modify") {
                             </tr>
                             <tr>
                                 <td align="right" class="border2">公司简介：</td>
-                                <td class="border2"> <textarea name="content" cols="40" rows="10" id="content" class="biaodan" style="height:auto"><?php echo $row["content"]?></textarea>
+                                <td class="border2"> <textarea name="content" cols="30" rows="8" id="content" class="biaodan" style="height:auto"><?php echo $row["content"]?></textarea>
                                 </td>
                             </tr>
                             <!--<tr>

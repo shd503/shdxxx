@@ -7,6 +7,7 @@ include("check.php");
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
     <link href="style/<?php echo siteskin_usercenter?>/style_mobile.css" rel="stylesheet" type="text/css">
     <script src="/js/gg.js" type="text/javascript"></script>
     <script src="/js/swfobject.js" type="text/javascript"></script>
@@ -82,7 +83,7 @@ include("check.php");
     include("top_mobile.php");
     ?>
     <div class="pagebody">
-        <div class="left">
+<!--        <div class="left">-->
             <?php
             $sql="select * from zzcms_main where editor='" .$username. "'";
             $rs = mysql_query($sql);
@@ -93,15 +94,14 @@ include("check.php");
                 <form action="zssave.php" method="post" name="myform" id="myform" onSubmit="return CheckForm();">
                     <table width="100%" border="0" cellpadding="3" cellspacing="1">
                         <tr>
-                            <td align="right" class="border" >项目名称<font color="#FF0000">(*)</font>：</td>
-                            <td class="border" > <input name="name" type="text" id="name" class="biaodan" value="<?php echo $row["proname"]?>" size="60" maxlength="45" >
+                            <td width="20%" align="right" class="border2" >项目<font color="#FF0000">*</font>：</td>
+                            <td width="60%" class="border" > <input name="name" type="text" id="name" class="biaodan" value="<?php echo $row["proname"]?>" size="30" maxlength="50" >
                                 <br>
                                 (只能写产品名称)</td>
                         </tr>
                         <tr>
-                            <td width="18%" align="right" valign="top" class="border2" ><br>
-                                所属类别 <font color="#FF0000">(*)</font>：</td>
-                            <td width="85%" class="border2" > <table width="100%" border="0" cellpadding="0" cellspacing="1">
+                            <td align="right"  class="border2" ><br>类别<font color="#FF0000">*</font>：</td>
+                            <td class="border2" > <table width="100%" border="0" cellpadding="0" cellspacing="1">
                                     <tr>
                                         <td> <fieldset class="fieldsetstyle">
                                                 <legend>所属大类</legend>
@@ -158,11 +158,11 @@ include("check.php");
                                 </table></td>
                         </tr>
                         <tr>
-                            <td align="right" class="border2" >简介<font color="#FF0000">(*)</font>：</td>
-                            <td class="border2" > <textarea name="gnzz" cols="60" rows="4" id="gnzz"><?php echo $row["prouse"]?></textarea>            </td>
+                            <td align="right" class="border2" >简介<font color="#FF0000">*</font>：</td>
+                            <td class="border2" > <textarea name="gnzz" cols="30" rows="4" id="gnzz"><?php echo $row["prouse"]?></textarea>            </td>
                         </tr>
 
-                        <tr class="border" >
+                        <tr>
                             <td align="right" class="border2">所在地区：</td>
                             <td class="border2"><select name="province" id="province"></select>
                                 <select name="city" id="city"></select>
@@ -178,25 +178,25 @@ include("check.php");
                                 </script></td>
 
                         </tr>
-                        <tr class="border">
+                        <tr>
                             <td align="right" class="border2">具体地址：</td>
-                            <td class="border2"> <input name="address" type="text" id="address"  class="biaodan" value="<?php echo $row["address"]?>" size="60" maxlength="60" ></tr>
+                            <td class="border2"> <input name="address" type="text" id="address"  class="biaodan" value="<?php echo $row["address"]?>" size="30" maxlength="50" ></tr>
                         <?php
-                        if (shuxing_name!=''){
+/*                        if (shuxing_name!=''){
                             $shuxing_name = explode("|",shuxing_name);
                             $shuxing_value = explode("|||",$row["shuxing_value"]);
                             for ($i=0; $i< count($shuxing_name);$i++){
-                                ?>
+                                */?><!--
                                 <tr>
-                                    <td align="right" class="border" ><?php echo $shuxing_name[$i]?>：</td>
-                                    <td class="border" ><input name="sx[]" type="text" value="<?php echo @$shuxing_value[$i]?>" size="60" class="biaodan"></td>
+                                    <td align="right" class="border" ><?php /*echo $shuxing_name[$i]*/?>：</td>
+                                    <td class="border" ><input name="sx[]" type="text" value="<?php /*echo @$shuxing_value[$i]*/?>" size="40" class="biaodan"></td>
                                 </tr>
-                                <?php
-                            }
+                                --><?php
+/*                            }
                         }
-                        ?>
+                        */?>
                         <tr>
-                            <td align="right" class="border" >说明 <font color="#FF0000">(*)</font>：</td>
+                            <td align="right" class="border" >说明 <font color="#FF0000">*</font>：</td>
                             <td class="border" >
 			
 <textarea name="sm"  id="sm">
@@ -223,7 +223,7 @@ if (file_exists($fp)) {
                                         <td width="120" align="center" bgcolor="#FFFFFF" id="showimg" onClick="openwindow('/uploadimg_form.php',400,300)">
                                             <?php
                                             if($row["img"]<>""){
-                                                echo "<img src='".$row["img"]."' border=0 width=120 /><br>点击可更换图片";
+                                                echo "<img src='".$row["img"]."' border=0 width=120 /><br>点击更换";
                                             }else{
                                                 echo "<input name='Submit2' type='button'  value='上传图片'/>";
                                             }
@@ -242,7 +242,7 @@ if (file_exists($fp)) {
                     </table>
                 </form>
             </div>
-        </div>
+<!--        </div>-->
     </div>
 </div>
 </body>

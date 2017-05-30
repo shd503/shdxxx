@@ -5,7 +5,7 @@
 ?>
 <div class="menu">
   <div class="system_logo"></div>
-  <div id="tabs"> 
+  <div id="tabs">
     <ul>
       <li><a href="zs_mobile.php" target="_self"><span>商机信息</span></a></li>
 <!--      <li><a href="dls_message_manage.php"  target="_self"><span>查看留言</span></a></li>-->
@@ -17,15 +17,16 @@
     </ul>
 	</div>
 </div>
-<div style="clear:both"></div>
+<!--<div style="clear:both"></div>-->
 <div class="userbar"> <span style="float:right"> [ <a href="/<?php echo getpageurl3("index")?>" target="_top"><img src="/image/home.gif" border="0">
-  网站首页</a> 
+  首页</a>
   <?php
-echo " | <a href='".getpageurlzs(@$username)."'  target='_blank'><img src='/image/pic.gif' border='0'> 我的商机</a>";	
+echo " | <a href='".getpageurlzs(@$username)."'  target='_blank'><img src='/image/pic.gif' border='0'> 商机</a>";
 		?>
         | <a href="logout.php" target="_top"><img src="/image/ding.gif" width="11" height="13" border="0">
-        安全退出</a> ] </span>
-		您好！<strong><?php echo @$_COOKIE["UserName"];?></strong>( <?php echo ShowUserSf();?>)
+        退出</a> ] </span>
+		您好！<strong><?php echo @$_COOKIE["UserName"];?></strong>
+<!--	( --><?php //echo ShowUserSf();?><!--)-->
 <?php
 function ShowUserSf(){
 	if (@$_COOKIE["UserName"]<>"" ){

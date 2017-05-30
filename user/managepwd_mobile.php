@@ -7,6 +7,7 @@ include("check.php");
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 	<link href="style/<?php echo siteskin_usercenter?>/style_mobile.css" rel="stylesheet" type="text/css">
 	<title>修改密码</title>
 	<?php
@@ -125,25 +126,25 @@ if ($action=="modify") {
 					<form name="form1" action="?" method="post" onsubmit="return CheckForm()">
 						<table width="100%" border="0" cellpadding="5" cellspacing="1">
 							<tr>
-								<td width="25%" align="right" class="border">用户名：</td>
+								<td width="35%" align="right" class="border">用户名：</td>
 								<td class="border"><?php echo $username ?></td>
 							</tr>
 							<tr>
 								<td align="right" class="border2">旧密码：</td>
 								<td class="border2">
-									<INPUT  type="password" maxLength="16" size="30" name="oldpassword" class="biaodan">
+									<INPUT  type="password" maxLength="16" size="20" name="oldpassword" class="biaodan">
 								</td>
 							</tr>
 							<tr>
 								<td align="right" class="border">新密码：</td>
 								<td class="border">
-									<INPUT  type="password" maxLength="16" size="30" name="password" class="biaodan">
+									<INPUT  type="password" maxLength="16" size="20" name="password" class="biaodan">
 								</td>
 							</tr>
 							<tr>
 								<td align="right" class="border2">确认新密码：</td>
 								<td class="border2">
-									<INPUT name=pwdconfirm   type=password id="pwdconfirm" size="30" maxLength="16" class="biaodan">
+									<INPUT name=pwdconfirm   type=password id="pwdconfirm" size="20" maxLength="16" class="biaodan">
 									<input name="action" type="hidden" id="action" value="modify">
 								</td>
 							</tr>
