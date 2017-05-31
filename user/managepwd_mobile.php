@@ -126,7 +126,7 @@ if ($action=="modify") {
 					<form name="form1" action="?" method="post" onsubmit="return CheckForm()">
 						<table width="100%" border="0" cellpadding="5" cellspacing="1">
 							<tr>
-								<td width="35%" align="right" class="border">用户名：</td>
+								<td width="30%" align="right" class="border">用户名：</td>
 								<td class="border"><?php echo $username ?></td>
 							</tr>
 							<tr>

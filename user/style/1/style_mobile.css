@@ -67,8 +67,8 @@ a:hover {color: #FF3300;text-decoration: underline;}
 	line-height:30px;
 	text-align:center;
 }
-.border {background-color: #FFF;padding:5px;}
-.border2 {background-color: #FFF;padding:5px;}
+.border {background-color: #FFF;padding:1px;}
+.border2 {background-color: #FFF;padding:1px;}
 .border3 {background-color: #FFF;border: solid 1px #b4cceb;}
 .fenyei {text-align: right;padding:5px;}
 .admintitle {

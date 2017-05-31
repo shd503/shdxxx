@@ -161,12 +161,12 @@ if ($action=="modify") {
                     <FORM name="myform" action="?action=modify" method="post" onSubmit="return CheckForm()">
                         <table width=100% border=0 cellpadding=3 cellspacing=1>
                             <tr>
-                                <td width="20%" align="right" class="border2">用户名：</td>
-                                <td width="80%" class="border2"><?php echo $row["username"]?></td>
+                                <td width="30%" align="right" class="border2">用户名：</td>
+                                <td  class="border2"><?php echo $row["username"]?></td>
                             </tr>
                             <tr>
-                                <td align="right" class="border">姓名：</td>
-                                <td class="border"> <INPUT name="somane" class="biaodan" value="<?php echo $row["somane"]?>" size="30" maxLength="50"></td>
+                                <td align="right" class="border2">姓名：</td>
+                                <td class="border2"> <INPUT name="somane" class="biaodan" value="<?php echo $row["somane"]?>" size="25" maxLength="50"></td>
                             </tr>
                             <tr >
                                 <td align="right" class="border2">性别：</td>
@@ -176,17 +176,17 @@ if ($action=="modify") {
                                     女</td>
                             </tr>
                             <tr>
-                                <td align="right" class="border">E-mail：</td>
-                                <td class="border"> <INPUT name="email" class="biaodan" value="<?php echo $row["email"]?>" size="30" maxLength="50">
+                                <td align="right" class="border2">E-mail：</td>
+                                <td class="border2"> <INPUT name="email" class="biaodan" value="<?php echo $row["email"]?>" size="25" maxLength="50">
                                 </td>
                             </tr>
                             <tr >
                                 <td align="right" class="border2">QQ：</td>
-                                <td class="border2"> <INPUT name="qq" id="qq" class="biaodan" value="<?php echo $row["qq"]?>" size="30" maxLength="50"></td>
+                                <td class="border2"> <INPUT name="qq" id="qq" class="biaodan" value="<?php echo $row["qq"]?>" size="25" maxLength="50"></td>
                             </tr>
                             <tr>
-                                <td align="right" class="border">QQ绑定：</td>
-                                <td class="border">
+                                <td align="right" class="border2">QQ绑定：</td>
+                                <td class="border2">
                                     <?php if ($row["qqid"]<>"") { ?>
                                         <input name="qqid[]" type="checkbox" id="qqid" value="1" checked>
                                         (已绑定。点击可取消绑定)
@@ -200,7 +200,7 @@ if ($action=="modify") {
                             <tr >
                                 <td align="right" class="border2">手机：</td>
                                 <td class="border2">
-                                    <INPUT name="mobile" id="mobile" class="biaodan" value="<?php echo $row["mobile"]?>" size="30" maxLength="50"></td>
+                                    <INPUT name="mobile" id="mobile" class="biaodan" value="<?php echo $row["mobile"]?>" size="25" maxLength="50"></td>
                             </tr>
                             <tr >
                                 <td align="right" class="border">&nbsp;</td>
@@ -211,8 +211,8 @@ if ($action=="modify") {
                         <div class="admintitle">修改公司信息</div>
                         <table width="100%" border="0" cellpadding="3" cellspacing="1">
                             <tr>
-                                <td width="20%" align="right" class="border2">公司名称：</td>
-                                <td width="70%" class="border2"><?php echo $row["comane"]?></td>
+                                <td width="30%" align="right" class="border2">公司名称：</td>
+                                <td class="border2"><?php echo $row["comane"]?></td>
                             </tr>
                             <tr class="border" >
                                 <td align="right" class="border2">所在地区：</td>
@@ -222,27 +222,27 @@ if ($action=="modify") {
                                     </select>
                                     <select name="xiancheng" id="xiancheng">
                                     </select>
-                                    <script src="/js/area.js"></script>
+                                    <script src="/js/area_mobile.js"></script>
                                     <script type="text/javascript">
                                         new PCAS('province', 'city', 'xiancheng', '<?php echo $row['province']?>', '<?php echo $row["city"]?>', '<?php echo $row["xiancheng"]?>');
                                     </script></td>
                             </tr>
                             <tr>
-                                <td align="right" class="border">公司地址：</td>
-                                <td class="border"> <input name="address" id="address" class="biaodan" value="<?php echo $row["address"]?>" size="30" maxlength="50">
+                                <td align="right" class="border2">公司地址：</td>
+                                <td class="border2"> <input name="address" id="address" class="biaodan" value="<?php echo $row["address"]?>" size="25" maxlength="50">
                                 </td>
                             </tr>
                             <tr >
                                 <td align="right" class="border2">公司网站：</td>
-                                <td class="border2"> <INPUT name="homepage" id="homepage" class="biaodan" value="<?php echo $row["homepage"]?>" size="30" maxLength="100"></td>
+                                <td class="border2"> <INPUT name="homepage" id="homepage" class="biaodan" value="<?php echo $row["homepage"]?>" size="25" maxLength="100"></td>
                             </tr>
                             <tr >
-                                <td align="right" class="border">公司电话：</td>
-                                <td class="border"> <INPUT name="phone" class="biaodan" value="<?php echo $row["phone"]?>" size="30" maxLength="50"></td>
+                                <td align="right" class="border2">公司电话：</td>
+                                <td class="border2"> <INPUT name="phone" class="biaodan" value="<?php echo $row["phone"]?>" size="25" maxLength="50"></td>
                             </tr>
                             <tr >
                                 <td align="right" class="border2">公司传真：</td>
-                                <td class="border2"> <INPUT name="fox" class="biaodan" value="<?php echo $row["fox"]?>" size="30" maxLength="50"></td>
+                                <td class="border2"> <INPUT name="fox" class="biaodan" value="<?php echo $row["fox"]?>" size="25" maxLength="50"></td>
                             </tr>
                             <tr>
                                 <td align="right" class="border2">公司简介：</td>

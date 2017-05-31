@@ -94,8 +94,8 @@ include("check.php");
                 <form action="zssave.php" method="post" name="myform" id="myform" onSubmit="return CheckForm();">
                     <table width="100%" border="0" cellpadding="3" cellspacing="1">
                         <tr>
-                            <td width="20%" align="right" class="border2" >项目<font color="#FF0000">*</font>：</td>
-                            <td width="60%" class="border" > <input name="name" type="text" id="name" class="biaodan" value="<?php echo $row["proname"]?>" size="30" maxlength="50" >
+                            <td width="30%" align="right" class="border2" >项目<font color="#FF0000">*</font>：</td>
+                            <td  class="border" > <input name="name" type="text" id="name" class="biaodan" value="<?php echo $row["proname"]?>" size="25" maxlength="40" >
                                 <br>
                                 (只能写产品名称)</td>
                         </tr>
@@ -167,7 +167,7 @@ include("check.php");
                             <td class="border2"><select name="province" id="province"></select>
                                 <select name="city" id="city"></select>
                                 <select name="xiancheng" id="xiancheng"></select>
-                                <script src="/js/area.js"></script>
+                                <script src="/js/area_mobile.js"></script>
                                 <?php
                                 $sqln="select province,city,xiancheng from zzcms_user where username='" .$username. "'";
                                 $rsn=mysql_query($sqln);
@@ -180,7 +180,7 @@ include("check.php");
                         </tr>
                         <tr>
                             <td align="right" class="border2">具体地址：</td>
-                            <td class="border2"> <input name="address" type="text" id="address"  class="biaodan" value="<?php echo $row["address"]?>" size="30" maxlength="50" ></tr>
+                            <td class="border2"> <input name="address" type="text" id="address"  class="biaodan" value="<?php echo $row["address"]?>" size="25" maxlength="40" ></tr>
                         <?php
 /*                        if (shuxing_name!=''){
                             $shuxing_name = explode("|",shuxing_name);
@@ -196,7 +196,7 @@ include("check.php");
                         }
                         */?>
                         <tr>
-                            <td align="right" class="border" >说明 <font color="#FF0000">*</font>：</td>
+                            <td align="right" class="border" >说明<font color="#FF0000">*</font>：</td>
                             <td class="border" >
 			
 <textarea name="sm"  id="sm">
