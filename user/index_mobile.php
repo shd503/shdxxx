@@ -71,8 +71,8 @@ include("check.php");
         <div class="admintitle">用户信息</div>
         <table width="100%" border="0" cellpadding="3" cellspacing="1">
           <tr>
-            <td width="20%" height="50" align="right" bgcolor="#FFFFFF" class="border2">注册时间：</td>
-            <td width="80%" bgcolor="#FFFFFF" class="border2">
+            <td width="30%" height="50" align="right" bgcolor="#FFFFFF" class="border2">注册时间：</td>
+            <td width="60%" bgcolor="#FFFFFF" class="border2">
               <?php
               $sql="select * from zzcms_user where username='".@$username."'";
               $rs=mysql_query($sql);

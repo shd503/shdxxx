@@ -6,8 +6,15 @@ switch ($style){
 case "H";
 
 	if (isset($_COOKIE["UserName"]) && isset($_COOKIE["PassWord"])){
-		$str= "您好！<b>". $_COOKIE["UserName"]."</b>";			
-		$str=$str . "&nbsp;<font color='#999999'>[ </font><a href='".siteurl."/user/index.php'>进入用户中心</a>&nbsp;<font color='#999999'>|</font>&nbsp;<a href='".siteurl."/user/logout.php'>安全退出</a> <font color='#999999'>]</font>&nbsp;";	
+		$str= "您好！<b>". $_COOKIE["UserName"]."</b>";
+		//php判断客户端是否为手机
+		$agent = $_SERVER['HTTP_USER_AGENT'];
+		if(strpos($agent,"NetFront") || strpos($agent,"iPhone") || strpos($agent,"MIDP-2.0") || strpos($agent,"Opera Mini") || strpos($agent,"UCWEB") || strpos($agent,"Android") || strpos($agent,"Windows CE") || strpos($agent,"SymbianOS")) {
+			$str=$str . "&nbsp;<font color='#999999'>[ </font><a href='".siteurl."/user/index_mobile.php'>进入用户中心</a>&nbsp;<font color='#999999'>|</font>&nbsp;<a href='".siteurl."/user/logout.php'>安全退出</a> <font color='#999999'>]</font>&nbsp;";
+		}else{
+			$str=$str . "&nbsp;<font color='#999999'>[ </font><a href='".siteurl."/user/index.php'>进入用户中心</a>&nbsp;<font color='#999999'>|</font>&nbsp;<a href='".siteurl."/user/logout.php'>安全退出</a> <font color='#999999'>]</font>&nbsp;";
+		}
+
 	}else{		
 		$str="<img src='".siteurl."/image/user.gif'> ";
 		$str=$str ."您好！客人 [<a href='".siteurl."/user/".getpageurl3("login")."'>请登陆</a>]&nbsp;[<a href='".siteurl."/reg/".getpageurl3("userreg")."' target='_blank'>免费注册</a>]&nbsp;";
