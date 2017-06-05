@@ -2,208 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a6a42a0-0867-48d1-9e97-8c5b1943e3b1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/ckeditor_basic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/ckeditor_basic_source.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/ckeditor_source.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/images/spacer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/adobeair/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/ajax/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/autogrow/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/bbcode/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/clipboard/dialogs/paste.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/_translationstatus.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/cy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/eo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/gu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/ku.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/no.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/ug.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/devtools/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/docprops/dialogs/docprops.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/docprops/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/iframedialog/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/link/images/anchor.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/pastetext/dialogs/pastetext.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/dialogs/placeholder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/_translationstatus.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/cy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/eo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/ku.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/no.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/ug.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/placeholder.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/placeholder/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/specialchar/lang/_translationstatus.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/specialchar/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/styles/styles/default.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/stylesheetparser/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/tableresize/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/uicolor/dialogs/uicolor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/uicolor/lang/_translationstatus.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/uicolor/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/uicolor/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/uicolor/uicolor.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/uicolor/yui/assets/hue_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/uicolor/yui/assets/hue_thumb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/uicolor/yui/assets/picker_mask.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/uicolor/yui/assets/picker_thumb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/uicolor/yui/assets/yui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/uicolor/yui/yui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/xml/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/_notes/icons.png.mno" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/_notes/sprites.png.mno" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/_notes/sprites_ie6.png.mno" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/icons_rtl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/_notes/sprites.png.mno" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/_notes/sprites_ie6.png.mno" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/noimage.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/templates.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3/ckeditor/themes/default/theme.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/forms/images/hiddenfield.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/forms/images/hiddenfield.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/iframe/images/placeholder.png" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/iframe/images/placeholder.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/pagebreak/images/pagebreak.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/pagebreak/images/pagebreak.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_address.png" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_address.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_blockquote.png" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_blockquote.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_div.png" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_div.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_h1.png" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_h1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_h2.png" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_h2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_h3.png" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_h3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_h4.png" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_h4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_h5.png" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_h5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_h6.png" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_h6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_p.png" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_p.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_pre.png" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/showblocks/images/block_pre.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/angel_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/angel_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/angry_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/angry_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/broken_heart.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/broken_heart.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/confused_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/confused_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/cry_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/cry_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/devil_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/devil_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/embaressed_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/embaressed_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/envelope.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/envelope.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/heart.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/heart.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/kiss.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/kiss.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/lightbulb.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/lightbulb.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/omg_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/omg_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/regular_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/regular_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/sad_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/sad_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/shades_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/shades_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/teeth_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/teeth_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/thumbs_down.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/thumbs_down.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/thumbs_up.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/thumbs_up.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/tounge_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/tounge_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/wink_smile.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/images/wink_smile.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/templates/templates/images/template1.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/templates/templates/images/template1.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/templates/templates/images/template2.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/templates/templates/images/template2.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/templates/templates/images/template3.gif" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/templates/templates/images/template3.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/icons.png" afterPath="$PROJECT_DIR$/3/ckeditor/skins/kama/icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/dialog_sides.gif" afterPath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/dialog_sides.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/dialog_sides.png" afterPath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/dialog_sides.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/dialog_sides_rtl.png" afterPath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/dialog_sides_rtl.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/mini.gif" afterPath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/mini.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/sprites.png" afterPath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/sprites.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/sprites_ie6.png" afterPath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/sprites_ie6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/toolbar_start.gif" afterPath="$PROJECT_DIR$/3/ckeditor/skins/kama/images/toolbar_start.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/adapters/jquery.js" afterPath="$PROJECT_DIR$/3/ckeditor/adapters/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/3/ckeditor/ckeditor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/config.js" afterPath="$PROJECT_DIR$/3/ckeditor/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/contents.css" afterPath="$PROJECT_DIR$/3/ckeditor/contents.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/lang/zh-cn.js" afterPath="$PROJECT_DIR$/3/ckeditor/lang/zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/about/dialogs/about.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/about/dialogs/about.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/colordialog/dialogs/colordialog.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/colordialog/dialogs/colordialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/dialog/dialogDefinition.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/dialog/dialogDefinition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/div/dialogs/div.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/div/dialogs/div.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/find/dialogs/find.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/find/dialogs/find.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/flash/dialogs/flash.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/flash/dialogs/flash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/button.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/button.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/checkbox.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/checkbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/form.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/hiddenfield.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/hiddenfield.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/radio.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/radio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/select.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/select.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/textarea.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/textarea.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/textfield.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/forms/dialogs/textfield.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/iframe/dialogs/iframe.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/iframe/dialogs/iframe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/image/dialogs/image.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/image/dialogs/image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/lineheight/lang/zh-cn.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/lineheight/lang/zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/lineheight/plugin.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/lineheight/plugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/link/dialogs/anchor.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/link/dialogs/anchor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/link/dialogs/link.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/link/dialogs/link.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/liststyle/dialogs/liststyle.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/liststyle/dialogs/liststyle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/pastefromword/filter/default.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/pastefromword/filter/default.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/preview/preview.html" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/preview/preview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/scayt/dialogs/options.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/scayt/dialogs/options.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/scayt/dialogs/toolbar.css" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/scayt/dialogs/toolbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/dialogs/smiley.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/smiley/dialogs/smiley.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/specialchar/dialogs/specialchar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/table/dialogs/table.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/table/dialogs/table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/templates/dialogs/templates.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/templates/dialogs/templates.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/templates/templates/default.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/templates/templates/default.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/wsc/dialogs/ciframe.html" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/wsc/dialogs/ciframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/wsc/dialogs/wsc.css" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/wsc/dialogs/wsc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/plugins/wsc/dialogs/wsc.js" afterPath="$PROJECT_DIR$/3/ckeditor/plugins/wsc/dialogs/wsc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/dialog.css" afterPath="$PROJECT_DIR$/3/ckeditor/skins/kama/dialog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/editor.css" afterPath="$PROJECT_DIR$/3/ckeditor/skins/kama/editor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/ckeditor/skins/kama/skin.js" afterPath="$PROJECT_DIR$/3/ckeditor/skins/kama/skin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/siteconfig.php" afterPath="$PROJECT_DIR$/admin/siteconfig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/top.php" afterPath="$PROJECT_DIR$/admin/top.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/config.php" afterPath="$PROJECT_DIR$/inc/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/zs.php" afterPath="$PROJECT_DIR$/user/zs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/shen1/index.htm" afterPath="$PROJECT_DIR$/web/shen1/index.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zs/show.php" afterPath="$PROJECT_DIR$/zs/show.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/red2/style.css" afterPath="$PROJECT_DIR$/template/red2/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/red2/top.htm" afterPath="$PROJECT_DIR$/template/red2/top.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/red2/top_index.htm" afterPath="$PROJECT_DIR$/template/red2/top_index.htm" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -225,136 +26,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/inc/config.php">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/red2/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0262752">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-              <folding>
-                <marker date="1496675762661" expanded="true" signature="204:220" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zs/show.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.290322">
-              <caret line="214" column="28" selection-start-line="214" selection-start-column="26" selection-end-line="214" selection-end-column="28" />
-              <folding>
-                <marker date="1496674249678" expanded="true" signature="483:536" placeholder="select * fro... zzcms_user" />
-                <marker date="1496674249678" expanded="true" signature="566:654" placeholder="select * fro... zzcms_user" />
-                <marker date="1496674249678" expanded="true" signature="607:653" placeholder="Select edito... zzcms_main" />
-                <marker date="1496674249678" expanded="true" signature="1053:1100" placeholder="select * fro... zzcms_main" />
-                <marker date="1496674249678" expanded="true" signature="1130:1171" placeholder="select * fro... zzcms_main" />
-                <marker date="1496674249678" expanded="true" signature="1621:1669" placeholder="update zzcms... " />
-                <marker date="1496674249678" expanded="true" signature="1687:1723" placeholder="update zzcms... " />
-                <marker date="1496674249678" expanded="true" signature="2414:2431" placeholder="..." />
-                <marker date="1496674249678" expanded="true" signature="3362:3429" placeholder="select class... zzcms_zsclass" />
-                <marker date="1496674249678" expanded="true" signature="3612:3681" placeholder="select class... zzcms_zsclass" />
-                <marker date="1496674249678" expanded="true" signature="4180:4271" placeholder="select img,t... zzcms_licence" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.387097">
-              <caret line="60" column="51" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
-              <folding>
-                <marker date="1496672557517" expanded="true" signature="1424:1543" placeholder="select group... zzcms_admingroup" />
-                <marker date="1496672557517" expanded="true" signature="1473:1542" placeholder="select group... zzcms_admin" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="right.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/right.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="10.193548">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1495552813159" expanded="true" signature="572:647" placeholder="update zzcms... " />
-                <marker date="1495552813159" expanded="true" signature="670:771" placeholder="select group... zzcms_user" />
-                <marker date="1495552813159" expanded="true" signature="885:954" placeholder="update zzcms... " />
-                <marker date="1495552813159" expanded="true" signature="974:1045" placeholder="Update zzcms... " />
-                <marker date="1495552813159" expanded="true" signature="1064:1133" placeholder="Update zzcms... " />
-                <marker date="1495552813159" expanded="true" signature="1163:1203" placeholder="select id fr... zzcms_user" />
-                <marker date="1495552813159" expanded="true" signature="1338:1378" placeholder="select id fr... zzcms_main" />
-                <marker date="1495552813159" expanded="true" signature="1512:1550" placeholder="select id fr... zzcms_dl" />
-                <marker date="1495552813159" expanded="true" signature="1684:1722" placeholder="select id fr... zzcms_zx" />
-                <marker date="1495552813159" expanded="true" signature="1856:1899" placeholder="select id fr... zzcms_pinglun" />
-                <marker date="1495552813159" expanded="true" signature="2038:2078" placeholder="select id fr... zzcms_link" />
-                <marker date="1495552813159" expanded="true" signature="2213:2256" placeholder="select id fr... zzcms_textadv" />
-                <marker date="1495552813159" expanded="true" signature="2395:2438" placeholder="select id fr... zzcms_licence" />
-                <marker date="1495552813159" expanded="true" signature="2570:2634" placeholder="select id fr... zzcms_ad" />
-                <marker date="1495552813159" expanded="true" signature="2777:2829" placeholder="select id fr... zzcms_usermessage" />
-                <marker date="1495552813159" expanded="true" signature="2964:2988" placeholder="select id fr... zzcms_bad" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="left.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/left.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="25.548388">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8366013">
+              <caret line="118" column="56" selection-start-line="118" selection-start-column="50" selection-end-line="118" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="top.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/top.php">
+      <file leaf-file-name="top_index.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/red2/top_index.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-36.258064">
-              <caret line="53" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="7" />
+            <state vertical-scroll-proportion="-11.935484">
+              <caret line="56" column="64" selection-start-line="45" selection-start-column="11" selection-end-line="56" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="siteconfig.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/siteconfig.php">
+      <file leaf-file-name="top.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/red2/top.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.8333335">
-              <caret line="697" column="60" selection-start-line="697" selection-start-column="46" selection-end-line="697" selection-end-column="60" />
+            <state vertical-scroll-proportion="-13.16129">
+              <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1495552813096" expanded="true" signature="142:204" placeholder="select * fro... zzcms_admin" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zs.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/zs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.129032">
-              <caret line="322" column="50" selection-start-line="322" selection-start-column="50" selection-end-line="322" selection-end-column="50" />
-              <folding>
-                <marker date="1496674286632" expanded="true" signature="3311:3366" placeholder="select * fro... zzcms_main" />
-                <marker date="1496674286632" expanded="true" signature="4817:4882" placeholder="select * fro... zzcms_zsclass" />
-                <marker date="1496674286632" expanded="true" signature="6204:6269" placeholder="select * fro... zzcms_zsclass" />
-                <marker date="1496674286632" expanded="true" signature="6712:6726" placeholder="..." />
-                <marker date="1496674286632" expanded="true" signature="6869:6882" placeholder="..." />
-                <marker date="1496674286632" expanded="true" signature="7105:7183" placeholder="select * fro... zzcms_zsclass" />
-                <marker date="1496674286632" expanded="true" signature="10597:10676" placeholder="select provi... zzcms_user" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -370,7 +67,6 @@
         <option value="$PROJECT_DIR$/template/mobile2/top_index.htm" />
         <option value="$PROJECT_DIR$/reg/userreg.php" />
         <option value="$PROJECT_DIR$/template/mobile2/userreg.htm" />
-        <option value="$PROJECT_DIR$/template/red2/top.htm" />
         <option value="$PROJECT_DIR$/user/zssave.php" />
         <option value="$PROJECT_DIR$/zs/zs.php" />
         <option value="$PROJECT_DIR$/inc/function.php" />
@@ -382,8 +78,6 @@
         <option value="$PROJECT_DIR$/template/red2/zs.htm" />
         <option value="$PROJECT_DIR$/template/mobile/m/zs.htm" />
         <option value="$PROJECT_DIR$/template/red2/label/zsclass/zsitem.txt" />
-        <option value="$PROJECT_DIR$/template/red2/style.css" />
-        <option value="$PROJECT_DIR$/template/red2/top_index.htm" />
         <option value="$PROJECT_DIR$/template/red2/zsshow.htm" />
         <option value="$PROJECT_DIR$/user/top_mobile.php" />
         <option value="$PROJECT_DIR$/user/managepwd_mobile.php" />
@@ -403,6 +97,9 @@
         <option value="$PROJECT_DIR$/admin/siteconfig.php" />
         <option value="$PROJECT_DIR$/admin/top.php" />
         <option value="$PROJECT_DIR$/inc/config.php" />
+        <option value="$PROJECT_DIR$/template/red2/top_index.htm" />
+        <option value="$PROJECT_DIR$/template/red2/top.htm" />
+        <option value="$PROJECT_DIR$/template/red2/style.css" />
       </list>
     </option>
   </component>
@@ -474,7 +171,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
+              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -488,7 +185,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="red2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -569,7 +270,7 @@
     <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18152525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1433942" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -704,13 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/red2/top.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43896714">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/mobile/m/zs.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="15.4">
@@ -722,13 +416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/red2/top_index.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="8" selection-start-line="59" selection-start-column="4" selection-end-line="63" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -892,14 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/red2/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.8190475">
-          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/style/1/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.8761904">
@@ -936,7 +615,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.387097">
+        <state vertical-scroll-proportion="0.30602783">
           <caret line="60" column="51" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
           <folding>
             <marker date="1496672557517" expanded="true" signature="1424:1543" placeholder="select group... zzcms_admingroup" />
@@ -947,7 +626,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/right.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.193548">
+        <state vertical-scroll-proportion="-0.48840803">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1495552813159" expanded="true" signature="572:647" placeholder="update zzcms... " />
@@ -972,7 +651,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/left.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="25.548388">
+        <state vertical-scroll-proportion="-1.2241113">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -980,7 +659,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/siteconfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.8333335">
+        <state vertical-scroll-proportion="0.52124184">
           <caret line="697" column="60" selection-start-line="697" selection-start-column="46" selection-end-line="697" selection-end-column="60" />
           <folding />
         </state>
@@ -998,7 +677,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/top.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-36.258064">
+        <state vertical-scroll-proportion="1.7372489">
           <caret line="53" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="7" />
           <folding />
         </state>
@@ -1006,7 +685,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zs/show.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.290322">
+        <state vertical-scroll-proportion="0.5239567">
           <caret line="214" column="28" selection-start-line="214" selection-start-column="26" selection-end-line="214" selection-end-column="28" />
           <folding>
             <marker date="1496674249678" expanded="true" signature="483:536" placeholder="select * fro... zzcms_user" />
@@ -1026,7 +705,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/zs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.129032">
+        <state vertical-scroll-proportion="0.29366305">
           <caret line="322" column="50" selection-start-line="322" selection-start-column="50" selection-end-line="322" selection-end-column="50" />
           <folding>
             <marker date="1496674286632" expanded="true" signature="3311:3366" placeholder="select * fro... zzcms_main" />
@@ -1047,6 +726,30 @@
           <folding>
             <marker date="1496675762661" expanded="true" signature="204:220" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/red2/top_index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.935484">
+          <caret line="56" column="64" selection-start-line="45" selection-start-column="11" selection-end-line="56" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/red2/top.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.16129">
+          <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/red2/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8366013">
+          <caret line="118" column="56" selection-start-line="118" selection-start-column="50" selection-end-line="118" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
