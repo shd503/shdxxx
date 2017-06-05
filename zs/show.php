@@ -212,7 +212,7 @@ if (!$row){
 	$strout=str_replace("{#sitetop}",sitetop(),$strout);
 	$strout=str_replace("{#sitebottom}",sitebottom(),$strout);
 
-	if (cancel_dl_liuyan == 'Yes') {
+	if (dl_liuyan_set == "No") {
 		$strout = str_replace("{#starthtmlnotes}", '<!--', $strout);
 		$strout = str_replace("{#endhtmlnotes}", '-->', $strout);
 	}

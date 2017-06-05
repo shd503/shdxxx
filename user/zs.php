@@ -319,6 +319,9 @@ if (file_exists($fp)) {
 
                                 <input name="Submit" type="submit" class="buttons" value="保存修改结果"></td>
                         </tr>
+                        <?php
+                        if (background_set == "Yes") {
+                        ?>
                         <tr>
                             <td colspan="2" class="admintitle" >页面背景设置</td>
                         </tr>
@@ -396,6 +399,9 @@ if (file_exists($fp)) {
                             <td  valign="top" class="border">
                                 <input name="Submit22" type="submit" class="buttons" value="保存修改结果" />		    </td>
                         </tr>
+                        <?php
+                        }
+                        ?>>
                     </table>
                 </form>
             </div>

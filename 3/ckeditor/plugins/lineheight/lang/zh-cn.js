@@ -3,7 +3,6 @@
  * 作者：中成网站建设 www.csccd.net
  */
 CKEDITOR.plugins.setLang('lineheight', 'zh-cn', {
-    label: '行距',
-    panelTitle: '行距',
-    panelTitle: '行距'
+    title: '行距'
+    
 });

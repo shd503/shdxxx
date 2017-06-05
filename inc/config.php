@@ -56,7 +56,7 @@ define('qiangad','Yes') ;//是否开通抢占广告位功能
 define('showadvdate','15') ;//广告位置占用时间
 define('duilianadisopen','Yes') ;//是否打开对联广告
 define('flyadisopen','Yes') ;//是否打开漂浮广告
-define('jifen','No') ;//是否启用积分功能
+define('jifen','Yes') ;//是否启用积分功能
 define('jifen_bilu','1') ;//1元等于多少积分
 
 define('jf_reg','50') ;//注册时获取积分值
@@ -82,5 +82,6 @@ define('qq_oauth_consumer_key','') ;//ID
 define('qq_oauth_consumer_secret','') ;//KEY
 define('qq_callback_url','') ;//返回页地址
 define('bbs_set','No') ;//是否开启同步论坛功能
-define('cancel_dl_liuyan','Yes') ;//是否注释掉html代码
+define('dl_liuyan_set','No') ;//是否显示代理留言页面
+define('background_set','No') ;//是否显示页面背景设置(用户发商机页面)
 ?>
