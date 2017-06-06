@@ -401,7 +401,7 @@ if (file_exists($fp)) {
                         </tr>
                         <?php
                         }
-                        ?>>
+                        ?>
                     </table>
                 </form>
             </div>
