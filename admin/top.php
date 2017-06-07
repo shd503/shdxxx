@@ -59,17 +59,17 @@ include("admin.php");
         <td>
             <div id="tabs">
                 <ul>
-                    <li><a href="siteconfig.php" onmouseover="parent.frmleft.disp(6);" target="frmright"><span>网站设置</span></a></li>
-                    <li><a href="zs_manage.php" onmouseover="parent.frmleft.disp(1);" target="frmright"><span>信息</span></a></li>
-                    <li><a href="zsclassmanage.php" onmouseover="parent.frmleft.disp(2);" target="frmright"><span>类别</span></a></li>
-                    <li><a href="ad_manage.php" onmouseover="parent.frmleft.disp(3);" target="frmright"><span>广告</span></a></li>
-                    <li><a href="usermanage.php" onmouseover="parent.frmleft.disp(4);" target="frmright"><span>用户</span></a></li>
-                    <li><a href="databaseclear.php" onmouseover="parent.frmleft.disp(7);" target="frmright"><span>数据库</span></a></li>
-                    <li><a href="labelzsshow.php" onmouseover="parent.frmleft.disp(8);" target="frmright"><span>标签</span></a></li>
-                    <li><a href="template.php" onmouseover="parent.frmleft.disp(9);" target="frmright"><span>模板</span></a></li>
-                    <li><a href="cachedel.php" onmouseover="parent.frmleft.disp(10);" target="frmright"><span>清缓存</span></a></li>
-                    <li><a href="uploadfile_nouse.php" onmouseover="parent.frmleft.disp(11);" target="frmright"><span>文件</span></a></li>
-                    <li><a href="message_add.php" onmouseover="parent.frmleft.disp(5);" target="frmright"><span>发消息</span></a></li>
+                    <li><a href="siteconfig.php" onClick="parent.frmleft.disp(6);" target="frmright"><span>网站设置</span></a></li>
+                    <li><a href="zs_manage.php" onClick="parent.frmleft.disp(1);" target="frmright"><span>信息</span></a></li>
+                    <li><a href="zsclassmanage.php" onClick="parent.frmleft.disp(2);" target="frmright"><span>类别</span></a></li>
+                    <li><a href="ad_manage.php" onClick="parent.frmleft.disp(3);" target="frmright"><span>广告</span></a></li>
+                    <li><a href="usermanage.php" onClick="parent.frmleft.disp(4);" target="frmright"><span>用户</span></a></li>
+                    <li><a href="databaseclear.php" onClick="parent.frmleft.disp(7);" target="frmright"><span>数据库</span></a></li>
+                    <li><a href="labelzsshow.php" onClick="parent.frmleft.disp(8);" target="frmright"><span>标签</span></a></li>
+                    <li><a href="template.php" onClick="parent.frmleft.disp(9);" target="frmright"><span>模板</span></a></li>
+                    <li><a href="cachedel.php" onClick="parent.frmleft.disp(10);" target="frmright"><span>清缓存</span></a></li>
+                    <li><a href="uploadfile_nouse.php" onClick="parent.frmleft.disp(11);" target="frmright"><span>文件</span></a></li>
+                    <li><a href="message_add.php" onClick="parent.frmleft.disp(5);" target="frmright"><span>发消息</span></a></li>
                 </ul>
             </div></td>
     </tr>

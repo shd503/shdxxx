@@ -6,6 +6,7 @@ include("admin.php");
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="style.css" rel="stylesheet" type="text/css">
     <title></title>
+    <script type="text/JavaScript" src="/js/jquery.js"></script>
     <script language="JavaScript" type="text/JavaScript">
 
         function ConfirmDelBig()
@@ -25,6 +26,15 @@ include("admin.php");
                 return false;
 
         }
+    </script>
+    <script language="JavaScript">
+        $(function() {
+            $('tr.parent').click(function() {
+                $(this)
+                    //.toggle("selected")
+                    .siblings('.child_'+this.id).toggle();
+            }).click();
+        })
     </script>
 </head>
 
@@ -114,9 +124,10 @@ if (!$row){
                 <td width="27%" class="border" ><strong>操作</strong></td>
             </tr>
             <?php
+            $class_no=0;
             while($row= mysql_fetch_array($rs)){
                 ?>
-                <tr bgcolor="#F1F1F1">
+                <tr class="parent" id="<?php echo $class_no?>" bgcolor="#F1F1F1">
                     <td style="font-weight:bold"><a name="B<?php echo $row["classzm"]?>"></a><img src="image/icobig.gif" width="9" height="9">
                         <?php echo $row["classname"]?></td>
                     <td style="font-weight:bold"><?php echo $row["classzm"]?></td>
@@ -134,7 +145,7 @@ if (!$row){
                 $rsn=mysql_query($sqln);
                 while($rown= mysql_fetch_array($rsn)){
                     ?>
-                    <tr onMouseOver="this.bgColor='#E8E8E8'" onMouseOut="this.bgColor='#FFFFFF'" bgcolor="#FFFFFF">
+                    <tr class="<?php echo "child_".$class_no?>" onMouseOver="this.bgColor='#E8E8E8'" onMouseOut="this.bgColor='#FFFFFF'" bgcolor="#FFFFFF">
                         <td ><a name="S<?php echo $rown["classid"]?>"></a><img src="image/icosmall.gif" width="23" height="11">
                             <?php echo $rown["classname"]?></td>
                         <td ><?php echo $rown["classzm"]?></td>
@@ -147,6 +158,7 @@ if (!$row){
                     <?php
                     $n=$n+1;
                 }
+                $class_no=$class_no+1;
             }
             ?>
         </table>
@@ -156,7 +168,4 @@ if (!$row){
 ?>
 </body>
 </html>
-</table>
-</form>
-</body>
-</html>
+
