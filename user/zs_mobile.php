@@ -91,7 +91,7 @@ include("check.php");
             ?>
             <div class="content">
                 <div class="admintitle">发商机</div>
-                <form action="zssave.php" method="post" name="myform" id="myform" onSubmit="return CheckForm();">
+                <form action="zssave_mobile.php" method="post" name="myform" id="myform" onSubmit="return CheckForm();">
                     <table width="100%" border="0" cellpadding="3" cellspacing="1">
                         <tr>
                             <td width="30%" align="right" class="border2" >项目<font color="#FF0000">*</font>：</td>
@@ -211,8 +211,26 @@ if (file_exists($fp)) {
     echo $row["sm"];
 }
 ?></textarea>
-                                <script type="text/javascript" src="/3/ckeditor/ckeditor.js"></script>
-                                <script type="text/javascript">CKEDITOR.replace('sm');</script>	</td>
+                                <script type="text/javascript" src="/3/kindeditor-4.1.10/kindeditor.js" ></script>
+                                <script type="text/javascript" src="/3/kindeditor-4.1.10/lang/zh_CN.js" ></script>
+                                <script type="text/javascript">
+                                    KindEditor.ready(function(K) {
+                                        window.editor = K.create('#sm', {
+                                            cssPath : '.3/kindeditor-4.1.10/plugins/code/prettify.css',
+                                            uploadJson : '/3/kindeditor-4.1.10/php/upload_json.php',
+                                            fileManagerJson : '/3/kindeditor-4.1.10/php/file_manager_json.php',
+                                            allowFileManager : true,
+                                                resizeType : 0,
+                                                allowImageRemote : false,
+                                                width : '100%',
+                                                height : '100%',
+                                                items : ['source','bold','italic','underline','forecolor','image','|', 'fullscreen', 'undo', 'redo',  'copy', 'paste',],
+                                                afterBlur : function(){this.sync();}//需要添加的
+                                        });
+
+                                    });
+
+                                </script>	</td>
                         </tr>
                         <tr>
                             <td align="right" class="border" >封面图片：
