@@ -634,6 +634,7 @@
 	position: absolute;
 	margin: 0;
 	padding: 0;
+	width:100% !important;
 }
 .ke-dialog .ke-header {
 	width: 100%;
@@ -834,6 +835,7 @@
 	vertical-align: middle;
 	zoom: 1;
 	*display: inline;
+	width:50% !important;
 }
 .ke-input-number {
 	width: 50px;

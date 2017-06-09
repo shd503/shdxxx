@@ -13,10 +13,10 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .nav ul {height: 50px;overflow: hidden;margin: 0px 0px;}
 .nav li {float: left;display: inline;}
 /*display:block就是将元素显示为块级元素。只有这样下面才能控制其宽度。*/
-.nav a {color: #FFFFFF;float:left;display:block;width:94px;height:50px;line-height:50px;text-align:center;font-weight:bold;font-size:14px;text-decoration: none;}
+.nav a {color: #FFFFFF;float:left;display:block;width:100px;height:50px;line-height:50px;text-align:center;font-weight:bold;font-size:17px;text-decoration: none;}
 .nav a:hover{color: #CC0000;background-color:#F1F1F1;}
 /*副导航条*/
-.item2 {clear:both;background-color:#f1f1f1;padding:5px;margin-bottom:8px}
+.item2 {clear:both;background-color:#f1f1f1;padding:5px;margin-bottom:0px}
 .item2 a{margin:0 10px;}
 .item2 span{float:right;padding:2px 5px 0px 0px;font-size:9pt}
 .boxtop {border: 1px solid #dddddd;color:#666666;padding:8px;margin-bottom:8px}
@@ -66,8 +66,8 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .main{width:1200px;margin:0 auto;text-align:left}
 .buttonlogin{border:solid 1px #dddddd;color:#000;background-color: #f1f1f1;height:20px;font-size:9pt;}
 .pagebody {width: 100%;clear:both;}
-.leftIndex {float: left;width: 772px;	}
-.rightIndex {width: 180px;float: right;}
+.leftIndex {float: left;width: 77%;	}
+.rightIndex {width: 23%;float: right;}
 .left {width: 712px;float: left;}
 .right {width: 240px;float: right;}
 .left_content {padding: 8px;border: 1px solid #dddddd;background:url(image/bg3.gif) repeat-x;}
@@ -84,7 +84,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .title1 a:link,.title2 a:link,.title4 a:link,.title5 a:link,.title1 a:hover,.title2 a:hover,.title4 a:hover,.title5 a:hover,.title1 a:visited,.title2 a:visited,.title4 a:visited,.title5 a:visited{color:#990000}
 
 .title1{background: url(image/title.png) no-repeat 0px 0px;}
-.title2{background: url(image/title.png) no-repeat 0px -25px;}
+.title2{background: url(image/title.png) no-repeat 0px 0px;}
 .title4{background: url(image/title.png) no-repeat 0px -75px;}
 .title5{background: url(image/title.png) no-repeat 0px -100px;}
 .title0 {font-size:14px;font-weight:bold;border:solid 1px #dddddd;padding:3px 0px 0px 10px;height:20px;color:#990000;background:url(image/titlebg4.gif);}
@@ -152,7 +152,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .content1,.content,.content2 {padding:8px;border:solid 1px #dddddd;border-top-width:0;color:#666666;background-color:#FFFFFF;}
 .content1 li,.content li,.content2 li{height:25px;line-height:25px;font-family:simsun}/*可显小方块·*/
 .content1 li span,.content li span,.content2 li span{float:right}
-.content1 {margin-bottom:10px}
+.content1 {margin-bottom:5px}
 .xuhao1{border:solid 1px #CC0000;background-color:#CC0000;color:#FFFFFF;padding:0px 2px;}
 .xuhao2{border:solid 1px #666666;background-color:#888888;color:#FFFFFF;padding:0px 2px;}
 .fenyei {text-align: center;margin:8px 0px 8px 0px}

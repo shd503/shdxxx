@@ -216,17 +216,22 @@ if (file_exists($fp)) {
                                 <script type="text/javascript">
                                     KindEditor.ready(function(K) {
                                         window.editor = K.create('#sm', {
+                                            designMode:true,
                                             cssPath : '.3/kindeditor-4.1.10/plugins/code/prettify.css',
                                             uploadJson : '/3/kindeditor-4.1.10/php/upload_json.php',
                                             fileManagerJson : '/3/kindeditor-4.1.10/php/file_manager_json.php',
                                             allowFileManager : true,
-                                                resizeType : 0,
-                                                allowImageRemote : false,
-                                                width : '100%',
-                                                height : '100%',
-                                                items : ['source','bold','italic','underline','forecolor','image','|', 'fullscreen', 'undo', 'redo',  'copy', 'paste',],
-                                                afterBlur : function(){this.sync();}//需要添加的
+                                            resizeType : 0,
+                                            allowImageRemote : false,
+                                            width : '100%',
+                                            height : '100%',
+                                            items : ['source','bold','italic','underline','forecolor','image','|', 'fullscreen', 'undo', 'redo',  'copy', 'paste','baidumap'],
+
+                                            afterCreate:function() {this.sync();},
+                                            afterBlur : function(){this.sync();}//需要添加的
+
                                         });
+                                        prettyPrint();
 
                                     });
 
