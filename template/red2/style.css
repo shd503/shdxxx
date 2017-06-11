@@ -68,7 +68,8 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .pagebody {width: 100%;clear:both;}
 .leftIndex {float: left;width: 77%;	}
 .rightIndex {width: 23%;float: right;}
-.left {width: 712px;float: left;}
+.left {width: 20%!important;float: left;}
+.centor {width: 80%!important;float: left;}
 .right {width: 240px;float: right;}
 .left_content {padding: 8px;border: 1px solid #dddddd;background:url(image/bg3.gif) repeat-x;}
 .bottom {line-height:18px;padding: 10px 0px;text-align: center;border-top:2px solid #a20401}
@@ -141,6 +142,26 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .titlezs_8 span{float:right;padding-top:7px;width:750px;background-color:#4c5e8c}
 .titlezs_8 span li{float:left;margin:0px 1px;padding:2px;min-width:60px;text-align:center;height:23px;line-height:23px;}
 .titlezs_8 span li a{color:#fff;background-color:#7f8ca8;padding:1px;border:1px solid #F0B2B2;display:block;text-align:center}
+
+.titlezs_9{background-color:#925937;clear:both;}
+.titlezs_9 h3{width:160px;font-size:20px;font-family: "微软雅黑";text-align:center;height:45px;line-height:45px;background-color:#925937}
+.titlezs_9 span{float:right;padding-top:7px;width:750px;background-color:#925937}
+.titlezs_9 span li{float:left;margin:0px 1px;padding:2px;min-width:60px;text-align:center;height:23px;line-height:23px;}
+.titlezs_9 span li a{color:#fff;background-color:#b08061;padding:1px;border:1px solid #F0B2B2;display:block;text-align:center}
+
+.titlezs_10{background-color:#7e3b3c;clear:both;}
+.titlezs_10 h3{width:160px;font-size:20px;font-family: "微软雅黑";text-align:center;height:45px;line-height:45px;background-color:#7e3b3c}
+.titlezs_10 span{float:right;padding-top:7px;width:750px;background-color:#7e3b3c}
+.titlezs_10 span li{float:left;margin:0px 1px;padding:2px;min-width:60px;text-align:center;height:23px;line-height:23px;}
+.titlezs_10 span li a{color:#fff;background-color:#987171;padding:1px;border:1px solid #F0B2B2;display:block;text-align:center}
+
+.titlezs_11{background-color:#684c44;clear:both;}
+.titlezs_11 h3{width:160px;font-size:20px;font-family: "微软雅黑";text-align:center;height:45px;line-height:45px;background-color:#684c44}
+.titlezs_11 span{float:right;padding-top:7px;width:750px;background-color:#684c44}
+.titlezs_11 span li{float:left;margin:0px 1px;padding:2px;min-width:60px;text-align:center;height:23px;line-height:23px;}
+.titlezs_11 span li a{color:#fff;background-color:#897b75;padding:1px;border:1px solid #F0B2B2;display:block;text-align:center}
+
+
 
 
 .titles3 {background:url(image/kb2px.gif) repeat-y right 0;background-color:#E4393C;color:#ffffff;height:35px;line-height:35px;font-size: 18px;font-family: "微软雅黑";padding:0 10px;}
@@ -263,7 +284,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .biaodan3 {border:0;height:18px;width: 340px;margin-right:15px;outline:none;}
 .current_search{display: block;background-color:#FFF;font-weight:bold;background:url(image/bottonbgsearch.gif) no-repeat 0px 0px;color:#FFFFFF;	}
 
-#flzs {position:relative;z-index:4;top:0px;background-color:#FFF;width:240px;}
+#flzs {position:relative;z-index:4;top:0px;background-color:#FFF;width:99%;}
 #flzs a { display:inline;padding:0px;height:18px;line-height:18px;text-align:left;font-size:14px;color: #666666;text-shadow: 1px 1px 1px #FFF;}
 #flzs a:hover{color:#FF6600}
 .flzs_zhankai{background-color:#CCCCCC;zoom: 1; overflow:auto;padding:1px 0 0 1px}
@@ -277,7 +298,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .zsclass_zhankai h2 a{color:#FF6600}
 .zsclass_s_zhankai_style1{margin:0 1px 1px 0;background-color:#FFFFFF;padding:10px;min-height:150px}
 .zsclass_s_zhankai_style2{margin:0 1px 1px 0;background-color:#FFFFFF;padding:10px;min-height:150px}
-.zsclass_s{display:none;position:absolute; z-index:-1;margin-top:-86px;left:238px;padding:8px 16px;border:solid 2px #e4393c;background-color:#fff;width:558px;min-height:343px;filter: alpha(opacity=100);}/*z-index 仅能在定位元素上奏效,如让div随大类向下走，则去除top:-35,加margin-top:-55px*/
+.zsclass_s{display:none;position:absolute; z-index:-1;margin-top:-50px;left:238px;padding:8px 16px;border:solid 1px #e4393c;background-color:#fff;width:558px;min-height:100px;filter: alpha(opacity=100);}/*z-index 仅能在定位元素上奏效,如让div随大类向下走，则去除top:-35,加margin-top:-55px*/
 .zsclass_s a{color:}
 .zsclass_s_li{float:left;line-height:25px;margin:3px 0px;width:33%;}
 .zsclass_s_name{}
@@ -306,7 +327,7 @@ background:url(image/backtotop.jpg) no-repeat 0px 0px;
 #kefu_content li{margin:8px 0px;padding:0 8px;height:35px;line-height:35px;border-left:solid 1px #ffffff;border-top:solid 1px #ffffff;border-right:solid 1px #dddddd ;border-bottom:solid 1px #dddddd;background-color:#F1F1F1 }
 #loginbg_box{position:relative;margin:10px 0px}
 #loginbg_kf{width:256px;height:438px;background:url(image/kf.png) no-repeat 0 0;position:absolute; z-index:1;top:0px;left:10px;}
-#loginbg_inputbox{width:680px;padding:10px;position:absolute; z-index:0;top:10px;right:80px;}
+#loginbg_inputbox{width:680px;padding:10px;position:absolute; z-index:0;top:10px;right:20%;}
 #loginbg_inputboxin{padding:10px 10px 10px 10px;background-color:#f1f1f1;border:solid 1px #fff}
 #loginbg_bigword{font-size:20px;line-height:40px;height:40px;color:#FFF;font-family: "微软雅黑";background-color:#FF6600;padding:20px}
 #loginbg_touying{background:url(image/loginbg_touying.gif) repeat-x 0 0;height:20px}

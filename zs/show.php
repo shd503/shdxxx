@@ -215,6 +215,9 @@ if (!$row){
 	if (dl_liuyan_set == "No") {
 		$strout = str_replace("{#starthtmlnotes}", '<!--', $strout);
 		$strout = str_replace("{#endhtmlnotes}", '-->', $strout);
+	}elseif(dl_liuyan_set == "Yes") {
+		$strout = str_replace("{#starthtmlnotes}", "", $strout);
+		$strout = str_replace("{#endhtmlnotes}", "", $strout);
 	}
 	$strout=showlabel($strout);
 	mysql_close($conn);

@@ -2,8 +2,8 @@ flashad|||首页|||轮显广告|||6|||20|||0|||<script language='javascript'>
 linkarr = new Array();
 picarr = new Array();
 textarr = new Array();
-var swf_width=712;
-var swf_height=205;
+var swf_width=700;
+var swf_height=340;
 var files = "";
 var links = "";
 var texts = "";|||picarr[{#n}]="{#img}";
