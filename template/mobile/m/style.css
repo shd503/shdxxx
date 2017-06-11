@@ -180,7 +180,7 @@ background:url(image/backtotop.gif) no-repeat 0px 0px;
 .bigbutton a{background:url(image/bigbutton.png) no-repeat 0 0;color:#FFFFFF;font-weight:bold;font-size:20px;display:block;width:170px;line-height:30px;height:40px;text-align:center;color:#cc0000}
 .bigbutton a:hover{text-decoration: none;}
 .bigbutton a span{font-size:12px;font-weight:normal;}
-.bigbutton2 {background-color: #2095d7;font-weight:bold;font-size:18px;display:block;width:100px;line-height:20px;height:30px;text-align:center;color:#FFFFFF;}
+.bigbutton2 {background-color: #2095d7;font-weight:bold;font-size:18px;display:block;width:100px;line-height:30px;height:30px;text-align:center;color:#FFFFFF;}
 .a_selected a{background-color:#FF7700;color:#FFFFFF;padding:3px;border:solid 1px #FF6600;font-family:"宋体"}
 .boxarea{border:solid 1px #dddddd;padding:0px 0px;height:25px;line-height:25px;margin-bottom:8px;background-color:#F1F1F1}
 .boxarea li{float:left;margin:0 6px }
