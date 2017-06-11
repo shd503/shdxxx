@@ -1,7 +1,7 @@
 @charset "utf-8";
 div, address, iframe, ul, ol,h1, h2, h3, h4, h5, h6, p, pre, caption,form, legend, fieldset, textarea{margin: 0;padding: 0;font-weight: normal;font-style: normal;font-family: inherit;font-size: 100%;}
 ul,li{list-style:none;}
-body{color: #444444;background-color:#FFFFFF;margin:0px;font-size: 13px;line-height:20px;word-break:break-all;font-family: Arial, Helvetica, sans-serif,宋体,simsun;}
+body{color: #444444;background-color:#FFFFFF;margin:0px;font-size: 14px;line-height:20px;word-break:break-all;font-family: Arial, Helvetica, sans-serif,宋体,simsun;}
 a{color: #444444;text-decoration: none;}
 a:hover {color: #FF0000;text-decoration: underline;}
 img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0;max-width:100%;}
@@ -56,7 +56,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0;max-
 .bgcolor2 {background-color: #f1f1f1;}
 .bgcolor3 {background-color: #dddddd;}
 .biaodan {border: 1px solid #dddddd;padding:2px 2px;width: 300px;}
-.biaodan2{border:solid 1px #dddddd;width: 220px;}
+.biaodan2{border:solid 1px #dddddd;width: 200px;}
 .buttons_search{background:url(image/search3.gif);width:63px;height:20px;border-width:0px;cursor: hand;}
 .mainColor {background-color: #990000;color: #FFFFFF;}
 .hiddiv{float:left;position:absolute;Visibility:hidden;Filter:revealTrans(duration=0.5, transition=19);border: solid 1px #e8e8e8;margin:0px 0px 0px 165px;padding: 1px;background: url(/image/loading.gif) no-repeat center center;background-color: #FFF;}
@@ -75,12 +75,12 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0;max-
 .bottom {line-height:18px;padding: 10px 0px;text-align: center;border-top:solid 2px #2095d7}
 .bottomlink{color:#ffffff;background-color:#8c0000;padding:5px}
 .bottomlink a{color:#ffffff;}
-.titlebig{border:solid 1px #ffffff;border-bottom-color:#dddddd;background-color:#f1f1f1;height:50px;line-height:50px;font-size: 18px;font-family: "微软雅黑";padding:0 10px}
+.titlebig{border:solid 0px #ffffff;border-bottom-color:#dddddd;background-color:#2095d7;height:50px;line-height:50px;font-size: 20px;color:#FFF;font-family: "微软雅黑";padding:0 10px}
 .titles,.titles1{background:url(image/titles_bg.gif) repeat-x 0px 0px;border:solid 1px #dddddd;border-bottom:0px;background-color:#f1f1f1;color:#2095d7;height:31px;line-height:31px;font-size: 15px;font-family: "微软雅黑";padding:0 10px;clear:both;}
 /*高度设为30,使不显示下划线*/
 .titles1{height:30px;line-height:30px;}
 .titles4 {background-color:#ffffff;height:24px;line-height:24px;padding:0 0px;border-bottom:solid 2px #2095d7;font-size:14px;font-weight:bold;color:#2095d7}
-.titles span,.titles1 span,.titles2 span,.titles4 span,.titlezs span,.titlebig span{float:right;font-size: 12px;font-weight:normal}
+.titles span,.titles1 span,.titles2 span,.titles4 span,.titlezs span,.titlebig span{float:right;font-size: 14px;font-weight:normal}
 .content,.content1,.content2,.content3 {padding:8px;border:solid 1px #dddddd;border-top-width:0;color:#666666;background-color:#FFFFFF;}
 .content3{zoom: 1; overflow:auto;}
 .content3 li{float:left;margin:0 4px;text-align:center}
@@ -108,8 +108,8 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0;max-
 .textad3 a:link, .textad3 a:hover,.textad3 a:visited{color:#FF6600}
 .textad4{color:#999999;background-color:#FFFFFF}
 .textad4 a:link, .textad4 a:hover,.textad4 a:visited{color:#333333}
-.bigword {font-size: 14px;line-height: 25px;}
-.bordercccccc{border:solid 1px #DDDDDD;background-color:#FFFFFF;clear:both}
+.bigword {font-size: 14px;line-height: 20px;}
+.bordercccccc{border:solid 1px #DDDDDD;background-color:#FFFFFF;margin: 10px 0px;clear:both}
 .boxin {border: 1px solid #dddddd;background-color: #FFFFFF;color:#666666;padding:8px}
 .bigbigword {font-size: 16px;line-height: 35px;font-family: "微软雅黑"}
 .bigbigword2 {font-size: 18px;line-height: 40px;font-family: "微软雅黑"}
@@ -168,7 +168,7 @@ background:url(image/backtotop.gif) no-repeat 0px 0px;
 
 #loginbg_box{position:relative;margin:10px 0px}
 
-#loginbg_bigword{font-size:20px;line-height:25px;height:25px;color:#FFF;font-family: "微软雅黑";background-color:#2095d7;padding:27px}
+#loginbg_bigword{font-size:20px;line-height:25px;height:25px;color:#FFF;font-family: "微软雅黑";background-color:#2095d7;padding:15px}
 #loginbg_bigword span{float:right;}
 #loginbg_bigword span a{color:#FFFFFF;border:solid 1px #FFFFFF;display:block;line-height:20px;width:20px;height:20px;text-align:center}
 
@@ -180,7 +180,7 @@ background:url(image/backtotop.gif) no-repeat 0px 0px;
 .bigbutton a{background:url(image/bigbutton.png) no-repeat 0 0;color:#FFFFFF;font-weight:bold;font-size:20px;display:block;width:170px;line-height:30px;height:40px;text-align:center;color:#cc0000}
 .bigbutton a:hover{text-decoration: none;}
 .bigbutton a span{font-size:12px;font-weight:normal;}
-.bigbutton2 {background:url(image/buttonbg2.gif) no-repeat 0 0;color:#FFFFFF;font-weight:bold;font-size:18px;display:block;width:132px;line-height:38px;height:38px;text-align:center;color:#FFFFFF;border:0}
+.bigbutton2 {background-color: #2095d7;font-weight:bold;font-size:18px;display:block;width:100px;line-height:20px;height:30px;text-align:center;color:#FFFFFF;}
 .a_selected a{background-color:#FF7700;color:#FFFFFF;padding:3px;border:solid 1px #FF6600;font-family:"宋体"}
 .boxarea{border:solid 1px #dddddd;padding:0px 0px;height:25px;line-height:25px;margin-bottom:8px;background-color:#F1F1F1}
 .boxarea li{float:left;margin:0 6px }
