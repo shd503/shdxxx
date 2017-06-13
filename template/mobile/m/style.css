@@ -56,7 +56,8 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0;max-
 .bgcolor2 {background-color: #f1f1f1;}
 .bgcolor3 {background-color: #dddddd;}
 .biaodan {border: 1px solid #dddddd;padding:2px 2px;width: 300px;}
-.biaodan2{border:solid 1px #dddddd;width: 200px;}
+.biaodanfy {border: 1px solid #dddddd;padding:2px 2px;width: 50px;}
+.biaodan2{border:solid 1px #dddddd;width: 200px; font-size: 16px;}
 .buttons_search{background:url(image/search3.gif);width:63px;height:20px;border-width:0px;cursor: hand;}
 .mainColor {background-color: #990000;color: #FFFFFF;}
 .hiddiv{float:left;position:absolute;Visibility:hidden;Filter:revealTrans(duration=0.5, transition=19);border: solid 1px #e8e8e8;margin:0px 0px 0px 165px;padding: 1px;background: url(/image/loading.gif) no-repeat center center;background-color: #FFF;}
@@ -70,7 +71,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0;max-
 .station .start a,.station2 .start a{background:url(image/station_a2.png) no-repeat right center;padding:0px 20px 0px 5px;display:block;}
 .station sapn,.station2 span {float:right;padding:6px 6px 0 0}
 
-.left_content {padding: 8px;border: 1px solid #dddddd;background:url(image/bg3.gif) repeat-x 0 -1px;margin-bottom:8px}
+.left_content {padding: 5px;border: 1px solid #dddddd;background:url(image/bg3.gif) repeat-x 0 -1px;margin-bottom:8px}
 .left_content td {font-size:9pt}
 .bottom {line-height:18px;padding: 10px 0px;text-align: center;border-top:solid 2px #2095d7}
 .bottomlink{color:#ffffff;background-color:#8c0000;padding:5px}
@@ -173,7 +174,7 @@ background:url(image/backtotop.gif) no-repeat 0px 0px;
 #loginbg_bigword span a{color:#FFFFFF;border:solid 1px #FFFFFF;display:block;line-height:20px;width:20px;height:20px;text-align:center}
 
 #banner{display:none; margin:0 auto; width:1200px;position:relative;}
-#banner span{display:block; bottom:10px; right:10px; width:50px; height:22px; text-align:center; line-height:22px; border:1px #ddd solid; background:#cc0000; color:#fff; font-size:12px; cursor:pointer; position:absolute;}
+#banner span{display:block; bottom:10px; right:10px; width:50px; height:22px; text-align:center; line-height:22px; border:1px #ddd solid; background:#cc0000; color:#fff; font-size:12px; cursor:pointer; position:absolute; font-size: 16px;}
 #divbottomtouming{position:fixed;bottom:0px;background-color:#222222;opacity:.9;filter: alpha(opacity=90);width:100%;height:60px;}
 #divbottom{position:fixed;bottom:0px;width:100%;height:60px;line-height:60px;font-size:30px;color:#ffffff;font-family: "微软雅黑"}
 .bigbutton{}
@@ -194,7 +195,7 @@ background:url(image/backtotop.gif) no-repeat 0px 0px;
 
 .boxarea li{float:left;margin:0 6px }
 .boxbigclass{zoom: 1; overflow:auto;}
-.boxbigclass li{float:left;margin:5px;padding:2px;min-width:80px;text-align:center}
+.boxbigclass li{float:left;margin:1px;padding:2px;min-width:80px;text-align:center}
 .boxbigclass .current{background-color:#ff6600}
 .boxbigclass .current a{color:#FFFFFF;}
 

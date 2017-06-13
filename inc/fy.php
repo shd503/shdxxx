@@ -180,7 +180,7 @@ $str="<form name='formpage' action='/".$channel."/".$channel.".php' method='get'
 				}
 			}
 		}
-$str=$str."<input name='page' type='text' maxlength='10' value='$page' class='biaodan'/>";
+$str=$str."<input name='page' type='text' maxlength='10' value='$page' class='biaodanfy'/>";
 $str=$str."<input type='submit'name='submit' value='跳转' class='button'/>";
 $str=$str."<input name='b' type='hidden' value='$b'/><input name='s' type='hidden' value='$s'/>";
 $str=$str."</form>";	

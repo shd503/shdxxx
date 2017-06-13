@@ -94,7 +94,7 @@ include("check.php");
                 <form action="zssave_mobile.php" method="post" name="myform" id="myform" onSubmit="return CheckForm();">
                     <table width="100%" border="0" cellpadding="3" cellspacing="1">
                         <tr>
-                            <td width="30%" align="right" class="border2" >项目<font color="#FF0000">*</font>：</td>
+                            <td width="20%" align="right" class="border2" >项目<font color="#FF0000">*</font>：</td>
                             <td  class="border" > <input name="name" type="text" id="name" class="biaodan" value="<?php echo $row["proname"]?>" size="25" maxlength="40" >
                                 <br>
                                 (只能写产品名称)</td>
@@ -159,11 +159,11 @@ include("check.php");
                         </tr>
                         <tr>
                             <td align="right" class="border2" >简介<font color="#FF0000">*</font>：</td>
-                            <td class="border2" > <textarea name="gnzz" cols="30" rows="4" id="gnzz"><?php echo $row["prouse"]?></textarea>            </td>
+                            <td class="border2" > <textarea name="gnzz" cols="32" rows="4" id="gnzz"><?php echo $row["prouse"]?></textarea>            </td>
                         </tr>
 
                         <tr>
-                            <td align="right" class="border2">所在地区：</td>
+                            <td align="right" class="border2">地区：</td>
                             <td class="border2"><select name="province" id="province"></select>
                                 <select name="city" id="city"></select>
                                 <select name="xiancheng" id="xiancheng"></select>
@@ -179,7 +179,7 @@ include("check.php");
 
                         </tr>
                         <tr>
-                            <td align="right" class="border2">具体地址：</td>
+                            <td align="right" class="border2">地址：</td>
                             <td class="border2"> <input name="address" type="text" id="address"  class="biaodan" value="<?php echo $row["address"]?>" size="25" maxlength="40" ></tr>
                         <?php
 /*                        if (shuxing_name!=''){
@@ -225,7 +225,7 @@ if (file_exists($fp)) {
                                             allowImageRemote : false,
                                             width : '100%',
                                             height : '100%',
-                                            items : ['source','bold','italic','underline','forecolor','image','|', 'fullscreen', 'undo', 'redo',  'copy', 'paste','baidumap'],
+                                            items : ['source','bold','italic','underline','forecolor','image','|', 'undo', 'redo', 'baidumap','fullscreen' ],
 
                                             afterCreate:function() {this.sync();},
                                             afterBlur : function(){this.sync();}//需要添加的
@@ -238,7 +238,7 @@ if (file_exists($fp)) {
                                 </script>	</td>
                         </tr>
                         <tr>
-                            <td align="right" class="border" >封面图片：
+                            <td align="right" class="border" >封面：
                                 <input name="oldimg" type="hidden" id="oldimg" value="<?php echo $row["img"] ?>">
                                 <input name="img"type="hidden" id="img" value="<?php echo $row["img"] ?>">            </td>
                             <td class="border" > <table height="120" border="0" cellpadding="5" cellspacing="1" bgcolor="#999999">

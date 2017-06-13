@@ -267,29 +267,29 @@
 		</div>
 		<form name="userreg" action="/reg/userregpost.php" method="post" onSubmit="return Checkall()">
 
-			<table width="100%" border="0" cellpadding="8" cellspacing="0" >
+			<table width="100%" border="0" cellpadding="6" cellspacing="0" >
 				<tr>
 					<td width="100" align="right" class="bigword">用户名</td>
 					<td>
-						<input name="username" id="username"class="biaodan2" onchange="checkusername();" tabindex="1"  size="30" maxlength="14" />
+						<input name="username" id="username"class="biaodan2" onchange="checkusername();" tabindex="1"  size="14" maxlength="30" />
 						<span id="ts_username"></span></td>
 				</tr>
 				<tr>
 					<td align="right" class="bigword">密码</td>
 					<td >
-						<INPUT name="password" type="password" class="biaodan2"  tabindex="2"  onchange="check_password_format();" size="30" maxLength="12" >
+						<INPUT name="password" type="password" class="biaodan2"  tabindex="2"  onchange="check_password_format();" size="14" maxLength="30" >
 						<span id="ts_password"></span></td>
 				</tr>
 				<tr>
 					<td align="right" class="bigword">确认密码</td>
 					<td >
-						<INPUT name="PwdConfirm" type="password" class="biaodan2" tabindex="3"  onchange="check_password2_format()" size="30" maxLength="12" >				    <span id="ts_password2"></span></td>
+						<INPUT name="PwdConfirm" type="password" class="biaodan2" tabindex="3"  onchange="check_password2_format()" size="14" maxLength="30" >				    <span id="ts_password2"></span></td>
 				</tr>
 
 				<tr id="TRcomane" style="display:">
 					<td align="right" class="bigword">公司名称</td>
 					<td >
-						<input name="comane" id="comane" class="biaodan2"  tabindex="4"   size="30" maxlength="100" />
+						<input name="comane" id="comane" class="biaodan2"  tabindex="4"   size="14" maxlength="100" />
 						<span id="ts_comane"></span></td>
 				</tr>
 
@@ -297,19 +297,19 @@
 				<tr>
 					<td align="right" class="bigword">联系人</td>
 					<td>
-						<input name="somane" class="biaodan2" onblur="check_somane()"  tabindex="6" size="30" maxlength="20"/>
+						<input name="somane" class="biaodan2" onblur="check_somane()"  tabindex="6" size="14" maxlength="20"/>
 						<span id="ts_somane"></span></td>
 				</tr>
 				<tr>
 					<td align="right" class="bigword">联系电话</td>
 					<td>
-						<input name="phone" id="phone" class="biaodan2" onchange="check_phone();" tabindex="7"  size="30" maxlength="20" />
+						<input name="phone" id="phone" class="biaodan2" onchange="check_phone();" tabindex="7"  size="14" maxlength="20" />
 						<span id="ts_phone"></span></td>
 				</tr>
 				<tr>
 					<td align="right" class="bigword">E-mail</td>
 					<td>
-						<input name="email" id="email" class="biaodan2" onchange="check_email();" tabindex="8"  size="30"   maxlength="50" />
+						<input name="email" id="email" class="biaodan2" onchange="check_email();" tabindex="8"  size="14"   maxlength="50" />
 						<span id="ts_email"></span></td>
 				</tr>
 				<tr>
