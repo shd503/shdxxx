@@ -1,65 +1,65 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-<title>{#pagetitle}</title>
-<meta content="{#pagedescription}" name="description" />
-<meta content="{#pagekeywords}" name="keywords" />
-<link href="/template/{#siteskin}/style.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>{#pagetitle}</title>
+    <meta content="{#pagedescription}" name="description" />
+    <meta content="{#pagekeywords}" name="keywords" />
+    <link href="/template/{#siteskin}/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-{#sitetop} 
+{#sitetop}
 <div class="station2">{#station}</div>
 <div class="left_content">
-	<form action="?" method="get" name="myform" id="myform">
-	  <table border="0" cellpadding="7" cellspacing="0">
-        <tr>
-          <td width="98" align="right">关键词：</td>
-          <td width="435"><input type="radio" name="yiju" value="Pname">
-            按产品
-            <input name="yiju" type="radio" value="Pcompany" />
-            按店家
-            <input name="keyword" type="text"  id="keyword" value="{#formkeyword}" size="25" maxlength="255"/>
-            <input name="Submit3" type="submit"  value="搜索"></td>
-        </tr>
-        <tr>
-          <td align="right">类别：</td>
-          <td>{#formbigclass}{#formsmallclass} </td>
-        </tr>
-       <!-- <tr>
-          <td align="right">投资金额：</td>
-          <td><a href="/zs/search.php?tz=1万以下">1万以下</a> <a href="/zs/search.php?tz=1-10万" >1-10万</a> <a href="/zs/search.php?tz=10-20万">10-20万</a> <a href="/zs/search.php?tz=20-50万">20-50万</a> <a href="/zs/search.php?tz=50-100万" >50-100万</a> <a href="/zs/search.php?tz=100万以上">100万以上</a></td>
-        </tr>-->
-        <tr>
-          <td align="right">区域：</td>
-          <td>{#formprovince}{#formcity}</td>
-        </tr>
-	    {#selected}
-      </table>
-	</form>
+    <form action="?" method="get" name="myform" id="myform">
+        <table border="0" cellpadding="7" cellspacing="0">
+            <tr>
+                <td width="98" align="right">关键词：</td>
+                <td width="435"><input type="radio" name="yiju" value="Pname">
+                    按产品
+                    <input name="yiju" type="radio" value="Pcompany" />
+                    按店家
+                    <input name="keyword" type="text"  id="keyword" value="{#formkeyword}" size="25" maxlength="255"/>
+                    <input name="Submit3" type="submit"  value="搜索"></td>
+            </tr>
+            <tr>
+                <td align="right">类别：</td>
+                <td>{#formbigclass}{#formsmallclass} </td>
+            </tr>
+            <!-- <tr>
+               <td align="right">投资金额：</td>
+               <td><a href="/zs/search.php?tz=1万以下">1万以下</a> <a href="/zs/search.php?tz=1-10万" >1-10万</a> <a href="/zs/search.php?tz=10-20万">10-20万</a> <a href="/zs/search.php?tz=20-50万">20-50万</a> <a href="/zs/search.php?tz=50-100万" >50-100万</a> <a href="/zs/search.php?tz=100万以上">100万以上</a></td>
+             </tr>-->
+            <tr>
+                <td align="right">区域：</td>
+                <td>{#formprovince}{#formcity}</td>
+            </tr>
+            {#selected}
+        </table>
+    </form>
 </div>
-<div class="left_content">	
-{zs}
-共有{#totlenum}条符合条件的信息
-<div class="content4">
-{loop_window}
-<li>
-<table width='130' height='130' border='0' cellpadding='0' cellspacing='1' class='bgcolor2' style="margin:auto">
-<tr>
-<td align='center' bgcolor='#FFFFFF'> 
-<a href='{#url}' target='_blank'><img src="{#img}"  border='0'></a>
-</td>
-</tr>
-</table>
-{#proname_small}
-</li>
-{/loop_window}
-</div>
-<div style='clear:both'></div>
-<div class='fenyei'>{#fenyei}</div>
-{/zs}
+<div class="left_content">
+    {zs}
+    共有{#totlenum}条符合条件的信息
+    <div class="content4">
+        {loop_window}
+        <li>
+            <table width='130' height='130' border='0' cellpadding='0' cellspacing='1' class='bgcolor2' style="margin:auto">
+                <tr>
+                    <td align='center' bgcolor='#FFFFFF'>
+                        <a href='{#url}' target='_blank'><img src="{#img}"  border='0'></a>
+                    </td>
+                </tr>
+            </table>
+            {#proname:9}
+        </li>
+        {/loop_window}
+    </div>
+    <div style='clear:both'></div>
+    <div class='fenyei'>{#fenyei}</div>
+    {/zs}
 
 </div>
 {#sitebottom}
