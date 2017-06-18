@@ -313,7 +313,7 @@ function formxiancheng(){
 if ($b<>"" || $s<>""|| $province<>"" || $city<>"" || $xiancheng<>"" || $tz<>"") {
 	setcookie("keyword","xxx",1);//当有筛选条件时，则清空关键词，使两者独立搜索，否则删除这行代码即可。
 	$selected="<tr>";
-	$selected=$selected."<td align='right'>已选条件：</td>";
+	$selected=$selected."<td align='right'>已选：</td>";
 	$selected=$selected."<td class='a_selected'>";
 	if ($b<>"") {
 		$selected=$selected."<a href='?delb=Yes' title='删除已选'>".$bigclassname."×</a>&nbsp;";
@@ -421,6 +421,8 @@ if(!$totlenum){
 		$list2 =str_replace("{#comane}" ,$row["comane"],$list2) ;
 		$list2 =str_replace("{#province}" ,$row["province"],$list2) ;
 		$list2 =str_replace("{#city}" ,$row["city"],$list2) ;
+		$list2 =str_replace("{#xiancheng}",$row["xiancheng"],$list2) ;
+		$list2 =str_replace("{#address}",$row["address"],$list2) ;
 		$list2 =str_replace("{#groupid}" ,$row["groupid"],$list2) ;
 		$list2 =str_replace("{#userid}" ,$row["userid"],$list2) ;
 		$list2 =str_replace("{#zturl}" ,getpageurl("zt",$row["userid"]),$list2) ;//展厅地址

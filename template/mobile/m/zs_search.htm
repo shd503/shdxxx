@@ -14,9 +14,9 @@
 <div class="station2">{#station}</div>
 <div class="left_content">
     <form action="?" method="get" name="myform" id="myform">
-        <table border="0" cellpadding="7" cellspacing="0">
+        <table border="0" cellpadding="4" cellspacing="0">
             <tr>
-                <td width="98" align="right">关键词：</td>
+                <td width="98" align="right">查询：</td>
                 <td width="435"><input type="radio" name="yiju" value="Pname">
                     按产品
                     <input name="yiju" type="radio" value="Pcompany" />
@@ -34,7 +34,7 @@
              </tr>-->
             <tr>
                 <td align="right">区域：</td>
-                <td>{#formprovince}{#formcity}</td>
+                <td>{#formprovince}{#formcity}{#formxiancheng}</td>
             </tr>
             {#selected}
         </table>
