@@ -94,12 +94,14 @@ function DemoHandle($data)
      * 插入到用户付款记录默认codepay_order表使用了2种唯一索引来区分是否已经存在。确保业务只执行一次
      * 以下为作为识别是否已经执行过此笔订单 建议保留 否则您必须确保业务已经处理
      */
-    $insertSQL = "INSERT INTO `" . DB_PREFIX . "_order` (`pay_id`, `money`, `price`, `type`, `pay_no`, `param`, `pay_time`, `pay_tag`, `status`, `creat_time`)values(?,?,?,?,?,?,?,?,?,?)";
+//    $insertSQL = "INSERT INTO `" . DB_PREFIX . "_order` (`pay_id`, `money`, `price`, `type`, `pay_no`, `param`, `pay_time`, `pay_tag`, `status`, `creat_time`)values(?,?,?,?,?,?,?,?,?,?)";
+    $insertSQL = "INSERT INTO `zzcms_pay` (`username`, `dowhat`, `RMB`, `mark`, `sendtime`)values(?,'微信支付',?,?,'".date('Y-m-d H:i:s')."')";
     $stmt = $m->prepare($insertSQL);//预编译SQL语句
     if (!$stmt) {
         return "数据表:" . DB_PREFIX . "_order  不存在 可能需要重新安装";
     }
-    $stmt->bind_param('sddissisii', $pay_id, $money, $price, $type, $pay_no, $param, $pay_time, $pay_tag, $status, $creat_time); //防止SQL注入
+//    $stmt->bind_param('sddissisii', $pay_id, $money, $price, $type, $pay_no, $param, $pay_time, $pay_tag, $status, $creat_time); //防止SQL注入
+    $stmt->bind_param('sds', $pay_id,  $money, $pay_no); //防止SQL注入
     $rs = $stmt->execute(); //执行SQL
 
     if ($rs && $stmt->affected_rows >= 1) { //插入成功 是首次通知 可以执行业务

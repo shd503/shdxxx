@@ -12,7 +12,9 @@ require_once("lib/codepay_core.function.php"); //导入所需函数库
 require_once("lib/codepay_md5.function.php"); //导入MD5函数库
 //$_SESSION["uuid"]=guid();//生成UUID 添加到网页表单 防止使用部分软件恶意提交订单
 //$salt=md5($_SESSION["uuid"]); //这是用于表单防跨站提交
-$user = 'admin';  //这是默认的用户名
+//$user = 'admin';  //这是默认的用户名
+$user = trim($_COOKIE['UserName']);
+
 if ((int)$codepay_config['id'] <= 1) { //未修改配置文件
     exit('<h3>您需要修改配置文件：codepay_config.php 或者安装码支付接口 才能显示该页面。 <a href="install.php">点击安装</a></h3>');
 } ?>
@@ -85,8 +87,7 @@ if ((int)$codepay_config['id'] <= 1) { //未修改配置文件
         <form action="codepay.php" method="post">
             <article class="clearfix mt10 m-round g-pay-ment g-bank-ct">
                 <ul id="ulBankList">
-                    <li class="gray6" style="width: 100%;padding: 0px 0px 0px 10px">您选择充值：<label class="input"
-                                                                                                 style="border: 1px solid #EAEAEA;height: 15px;font-size:24px;">
+                    <li class="gray6" style="width: 100%;padding: 0px 0px 0px 10px">您选择充值：<label class="input" style="border: 1px solid #EAEAEA;height: 15px;font-size:24px;">
                             <input type="text" name="price" id="price" placeholder="如：50" value="50"
                                    style="width: 72px;color: red;font-size:14px;">
                         </label> 元

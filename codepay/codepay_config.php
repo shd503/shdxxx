@@ -37,7 +37,7 @@ $codepay_config['act'] = '0'; //认证版则开启
  * 3：自定义开发模式 (复杂 需要一定开发能力 手动升级)
  * 4：高级模式(复杂 需要较强的开发能力 手动升级)
  */
-$codepay_config['page'] = 1; //支付页面展示方式：GET框架云端支付 享受免集成 免升级
+$codepay_config['page'] = 2; //支付页面展示方式：GET框架云端支付 享受免集成 免升级
 
 //支付页面风格样式 仅针对$codepay_config['page'] 参数为 1或2 才会有用。
 $codepay_config['style'] = 1; //暂时保留的功能 后期会生效 留意官网发布的风格编号
@@ -101,9 +101,9 @@ define('DB_ENCODE', $codepay_config['chart'] == 'utf-8' ? 'utf8' : $codepay_conf
 /**
  * 以下为MYSQL数据库的配置 修改下面表名,字段 即可实现简单的充值业务 为附带部分可跳过。
  */
-define('DB_USERTABLE', 'codepay_user');  //充值用户所在数据库表名
-define('DB_USERMONEY', 'money');  //充值用户所在表中的金额字段名
+define('DB_USERTABLE', 'zzcms_user');  //充值用户所在数据库表名
+define('DB_USERMONEY', 'totleRMB');  //充值用户所在表中的金额字段名
 //define('DB_USERID', 'user');  //充值用户所在表中的ID字段名
-define('DB_USERNAME', 'user');  //充值用户名的字段名 根据用户名转换为id
+define('DB_USERNAME', 'username');  //充值用户名的字段名 根据用户名转换为id
 
 ?>
