@@ -442,9 +442,9 @@ function showad($cs){
 					}else{
 						$str=$str. "<a href='".$row["link"]."' target='_blank' style='color:".$row["titlecolor"]."'>";
 						if ($imgwidth!=0){//参数里设值的按所设值显示，未设值的按广告管理中所设的值显示
-							$str=$str. "<img data-original='".isaddsiteurl($row["img"])."' height='$imgheight' width='$imgwidth'  alt='".$row["title"]."'/>";
+							$str=$str. "<img src='".isaddsiteurl($row["img"])."' data-original='".isaddsiteurl($row["img"])."' height='$imgheight' width='$imgwidth'  alt='".$row["title"]."'/>";
 						}else{
-							$str=$str. "<img data-original='".isaddsiteurl($row["img"])."' height='".$row["imgheight"]."' width='".$row["imgwidth"]."' alt='".$row["title"]."'/>";
+							$str=$str. "<img stc='".isaddsiteurl($row["img"])."' data-original='".isaddsiteurl($row["img"])."' height='".$row["imgheight"]."' width='".$row["imgwidth"]."' alt='".$row["title"]."'/>";
 						}
 						if ($titlelong!=0){
 							$str=$str.'<br/>';
