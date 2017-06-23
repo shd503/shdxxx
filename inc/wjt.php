@@ -1,13 +1,13 @@
 <?php
-define('sitetitle','zzcms项目版') ;//SiteKeywords
-define('sitekeyword','zzcms项目版') ;//SiteKeywords
-define('sitedescription','zzcms项目版') ;//sitedescription
-define('zslisttitle','招商') ;//zslisttitle
-define('zslistkeyword','招商') ;//zslistkeyword
-define('zslistdescription','招商') ;//zslistdescription
-define('zsshowtitle','招商') ;//zsshowtitle
-define('zsshowkeyword','招商') ;//zsshowkeyword
-define('zsshowdescription','招商') ;//zsshowdescription
+define('sitetitle','店家导航') ;//SiteKeywords
+define('sitekeyword','店家导航') ;//SiteKeywords
+define('sitedescription','店家导航') ;//sitedescription
+define('zslisttitle','店家') ;//zslisttitle
+define('zslistkeyword','店家') ;//zslistkeyword
+define('zslistdescription','店家') ;//zslistdescription
+define('zsshowtitle','店家') ;//zsshowtitle
+define('zsshowkeyword','店家') ;//zsshowkeyword
+define('zsshowdescription','店家') ;//zsshowdescription
 define('zxlisttitle','资讯') ;//zxlisttitle
 define('zxlistkeyword','资讯') ;//zxlistkeyword
 define('zxlistdescription','资讯') ;//zxlistdescription

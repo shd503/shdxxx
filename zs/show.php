@@ -91,6 +91,10 @@ if (!$row){
 	$province=$row["province"];
 	$city=$row["city"];
 	$xiancheng=$row["xiancheng"];
+	$address=$row["address"];
+	$proname=$row["proname"];
+	//$img=$row["img"];
+
 	$tz=$row["tz"];
 	$shuxing_value = explode("|||",$row["shuxing_value"]);
 	function showflv($flv){
@@ -199,6 +203,9 @@ if (!$row){
 	$strout=str_replace("{#province}",$province,$strout);
 	$strout=str_replace("{#city}",$city,$strout);
 	$strout=str_replace("{#xiancheng}",$xiancheng,$strout);
+	$strout=str_replace("{#address}",$address,$strout);
+	$strout =str_replace("{#proname}",$proname,$strout) ;
+	//$strout =str_replace("{#img}",$img,$strout) ;
 	$strout=str_replace("{#tz}",$tz,$strout);
 	for ($i=0; $i< count($shuxing_value);$i++){
 		$strout=str_replace("{#shuxing".$i."}",$shuxing_value[$i],$strout);

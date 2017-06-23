@@ -43,6 +43,64 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .boxA ul{padding:0 8px}
 .boxA li{color:#666666;border-bottom:dotted 1px #e8e8e8;line-height:30px;height:30px}
 .boxA li span{float:right;color:#666666;}
+
+.boxitem {
+    background: url(image/bgn2.gif) repeat-x 0px bottom;
+}
+.boxitem ul {
+    padding: 0 10px;
+    height: 35px;
+}
+.boxitem li {
+    display: block;
+    float: left;
+    text-align: center;
+}
+.boxitem li a {
+    display: block;
+    padding: 0 16px;
+    height: 35px;
+    line-height: 35px;
+}
+.current1 {
+    display: block;
+    background-color: #f9f9f9;
+    border: solid 0px #dddddd;
+    border-bottom: 0;
+    border-top: solid 2px #FF6600;
+}
+.titlesZS {
+    clear: both;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    border-bottom: solid 1px #dddddd;
+    background-color: #FFF;
+}
+
+.contentZSt{
+    padding: 8px;
+    border: solid 0px #dddddd;
+    border-top-width: 0;
+    color: #666666;
+    background-color: #FFFFFF;
+}
+.contentZS {
+    padding: 10px;
+    color: #666666;
+    background-color: #FFF;
+}
+
+.Jieshao{
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    border-bottom: solid 1px #dddddd;
+    background-color: #FFF;
+}
+
 /*轮换显示*/
 .boxitem2 {background:url(image/bgn.gif) repeat-x 0px 0px;background-color:#f1f1f1;border:solid 1px #dddddd;border-bottom-width:0;border-top-width:0}
 .boxitem2 ul{height: 28px;line-height: 28px;}

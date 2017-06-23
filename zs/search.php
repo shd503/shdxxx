@@ -203,9 +203,9 @@ if (isset($_GET['deltz'])){
 	echo "<script>location.href='search.php'</script>";
 }
 
-$pagetitle="搜索招商信息-".sitename;
-$pagekeyword="搜索招商信息-".sitename;
-$pagedescription="搜索招商信息-".sitename;
+$pagetitle="搜索店家信息-".sitename;
+$pagekeyword="搜索店家信息-".sitename;
+$pagedescription="搜索店家信息-".sitename;
 if ($b<>""){
 	$sql="select * from zzcms_zsclass where classzm='".$b."'";
 	$rs=mysql_query($sql);
