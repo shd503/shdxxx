@@ -261,13 +261,17 @@ if (file_exists($fp)) {
 
                                 <input name="Submit" type="submit" class="buttons" value="保存修改结果"></td>
                         </tr>
+                        <tr>
+                            <td colspan="2" class="admintitle" >支付(首次发布需要支付)</td>
+                        </tr>
 
                         <tr>
-                            <td align="center" class="border2" >&nbsp;</td>
+                            <td align="right" class="border2" >支付：</td>
                             <td class="border2" >
                                 <input type="button" class="buttons" onclick="window.location.href='/codepay/index.php'" value="微信支付">
                             </td>
                         </tr>
+
                     </table>
                 </form>
             </div>

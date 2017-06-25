@@ -86,7 +86,7 @@ if ((int)$codepay_config['id'] <= 1) { //未修改配置文件
         </div>
         <form action="codepay.php" method="post">
             <article class="clearfix mt10 m-round g-pay-ment g-bank-ct">
-                <ul id="ulBankList">
+                <ul id="ulBankList" >
                     <li class="gray6" style="width: 100%;padding: 0px 0px 0px 10px">您选择充值：<label class="input" style="border: 1px solid #EAEAEA;height: 15px;font-size:24px;">
                             <input type="text" name="price" id="price" placeholder="如：50" value="50"
                                    style="width: 72px;color: red;font-size:14px;">
@@ -97,20 +97,20 @@ if ((int)$codepay_config['id'] <= 1) { //未修改配置文件
                             <input type="text" name="user" id="user" placeholder="用户名" value="<?php echo $user; ?>"
                                    style="width: 80px;font-size:14px;">
                         </label></li>
-                    <li payType="1" class="gray9" type="codePay" style="width: 33%">
+                    <!--<li payType="1" class="gray9" type="codePay" style="width: 33%">
                         <a href="javascript:;" class="z-initsel"><img src="img/alipay.jpg"><s></s></a>
 
-                    </li>
-                    <li payType="3" class="gray9" type="codePay" style="width: 33%">
-                        <a href="javascript:;"><img src="img/weixin.jpg"><s></s></a>
+                    </li>-->
+                    <li payType="3" class="gray9" type="codePay" style="width: 33%" >
+                        <a href="javascript:;"  class="z-initsel"><img src="img/weixin.jpg"><s></s></a>
 
                     </li>
-                    <li payType="2" class="gray9" type="codePay" style="width: 33%">
+                   <!-- <li payType="2" class="gray9" type="codePay" style="width: 33%">
                         <a href="javascript:;"><img src="img/qqpay.jpg"><s></s></a>
-                    </li>
+                    </li>-->
                 </ul>
             </article>
-            <input type="hidden" id="pay_type" value="1" name="type">
+            <input type="hidden" id="pay_type" value="3" name="type">
             <input type="hidden" value="<?php echo $salt; ?>" name="salt">
 
             <div class="mt10 f-Recharge-btn">

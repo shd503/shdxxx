@@ -77,6 +77,14 @@ include("check.php");
     </script>
 </head>
 <body>
+
+<?php
+$sqlu="select initRMB from zzcms_user where username='" .$username. "'";
+$rsu=mysql_query($sqlu);
+$rowu=mysql_fetch_array($rsu);
+$intiRMB=$rowu["initRMB"];
+?>
+
 <div class="main">
     <?php
     include("top.php");
@@ -399,9 +407,19 @@ if (file_exists($fp)) {
                             <td  valign="top" class="border">
                                 <input name="Submit22" type="submit" class="buttons" value="保存修改结果" />		    </td>
                         </tr>
+
                         <?php
                         }
                         ?>
+                        <tr>
+                            <td colspan="2" class="admintitle" >支付(首次发布需要支付)</td>
+                        </tr>
+                        <tr>
+                            <td align="right" class="border2" >支付：</td>
+                            <td class="border2" >
+                                <input type="button" class="buttons" onclick="window.location.href='/codepay/index.php'" value="微信支付">
+                            </td>
+                        </tr>
                     </table>
                 </form>
             </div>

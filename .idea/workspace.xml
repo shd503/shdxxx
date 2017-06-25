@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a6a42a0-0867-48d1-9e97-8c5b1943e3b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codepay/codepay_config.php" afterPath="$PROJECT_DIR$/codepay/codepay_config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3/kindeditor-4.1.10/kindeditor.js" afterPath="$PROJECT_DIR$/3/kindeditor-4.1.10/kindeditor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codepay/index.php" afterPath="$PROJECT_DIR$/codepay/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codepay/log.txt" afterPath="$PROJECT_DIR$/codepay/log.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codepay/notify.php" afterPath="$PROJECT_DIR$/codepay/notify.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install/data.sql" afterPath="$PROJECT_DIR$/install/data.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/zs.php" afterPath="$PROJECT_DIR$/user/zs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user/zs_mobile.php" afterPath="$PROJECT_DIR$/user/zs_mobile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/shen1/index.htm" afterPath="$PROJECT_DIR$/web/shen1/index.htm" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,37 +37,128 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="notify.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="notify.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/codepay/notify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38377723">
-              <caret line="164" column="39" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="39" />
+            <state vertical-scroll-proportion="-5.651515">
+              <caret line="264" column="10" selection-start-line="264" selection-start-column="10" selection-end-line="264" selection-end-column="10" />
               <folding>
-                <marker date="1498389029066" expanded="true" signature="3449:3568" placeholder="INSERT INTO `zzcms_pay`... " />
-                <marker date="1498389029066" expanded="true" signature="6182:6273" placeholder="select * fro... ${DB_USERTABLE}" />
+                <marker date="1498394292042" expanded="true" signature="3472:3591" placeholder="INSERT INTO `zzcms_pay`... " />
+                <marker date="1498394292042" expanded="true" signature="6205:6277" placeholder="select * fro... ${DB_USERTABLE}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codepay/user.php">
+      <file leaf-file-name="zs_mobile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/zs_mobile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.4838705">
-              <caret line="25" column="76" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="76" />
+            <state vertical-scroll-proportion="-21.67742">
+              <caret line="268" column="44" selection-start-line="268" selection-start-column="44" selection-end-line="268" selection-end-column="44" />
               <folding>
-                <marker date="1493220083819" expanded="true" signature="625:682" placeholder="select * fro... ${DB_USERTABLE}" />
+                <marker date="1498397433855" expanded="true" signature="3356:3411" placeholder="select * fro... zzcms_main" />
+                <marker date="1498397433855" expanded="true" signature="4776:4841" placeholder="select * fro... zzcms_zsclass" />
+                <marker date="1498397433855" expanded="true" signature="6163:6228" placeholder="select * fro... zzcms_zsclass" />
+                <marker date="1498397433855" expanded="true" signature="6671:6685" placeholder="..." />
+                <marker date="1498397433855" expanded="true" signature="6828:6841" placeholder="..." />
+                <marker date="1498397433855" expanded="true" signature="7061:7139" placeholder="select * fro... zzcms_zsclass" />
+                <marker date="1498397433855" expanded="true" signature="9475:9554" placeholder="select provi... zzcms_user" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="codepay_config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codepay/codepay_config.php">
+      <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/red2/index.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.838709">
-              <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
+            <state vertical-scroll-proportion="-16.32258">
+              <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zs.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user/zs.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.082174465">
+              <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+              <folding>
+                <marker date="1498400533767" expanded="true" signature="3066:3129" placeholder="select provi... zzcms_user" />
+                <marker date="1498400533767" expanded="true" signature="3478:3533" placeholder="select * fro... zzcms_main" />
+                <marker date="1498400533767" expanded="true" signature="4984:5049" placeholder="select * fro... zzcms_zsclass" />
+                <marker date="1498400533767" expanded="true" signature="6371:6436" placeholder="select * fro... zzcms_zsclass" />
+                <marker date="1498400533767" expanded="true" signature="6879:6893" placeholder="..." />
+                <marker date="1498400533767" expanded="true" signature="7036:7049" placeholder="..." />
+                <marker date="1498400533767" expanded="true" signature="7272:7350" placeholder="select * fro... zzcms_zsclass" />
+                <marker date="1498400533767" expanded="true" signature="10764:10843" placeholder="select provi... zzcms_user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zssave.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/zssave.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="33.35484">
+              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+              <folding>
+                <marker date="1496937108180" expanded="true" signature="1471:1567" placeholder="select group... zzcms_user" />
+                <marker date="1496937108180" expanded="true" signature="1850:1905" placeholder="SELECT id FR... zzcms_main" />
+                <marker date="1496937108180" expanded="true" signature="2024:2574" placeholder="insert into zzcms_main... " />
+                <marker date="1496937108180" expanded="true" signature="2605:3135" placeholder="update zzcms... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conn.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/conn.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.5161295">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/check.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.8387096">
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="9" />
+              <folding>
+                <marker date="1495552813596" expanded="true" signature="195:320" placeholder="select id,la... zzcms_user" />
+                <marker date="1495552813596" expanded="true" signature="712:788" placeholder="UPDATE zzcms... " />
+                <marker date="1495552813596" expanded="true" signature="892:977" placeholder="UPDATE zzcms... " />
+                <marker date="1495552813596" expanded="true" signature="1005:1145" placeholder="insert into zzcms_pay... " />
+                <marker date="1495552813596" expanded="true" signature="1169:1263" placeholder="UPDATE zzcms... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="27.67742">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1495201346000" expanded="true" signature="977:1033" placeholder="select * fro... zzcms_user" />
+                <marker date="1495201346000" expanded="true" signature="1600:1689" placeholder="select * fro... zzcms_message" />
+                <marker date="1495201346000" expanded="true" signature="2506:2562" placeholder="select * fro... zzcms_user" />
+                <marker date="1495201346000" expanded="true" signature="4110:4198" placeholder="select id fr... zzcms_dl" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,7 +183,6 @@
         <option value="$PROJECT_DIR$/inc/config.php" />
         <option value="$PROJECT_DIR$/admin/ad_modify.php" />
         <option value="$PROJECT_DIR$/admin/ad_user_modify.php" />
-        <option value="$PROJECT_DIR$/user/zs.php" />
         <option value="$PROJECT_DIR$/admin/zxclassmanage.php" />
         <option value="$PROJECT_DIR$/admin/zsclassmanage.php" />
         <option value="$PROJECT_DIR$/admin/top.php" />
@@ -113,8 +207,6 @@
         <option value="$PROJECT_DIR$/template/mobile/m/zsshow.htm" />
         <option value="$PROJECT_DIR$/template/mobile/m/zs_search.htm" />
         <option value="$PROJECT_DIR$/template/red2/zs_search.htm" />
-        <option value="$PROJECT_DIR$/user/zs_mobile.php" />
-        <option value="$PROJECT_DIR$/codepay/index.php" />
         <option value="$PROJECT_DIR$/codepay/codepay.php" />
         <option value="$PROJECT_DIR$/inc/function.php" />
         <option value="$PROJECT_DIR$/user/adv2.php" />
@@ -127,6 +219,9 @@
         <option value="$PROJECT_DIR$/template/red2/zsshow.htm" />
         <option value="$PROJECT_DIR$/codepay/codepay_config.php" />
         <option value="$PROJECT_DIR$/codepay/notify.php" />
+        <option value="$PROJECT_DIR$/codepay/index.php" />
+        <option value="$PROJECT_DIR$/user/zs_mobile.php" />
+        <option value="$PROJECT_DIR$/user/zs.php" />
       </list>
     </option>
   </component>
@@ -170,6 +265,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -198,7 +295,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="zs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="red2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -226,14 +391,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="codepay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,11 +474,10 @@
     <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1595059" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16165413" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20134982" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -308,6 +488,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -336,81 +517,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/template/mobile/m/top_index.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/mobile/m/top.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/mobile/m/zsshow.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.806452">
-          <caret line="87" column="15" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/area.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07990315">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/mobile/m/zs_search.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.225806">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/red2/zs_search.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.225806">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/zs_mobile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-100.451614">
-          <caret line="267" column="118" selection-start-line="267" selection-start-column="118" selection-end-line="267" selection-end-column="118" />
-          <folding>
-            <marker date="1497875317040" expanded="true" signature="3356:3411" placeholder="select * fro... zzcms_main" />
-            <marker date="1497875317040" expanded="true" signature="4776:4841" placeholder="select * fro... zzcms_zsclass" />
-            <marker date="1497875317040" expanded="true" signature="6163:6228" placeholder="select * fro... zzcms_zsclass" />
-            <marker date="1497875317040" expanded="true" signature="6671:6685" placeholder="..." />
-            <marker date="1497875317040" expanded="true" signature="6828:6841" placeholder="..." />
-            <marker date="1497875317040" expanded="true" signature="7061:7139" placeholder="select * fro... zzcms_zsclass" />
-            <marker date="1497875317040" expanded="true" signature="9475:9554" placeholder="select provi... zzcms_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codepay/online.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13320826">
-          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codepay/img/mobile.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codepay/img/wave.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codepay/img/use_3.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -600,14 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/red2/index.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/red2/top_index.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4382566">
@@ -678,23 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.580645">
           <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codepay/codepay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46050096">
-          <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codepay/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.026634382">
-          <caret line="104" column="61" selection-start-line="104" selection-start-column="61" selection-end-line="104" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -714,17 +795,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3/alipay/notify_url.php">
+    <entry file="file://$PROJECT_DIR$/codepay/notify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41041163">
-          <caret line="75" column="25" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="25" />
+        <state vertical-scroll-proportion="-5.651515">
+          <caret line="264" column="10" selection-start-line="264" selection-start-column="10" selection-end-line="264" selection-end-column="10" />
+          <folding>
+            <marker date="1498394292042" expanded="true" signature="3472:3591" placeholder="INSERT INTO `zzcms_pay`... " />
+            <marker date="1498394292042" expanded="true" signature="6205:6277" placeholder="select * fro... ${DB_USERTABLE}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mobile/m/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codepay/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.548388">
+          <caret line="112" column="55" selection-start-line="112" selection-start-column="55" selection-end-line="112" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#article#0;n#form#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#label#0;n#li#0;n#ul#0;n#article#0;n#form#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#0;n#li#1;n#ul#0;n#article#0;n#form#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#label#0;n#li#1;n#ul#0;n#article#0;n#form#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#article#0;n#form#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codepay/codepay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.157385">
+          <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/zs_mobile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.67742">
+          <caret line="268" column="44" selection-start-line="268" selection-start-column="44" selection-end-line="268" selection-end-column="44" />
+          <folding>
+            <marker date="1498397433855" expanded="true" signature="3356:3411" placeholder="select * fro... zzcms_main" />
+            <marker date="1498397433855" expanded="true" signature="4776:4841" placeholder="select * fro... zzcms_zsclass" />
+            <marker date="1498397433855" expanded="true" signature="6163:6228" placeholder="select * fro... zzcms_zsclass" />
+            <marker date="1498397433855" expanded="true" signature="6671:6685" placeholder="..." />
+            <marker date="1498397433855" expanded="true" signature="6828:6841" placeholder="..." />
+            <marker date="1498397433855" expanded="true" signature="7061:7139" placeholder="select * fro... zzcms_zsclass" />
+            <marker date="1498397433855" expanded="true" signature="9475:9554" placeholder="select provi... zzcms_user" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/codepay/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.4838705">
+        <state vertical-scroll-proportion="0.50605327">
           <caret line="25" column="76" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="76" />
           <folding>
             <marker date="1493220083819" expanded="true" signature="625:682" placeholder="select * fro... ${DB_USERTABLE}" />
@@ -734,19 +864,122 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codepay/codepay_config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.838709">
+        <state vertical-scroll-proportion="0.7070218">
           <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codepay/notify.php">
+    <entry file="file://$PROJECT_DIR$/3/alipay/notify_url.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38377723">
-          <caret line="164" column="39" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.07990315">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/ucenter_api/code/login_db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.346247">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
           <folding>
-            <marker date="1498389029066" expanded="true" signature="3449:3568" placeholder="INSERT INTO `zzcms_pay`... " />
-            <marker date="1498389029066" expanded="true" signature="6182:6273" placeholder="select * fro... ${DB_USERTABLE}" />
+            <marker date="1495552813034" expanded="true" signature="801:857" placeholder="SELECT count... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/check.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8387096">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="9" />
+          <folding>
+            <marker date="1495552813596" expanded="true" signature="195:320" placeholder="select id,la... zzcms_user" />
+            <marker date="1495552813596" expanded="true" signature="712:788" placeholder="UPDATE zzcms... " />
+            <marker date="1495552813596" expanded="true" signature="892:977" placeholder="UPDATE zzcms... " />
+            <marker date="1495552813596" expanded="true" signature="1005:1145" placeholder="insert into zzcms_pay... " />
+            <marker date="1495552813596" expanded="true" signature="1169:1263" placeholder="UPDATE zzcms... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/conn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5161295">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/dls_show.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.1290324">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1495552813596" expanded="true" signature="601:638" placeholder="select * fro... zzcms_dl" />
+            <marker date="1495552813596" expanded="true" signature="2316:2359" placeholder="update zzcms... " />
+            <marker date="1495552813596" expanded="true" signature="3110:3183" placeholder="select totle... zzcms_user" />
+            <marker date="1495552813596" expanded="true" signature="3335:3435" placeholder="update zzcms... " />
+            <marker date="1495552813596" expanded="true" signature="3467:3655" placeholder="insert into zzcms_pay... " />
+            <marker date="1495552813596" expanded="true" signature="3693:3736" placeholder="update zzcms... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/zssave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="33.35484">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding>
+            <marker date="1496937108180" expanded="true" signature="1471:1567" placeholder="select group... zzcms_user" />
+            <marker date="1496937108180" expanded="true" signature="1850:1905" placeholder="SELECT id FR... zzcms_main" />
+            <marker date="1496937108180" expanded="true" signature="2024:2574" placeholder="insert into zzcms_main... " />
+            <marker date="1496937108180" expanded="true" signature="2605:3135" placeholder="update zzcms... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/red2/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.32258">
+          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="27.67742">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1495201346000" expanded="true" signature="977:1033" placeholder="select * fro... zzcms_user" />
+            <marker date="1495201346000" expanded="true" signature="1600:1689" placeholder="select * fro... zzcms_message" />
+            <marker date="1495201346000" expanded="true" signature="2506:2562" placeholder="select * fro... zzcms_user" />
+            <marker date="1495201346000" expanded="true" signature="4110:4198" placeholder="select id fr... zzcms_dl" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/zs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.082174465">
+          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+          <folding>
+            <marker date="1498400533767" expanded="true" signature="3066:3129" placeholder="select provi... zzcms_user" />
+            <marker date="1498400533767" expanded="true" signature="3478:3533" placeholder="select * fro... zzcms_main" />
+            <marker date="1498400533767" expanded="true" signature="4984:5049" placeholder="select * fro... zzcms_zsclass" />
+            <marker date="1498400533767" expanded="true" signature="6371:6436" placeholder="select * fro... zzcms_zsclass" />
+            <marker date="1498400533767" expanded="true" signature="6879:6893" placeholder="..." />
+            <marker date="1498400533767" expanded="true" signature="7036:7049" placeholder="..." />
+            <marker date="1498400533767" expanded="true" signature="7272:7350" placeholder="select * fro... zzcms_zsclass" />
+            <marker date="1498400533767" expanded="true" signature="10764:10843" placeholder="select provi... zzcms_user" />
           </folding>
         </state>
       </provider>

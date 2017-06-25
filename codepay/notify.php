@@ -1,8 +1,8 @@
 <?php
 //error_reporting(E_ALL & ~ E_NOTICE); //过滤脚本错误
-
-//ini_set("display_errors", "On");  //显示脚本错误提示
-//error_reporting(E_ALL | E_STRICT); //开启全部脚本错误提示
+include("../inc/conn.php");
+ini_set("display_errors", "On");  //显示脚本错误提示
+error_reporting(E_ALL | E_STRICT); //开启全部脚本错误提示
 /**
  * 功能：码支付服务器异步通知页面 (建议放置外网)
  * 版本：1.0
@@ -157,12 +157,12 @@ function DemoHandle($data)
             return $result;
         }*/
 
-        $rs = $m->runSql("select " . DB_INITMONEY . " from " . DB_USERTABLE . " where " . DB_USERNAME . "='{$pay_id}'"); //执行SQL
+        $rs = $m->runSql("select * from " . DB_USERTABLE . " where " . DB_USERNAME . "='{$pay_id}'"); //执行SQL
         if (!$rs || $rs->num_rows < 1) {
             echo(sprintf("数据库中没找到ID为：%u 的为用户.", $pay_id));
         } else {
             $userData = $rs->fetch_assoc();
-            if (init($userData["initRMB"]) == 0) {
+            if ((int)$userData["initRMB"] == 0) {
                 $sql = "update `" . DB_USERTABLE . "` set " . DB_INITMONEY . "= {$money}  where " . DB_USERNAME . "=?";
                 $stmt = $m->prepare($sql); //预编译SQL语句
 
