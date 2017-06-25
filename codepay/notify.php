@@ -148,8 +148,55 @@ function DemoHandle($data)
         //以下为充值示范的代码 需要改为您的业务代码 如果已经知道开发可直接删除
         //为用户充值demo 修改为自己业务请看上面方法
 
-        $sql = "update `" . DB_USERTABLE . "` set " . DB_USERMONEY . "=" . DB_USERMONEY . "+{$price} where " . DB_USERNAME . "=?";
+        /*$sql = "select " . DB_INITMONEY . " from `" . DB_USERTABLE . "` where " . DB_USERNAME . "=?";
+        $stmt = $m->prepare($sql); //预编译SQL语句
 
+        if ($stmt->error != '') { //捕获错误 这一般是数据表不存在造成
+            $result = sprintf("数据表存在问题 ：%s SQL: %s 参数：%s ", $stmt->error, $sql, createLinkstring($data));
+            mysqli_stmt_close($stmt); //关闭预编译
+            return $result;
+        }*/
+
+        $rs = $m->runSql("select " . DB_INITMONEY . " from " . DB_USERTABLE . " where " . DB_USERNAME . "='{$pay_id}'"); //执行SQL
+        if (!$rs || $rs->num_rows < 1) {
+            echo(sprintf("数据库中没找到ID为：%u 的为用户.", $pay_id));
+        } else {
+            $userData = $rs->fetch_assoc();
+            if (init($userData["initRMB"]) == 0) {
+                $sql = "update `" . DB_USERTABLE . "` set " . DB_INITMONEY . "= {$money}  where " . DB_USERNAME . "=?";
+                $stmt = $m->prepare($sql); //预编译SQL语句
+
+                if ($stmt->error != '') { //捕获错误 这一般是数据表不存在造成
+                    $result = sprintf("数据表存在问题 ：%s SQL: %s 参数：%s ", $stmt->error, $sql, createLinkstring($data));
+                    mysqli_stmt_close($stmt); //关闭预编译
+                    $m->rollback();//回滚
+                    return $result;
+                }
+
+                $stmt->bind_param('s', $pay_id); //绑定参数 防止注入
+                $rs = $stmt->execute(); //执行SQL语句
+
+                if ($rs && $stmt->affected_rows >= 1) {
+
+                    if (!DB_AUTOCOMMIT) $m->db->commit(); //提交事物
+                    mysqli_stmt_close($stmt); //关闭预编译
+//                    return 'ok'; //业务处理完成 。
+
+                } else { //如果下次还要处理则应该开启事物 数据库引擎为InnoDB 不支持事物该笔订单是无法再执行到业务处理这个步骤除非是使用订单状态标识区分
+                    $error_msg = $stmt->error;
+                    if ($error_msg == '' && $stmt->affected_rows <= 0) {
+                        $error_msg = '该用户可能不存在 请核对';
+                    }
+                    $result = sprintf("业务处理失败了 ：%s SQL: %s 参数：%s ", $error_msg, $sql, createLinkstring($data));
+                    $m->rollback();//回滚
+                }
+
+            }
+        }
+
+
+        $priceall=$price * jifen_bilu;
+        $sql = "update `" . DB_USERTABLE . "` set " . DB_USERMONEY . "=" . DB_USERMONEY . "+{$priceall} where " . DB_USERNAME . "=?";
         //默认sql为：update `codepay_user` set money=money+{$price} where user=?
 
         $stmt = $m->prepare($sql); //预编译SQL语句
