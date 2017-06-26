@@ -57,6 +57,10 @@ include("check.php");
                     return false;
                 }
             }
+            if (document.myform.pay.value =="0"){
+                alert('请先支付，再发布！');
+                return false;
+            }
         }
         function doClick_E(o){
             var id;
@@ -82,7 +86,7 @@ include("check.php");
 $sqlu="select initRMB from zzcms_user where username='" .$username. "'";
 $rsu=mysql_query($sqlu);
 $rowu=mysql_fetch_array($rsu);
-$intiRMB=$rowu["initRMB"];
+$initRMB=$rowu["initRMB"];
 ?>
 
 <div class="main">
@@ -102,9 +106,27 @@ $intiRMB=$rowu["initRMB"];
             $row = mysql_fetch_array($rs);
             ?>
             <div class="content">
-                <div class="admintitle">发商机</div>
+<!--                <div class="admintitle">发商机</div>-->
                 <form action="zssave.php" method="post" name="myform" id="myform" onSubmit="return CheckForm();">
                     <table width="100%" border="0" cellpadding="3" cellspacing="1">
+                        <?php
+                        if ((int)$initRMB == 0 ) {
+                        ?>
+                        <tr>
+                            <td colspan="2" class="admintitle" >支付(首次发布请先支付)</td>
+                        </tr>
+                        <tr>
+                            <td align="right" class="border2" >支付：</td>
+                            <td class="border2" >
+                                <input type="button" class="buttons" onclick="window.location.href='/codepay/index.php'" value="微信支付">
+                            </td>
+                        </tr>
+                        <?php
+                        }
+                        ?>
+                        <tr>
+                            <td colspan="2" class="admintitle" >发商机</td>
+                        </tr>
                         <tr>
                             <td align="right" class="border" >项目名称<font color="#FF0000">（必填）</font>：</td>
                             <td class="border" > <input name="name" type="text" id="name" class="biaodan" value="<?php echo $row["proname"]?>" size="60" maxlength="45" >
@@ -323,9 +345,11 @@ if (file_exists($fp)) {
                         </tr>
                         <tr>
                             <td align="center" class="border2" >&nbsp;</td>
-                            <td class="border2" > <input name="cpid" type="hidden" id="cpid" value="<?php echo $row["id"] ?>">
-
-                                <input name="Submit" type="submit" class="buttons" value="保存修改结果"></td>
+                            <td class="border2" >
+                                <input name="cpid" type="hidden" id="cpid" value="<?php echo $row["id"] ?>">
+                                <input name="Submit" type="submit" class="buttons" value="保存修改结果">
+                                <input type='hidden' name="pay" id="pay" value='<?php echo $initRMB;?>' />
+                            </td>
                         </tr>
                         <?php
                         if (background_set == "Yes") {
@@ -411,15 +435,7 @@ if (file_exists($fp)) {
                         <?php
                         }
                         ?>
-                        <tr>
-                            <td colspan="2" class="admintitle" >支付(首次发布需要支付)</td>
-                        </tr>
-                        <tr>
-                            <td align="right" class="border2" >支付：</td>
-                            <td class="border2" >
-                                <input type="button" class="buttons" onclick="window.location.href='/codepay/index.php'" value="微信支付">
-                            </td>
-                        </tr>
+
                     </table>
                 </form>
             </div>

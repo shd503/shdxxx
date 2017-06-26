@@ -3,7 +3,7 @@ zsitem|||0|||10|||1|||<div>|||<div class='titlezs_{#i}'>
 {#zssmallclass:10}
 </span> 
 <h3>
-<a style='font-weight:bold;color:#FFFFFF' href=/zs/zs.php?b={#classid}>{#classname}</a>
+<a style='font-weight:bold;color:#FFFFFF' href=/zs/{#classid}>{#classname}</a>
 </h3>	
 </div> 
 

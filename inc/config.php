@@ -6,14 +6,13 @@ define('sqlhost','localhost');//连接服务器,本机填(local)，外地填IP�
 define('zzcmsver','Powered By <a target=_blank style=font-weight:bold href=http://www.zzcms.net><font color=#FF6600 face=Arial>ZZ</font><font color=#025BAD face=Arial>CMS8.0</font></a>');//版本
 define('sitename','zzcms') ;//网站名称
 define('siteurl','http://localhost') ;//网站地址
-define('logourl','http://localhost/image/logo.png') ;//Logo地址
+define('logourl','http://localhost/image/dianjialogo.png') ;//Logo地址
 define('icp','豫icp备07007271号') ;//icp备案号
 define('webmasteremail','357856668@qq.com') ;//站长信箱
 define('kftel','0371-86137281') ;//联系电话
 define('kfmobile','13838064112') ;//手机
 define('kfqq','357856668') ;//QQ
-define('sitecount','<script language=javascript type=text/javascript src=http://js.users.51.la/713776.js></script>') ;//网站统计代码
-
+define('sitecount','<script language=javascript type=text/javascript src=http://js.users.51.la/713776.js></script>') ;//网站统计代码
 define('opensite','Yes') ;//网站运行状态
 define('showwordwhenclose','网站正在维护中……') ;//关闭网站原因
 define('openuserreg','Yes') ;//注册用户状态
@@ -57,8 +56,7 @@ define('showadvdate','15') ;//广告位置占用时间
 define('duilianadisopen','Yes') ;//是否打开对联广告
 define('flyadisopen','Yes') ;//是否打开漂浮广告
 define('jifen','Yes') ;//是否启用积分功能
-define('jifen_bilu','1') ;//1元等于多少积分
-
+define('jifen_bilu','1') ;//1元等于多少积分
 define('jf_reg','50') ;//注册时获取积分值
 define('jf_login','20') ;//登录时获取积分值
 define('jf_addreginfo','10') ;      //完善注册信息获取积分值
@@ -70,8 +68,7 @@ define('maxflvsize','20') ;  //视频文件大小限制,单位M
 define('upfiletype','gif|jpg|swf|xls|flv') ;//允许的上传文件类型
 define('shuiyin','No') ;//是否启用水印功能
 define('addimgXY','right') ;//水印文字位置
-define('syurl','uploadfiles/2014-07/20140721223830783.jpg') ;//水印图片地址
-
+define('syurl','uploadfiles/2014-07/20140721223830783.jpg') ;//水印图片地址
 define('alipay_partner','2088002168041280') ;//合作者身份ID
 define('alipay_key','g6m9go08qiag25d6bvb1uvrtkdpqral7') ;//安全检验码
 define('alipay_seller_email','lzy0393@126.com') ;//签约支付宝账号或卖家支付宝帐户

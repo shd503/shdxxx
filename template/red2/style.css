@@ -122,7 +122,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .mainColor {background-color: #990000;color: #FFFFFF;}
 .hiddiv{float:left;position:absolute;Visibility:hidden;Filter:revealTrans(duration=0.5, transition=19);border: solid 1px #e8e8e8;margin:0px 0px 0px 138px;padding: 1px;background: url(image/loading.gif) no-repeat center center;background-color: #FFF;}
 /*主容器*/
-.main{width:1200px;margin:0 auto;text-align:left}
+.main{width:1200px;margin:0 135px;text-align:left}
 .buttonlogin{border:solid 1px #dddddd;color:#000;background-color: #f1f1f1;height:20px;font-size:9pt;}
 .pagebody {width: 100%;clear:both;}
 .leftIndex {float: left;width: 77%;	}
