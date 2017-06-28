@@ -80,6 +80,13 @@ function showlabel($str){
 			$str=str_replace("{@aboutshow.".$mylabel."}",aboutshow($mylabel),$str);
 		}
 	}
+	if (strpos($str,"{@gsshow.")!==false) {
+		$n=count(explode("{@gsshow.",$str));
+		for ($i=1;$i<$n;$i++){
+			$mylabel=strbetween($str,"{@gsshow.","}");
+			$str=str_replace("{@gsshow.".$mylabel."}",gsshow($mylabel),$str);
+		}
+	}
 	return $str;
 }
 
@@ -782,5 +789,68 @@ function aboutshow($labelname){
 			return $str;
 		}//end if file_exists($fpath)==true
 	}//end if (cache_update_time!=0 && file_exists($fpath)!==false && time()-filemtime($fpath)<3600*24*cache_update_time)
+}
+
+function gsshow($labelname){
+	global $siteskin;//取外部值，供演示模板用
+	if (!$siteskin){$siteskin=siteskin;}
+	$fpath=zzcmsroot."/template/".$siteskin."/label/gsshow/".$labelname.".txt";
+	if (file_exists($fpath)==true){
+		$fcontent=file_get_contents($fpath);
+		$f=explode("|||",$fcontent) ;
+		$title=$f[0];$elite = $f[1];$numbers = $f[2];$orderby =$f[3];$titlenum = $f[4];$cnum = $f[5];$row = $f[6];$start =$f[7];$mids = $f[8];
+		$mids = str_replace("help.php#{#id}", "/one/help.php#{#id}",$mids);//需要从company目录转到zt
+		if (whtml == "Yes") {
+			$mids = str_replace("/one/help.php#{#id}", "/help.htm#{#id}",$mids);
+		}
+		$ends = $f[9];
+		$sql = "select id,title,sendtime,img,content,elite from zzcms_help where classid=1";
+		if ($elite == 1){$sql = $sql . " and elite>0";}
+		//$sql = $sql . " order by elite desc,";
+		$sql = $sql . " order by ";
+		if ($orderby == "id") {$sql = $sql . "id desc";
+		}elseif ($orderby = "timefororder") {$sql = $sql . "sendtime desc";}
+		$sql = $sql . " limit 0,$numbers ";
+//echo $sql ."<br>";
+		$rs=mysql_query($sql);
+		$r=mysql_num_rows($rs);
+		if (!$r){
+			$str="暂无信息";
+		}else{
+			$n = 1;
+			$xuhao = 1;
+			$mids2='';
+			while($r=mysql_fetch_array($rs)){
+				if ($r["img"] <> ""){
+					$mids2=$mids2.str_replace('{#img}',getsmallimg($r["img"]),str_replace("{#imgbig}", $r["img"],$mids));
+				}else{
+					$mids2=$mids2.str_replace("{#img}","",str_replace("{#imgbig}", "",$mids));
+				}
+				if ($n<=3){
+					$mids2=str_replace("{#xuhao}", "<font class=xuhao1>".addzero($xuhao,2)."</font>",$mids2);
+				}else{
+					$mids2=str_replace("{#xuhao}", "<font class=xuhao2>".addzero($xuhao,2)."</font>",$mids2);
+				}
+				if ($cnum==0){
+					$mids2=str_replace("{#content}",$r["content"],$mids2);
+				}else{
+					$mids2=str_replace("{#content}", cutstr(nohtml($r["content"]),$cnum),$mids2);
+				}
+				$mids2=str_replace("{#sendtime}", date("Y-m-d",strtotime($r['sendtime'])),$mids2);
+				$mids2=str_replace("{#id}", $r["id"],$mids2);
+				$mids2=str_replace("{#n}", $n,$mids2);
+				$mids2=str_replace("{#title}",cutstr($r["title"],$titlenum),$mids2);
+
+				if ( $row <> "" && $row >0) {
+					if ( $n % $row == 0) {$mids2 = $mids2 . "</tr>";}
+				}
+				$mids2 = $mids2 . "\r\n";
+				$n = $n + 1;
+				$xuhao++;
+			}
+			$str = $start.$mids2.$ends;
+		}
+		return $str;
+	}
 }
 ?>
