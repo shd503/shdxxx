@@ -32,135 +32,160 @@
 		<div class="left" style="width:240px">
 			<!--<div class="titles3">创业商机分类</div>-->
 			<div id="flzs">{#zsclass:1,99,8,99,8,1,2,8,yes,no}</div>
-			<!--<div  class="adStyle1">{#showad:展示页,A,0,0,0,0,,no}</div>-->
 		</div>
-		<div class="centor" style="width:712px">
-			<div style="margin:0 0 10px 0">{@adshow.flashad}</div>
-			<!--<div class="adStyle1">{#showad:首页,A,0,130,90,8,no}</div>-->
-
+		<div class="centor">
+			<div style="margin:0 0 10px 10px">{@adshow.flashad}</div>
+			<!--<div style="margin:0 0 10px 0px">-->
+				<div class="centor_left">{@adshow.flashad2}</div>
+				<div class="centor_left">{@adshow.flashad2}</div>
+			<!--</div>-->
 		</div>
-	</div>
-	<div style="height:10px;clear:both;"></div>
-	<div class="titlesA">优质店家A区</div>
-	<div class="adStyle1">{#showad:首页,A,0,130,90,9,no}</div>
 
-	<div class="titlesA">
-		<h3>火爆招商A区</h3>
-	</div>
-	<div class="pagebody">
-		<div class="leftIndex">
-			<div class="adStyle3">{#showad:展示页,A,0,130,90,9,no}</div>
-			<!--<div  class="adStyle1">{#showad:展示页,A,0,0,0,0,,no}</div>-->
-		</div>
-		<div class="rightIndex">
-			<div class="titlesA"><h3>最新加盟信息</h3></div>
-			<div class="content1">
-			<div style="margin:0 0 10px 0">{@helpshow.new}</div>
-			<!--<div class="adStyle1">{#showad:首页,A,0,130,90,8,no}</div>-->
-			</div>
-		</div>
-	</div>
-
-	<div class="pagebody">
-		{@zsclass.zsitem}
-	</div>
-
-	<!--{#showad:4,0,no,no,no,0,0,0,首页,第二行,no}-->
-
-
-	<div class="bordercccccc" style="margin-bottom:10px">
-		{@zxclass.forindex}
-	</div>
-
-	<div class="titles">您可能喜欢的店家</div>
-	<div class="content1">
-		<div id="boxgd">
-			<div id="inboxgd">
-				<div id="boxgd1">
-					{@zsshow.sp}
+		<div class="right">
+			<div class="bordercccccc">
+				<div style="padding:10px">
+					<strong>免费注册为会员后，您可以</strong><br>
+					建企业商铺&nbsp;&nbsp;发供求信息&nbsp;&nbsp;推广产品
 				</div>
-				<div id="boxgd2"></div>
+				<div class="boxregS">
+					<ul>
+						<li><a id="reg" href="reg/userreg.htm">免费注册</a></li>
+						<li><a id="login" href="user/login.htm">登录</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content1">
+				<div class="titles_small"><h3>常见问题解答</h3></div>
+				{@helpshow.new}
 			</div>
 		</div>
-		<script>
-			<!--
-			var speed=10;
-			var tab=document.getElementById("boxgd");
-			var tab1=document.getElementById("boxgd1");
-			var tab2=document.getElementById("boxgd2");
-			tab2.innerHTML=tab1.innerHTML;
-			function Marquee(){
-				if(tab2.offsetWidth-tab.scrollLeft<=0)
-					tab.scrollLeft-=tab1.offsetWidth
-				else{
-					tab.scrollLeft++;
-				}
-			}
-			var MyMar=setInterval(Marquee,speed);
-			tab.onmouseover=function() {clearInterval(MyMar)};
-			tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
-			-->
-		</script>
-	</div>
 
-	<div class="bordercccccc" style="margin-bottom:10px">
-		{@zxclass.forindex2}
-	</div>
+		<div style="height:10px;clear:both;"></div>
+		<div class="titlesA">店家广告抢占区</div>
+		<div class="adStyle1">{#showad:首页,A,0,130,90,9,no}</div>
 
-	<div class="pagebody">
-		<div class="titles">创业项目导航</div>
-		<div class="flzs_zhankai">{#zsclass:0,99,5,12,4,2,0,5,no,no}</div>
-	</div>
-
-
-	<div class="bordercccccc" style="margin-bottom:10px">
-		{@zxclass.forindex3}
-	</div>
-
-	<!--<div class="pagebody">
-        <div class="title3"><span><a href='link.htm'>更多...</a></span> 图片链接</div>
-        <div class="content">{@linkshow.LinkInIndexImg}</div>
-
-		<div class="title3"><span><a href='link.htm'>更多...</a></span> <h3>文字链接</h3></div>
-		<div class="content" style="margin-bottom:8px">{@linkshow.LinkInIndexText}</div>
-	</div>-->
-
-	<div id="dl5"><span>{#sitename}温馨恭贺双方合作愉快！诚信经营，财富共享</span></div>
-	<div id="dlstepbox"  style="margin-bottom:8px">
-		<div id="dlstep">
-			<li id="dlstepli1">
-				<div id="dlsteptitlein"><span>1 </span>登录网站</div>
-				<div id="dlstepcontentin">输入{#siteurl}<br />网上搜索</div>
-			</li>
-			<li  id="dlstepli2">
-				<div id="dlsteptitlein"><span>2 </span>寻找项目</div>
-				<div id="dlstepcontentin">点击广告位查找<br />热门项目查找<br />根据搜索查找</div>
-			</li>
-			<li id="dlstepli3">
-				<div  id="dlsteptitlein"><span>3 </span>留言，电话咨询</div>
-				<div id="dlstepcontentin">电话咨询厂家<br />页面留言咨询<br />在线咨询</div>
-			</li>
-			<li id="dlstepli4">
-				<div id="dlsteptitlein"><span>4 </span>上门考察</div>
-				<div id="dlstepcontentin">进行考察核实<br />加盟要求<br />厂家政策支持</div>
-			</li>
-			<li id="dlstepli5">
-				<div  id="dlsteptitlein"><span>5 </span>确定合作</div>
-				<div  id="dlstepcontentin">双方沟通相关事宜<br />签订合同<br />加盟成功</div>
-			</li>
+		<div class="titlesA">
+			<h3>火爆招商A区</h3>
 		</div>
-	</div>
+		<div class="pagebody">
+			<div class="adStyle3">{#showad:展示页,A,0,130,90,9,no}</div>
+			<!--<div class="leftIndex">
 
-	{#sitebottom}
-</div>
-<!-- Baidu Button BEGIN -->
-<script type="text/javascript" id="bdshare_js" data="type=slide&img=0&pos=right&uid=0" ></script>
-<script type="text/javascript" id="bdshell_js"></script>
-<script type="text/javascript">
-	document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
-</script>
-<!-- Baidu Button END -->
-<div style="display: none" id="goTopBtn"></DIV>
-<SCRIPT type=text/javascript>goTopEx();</SCRIPT>
+                <div  class="adStyle1">{#showad:展示页,A,0,0,0,0,,no}</div>
+            </div>
+            <div class="rightIndex">
+                <div class="titlesA"><h3>最新加盟信息</h3></div>
+                <div class="content1">
+                <div style="margin:0 0 10px 0">{@helpshow.new}</div>
+                </div>
+            </div>-->
+		</div>
+
+		<div class="pagebody">
+			{@zsclass.zsitem}
+		</div>
+
+		<!--{#showad:4,0,no,no,no,0,0,0,首页,第二行,no}-->
+
+
+		<div class="bordercccccc" style="margin-bottom:10px">
+			{@zxclass.forindex}
+		</div>
+
+		<div class="titlesA">
+			<h3>您可能喜欢的店家</h3>
+		</div>
+		<div class="content1">
+			<div id="boxgd">
+				<div id="inboxgd">
+					<div id="boxgd1">
+						{@zsshow.sp}
+					</div>
+					<div id="boxgd2"></div>
+				</div>
+			</div>
+			<script>
+				<!--
+				var speed=10;
+				var tab=document.getElementById("boxgd");
+				var tab1=document.getElementById("boxgd1");
+				var tab2=document.getElementById("boxgd2");
+				tab2.innerHTML=tab1.innerHTML;
+				function Marquee(){
+					if(tab2.offsetWidth-tab.scrollLeft<=0)
+						tab.scrollLeft-=tab1.offsetWidth
+					else{
+						tab.scrollLeft++;
+					}
+				}
+				var MyMar=setInterval(Marquee,speed);
+				tab.onmouseover=function() {clearInterval(MyMar)};
+				tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+				-->
+			</script>
+		</div>
+
+		<div class="bordercccccc" style="margin-bottom:10px">
+			{@zxclass.forindex2}
+		</div>
+
+		<div class="pagebody">
+			<!--<div class="titles">创业项目导航</div>-->
+			<div class="titlesA">
+				<h3>创业项目导航</h3>
+			</div>
+			<div class="flzs_zhankai">{#zsclass:0,99,5,12,4,2,0,5,no,no}</div>
+		</div>
+
+
+		<div class="bordercccccc" style="margin-bottom:10px">
+			{@zxclass.forindex3}
+		</div>
+
+		<!--<div class="pagebody">
+            <div class="title3"><span><a href='link.htm'>更多...</a></span> 图片链接</div>
+            <div class="content">{@linkshow.LinkInIndexImg}</div>
+
+            <div class="title3"><span><a href='link.htm'>更多...</a></span> <h3>文字链接</h3></div>
+            <div class="content" style="margin-bottom:8px">{@linkshow.LinkInIndexText}</div>
+        </div>-->
+
+		<!--<div id="dl5"><span>{#sitename}温馨恭贺双方合作愉快！诚信经营，财富共享</span></div>
+        <div id="dlstepbox"  style="margin-bottom:8px">
+            <div id="dlstep">
+                <li id="dlstepli1">
+                    <div id="dlsteptitlein"><span>1 </span>登录网站</div>
+                    <div id="dlstepcontentin">输入{#siteurl}<br />网上搜索</div>
+                </li>
+                <li  id="dlstepli2">
+                    <div id="dlsteptitlein"><span>2 </span>寻找项目</div>
+                    <div id="dlstepcontentin">点击广告位查找<br />热门项目查找<br />根据搜索查找</div>
+                </li>
+                <li id="dlstepli3">
+                    <div  id="dlsteptitlein"><span>3 </span>留言，电话咨询</div>
+                    <div id="dlstepcontentin">电话咨询厂家<br />页面留言咨询<br />在线咨询</div>
+                </li>
+                <li id="dlstepli4">
+                    <div id="dlsteptitlein"><span>4 </span>上门考察</div>
+                    <div id="dlstepcontentin">进行考察核实<br />加盟要求<br />厂家政策支持</div>
+                </li>
+                <li id="dlstepli5">
+                    <div  id="dlsteptitlein"><span>5 </span>确定合作</div>
+                    <div  id="dlstepcontentin">双方沟通相关事宜<br />签订合同<br />加盟成功</div>
+                </li>
+            </div>
+        </div>-->
+
+		{#sitebottom}
+	</div>
+	<!-- Baidu Button BEGIN -->
+	<script type="text/javascript" id="bdshare_js" data="type=slide&img=0&pos=right&uid=0" ></script>
+	<script type="text/javascript" id="bdshell_js"></script>
+	<script type="text/javascript">
+		document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+	</script>
+	<!-- Baidu Button END -->
+	<div style="display: none" id="goTopBtn"></DIV>
+	<SCRIPT type=text/javascript>goTopEx();</SCRIPT>
 </body>
 </html>

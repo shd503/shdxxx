@@ -1,7 +1,7 @@
 <?php
-define('sitetitle','店家导航') ;//SiteKeywords
-define('sitekeyword','店家导航') ;//SiteKeywords
-define('sitedescription','店家导航') ;//sitedescription
+define('sitetitle','店家123') ;//SiteKeywords
+define('sitekeyword','店家123') ;//SiteKeywords
+define('sitedescription','店家123') ;//sitedescription
 define('zslisttitle','店家') ;//zslisttitle
 define('zslistkeyword','店家') ;//zslistkeyword
 define('zslistdescription','店家') ;//zslistdescription

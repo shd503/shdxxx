@@ -128,8 +128,9 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .leftIndex {float: left;width: 77%;	}
 .rightIndex {width: 22%;float: right;}
 .left {width: 20%!important;float: left;}
-.centor {width: 80%!important;float: left;}
-.right {width: 240px;float: right;}
+.centor {width: 60%!important;float: left;}
+.centor_left {width: 48%!important;float: left;margin:5px 3px 0px 10px}
+.right {width: 20%;float: left;}
 .left_content {padding: 8px;border: 1px solid #dddddd;background:url(image/bg3.gif) repeat-x;}
 .bottom {line-height:18px;padding: 10px 0px;text-align: center;border-top:2px solid #a20401}
 .bottomlink{color:#ffffff;background-color:#8c0000;padding:5px}
@@ -224,8 +225,8 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .titlesA {
     clear: both;
     padding: 0 10px;
-    height: 50px;
-    line-height: 50px;
+    height: 45px;
+    line-height: 45px;
     font-size: 16px;
     border-bottom: solid 1px #dddddd;
     background-color: #FFF;
@@ -269,7 +270,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 
 .adStyle3{width:100%;background-color:#ddd;zoom:1;overflow:hidden;margin-bottom: 10px;}
 .adStyle3 ul{padding:0px 0 0 1px;}
-.adStyle3 li{width:20%;float:left;text-align:center;}
+.adStyle3 li{width:12.5%;float:left;text-align:center;}
 .adStyle3 li a{margin:0 1px 1px 0;display:block;background-color:#ffffff;padding:5px;transition:all 0.2s;}
 .adStyle3 li a:hover{background-color:#4d9b11;color:#FFFFFF;transform: scale(1.2); }
 
@@ -278,6 +279,45 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .bigword {font-size: 14px;line-height: 25px;}
 .bordercccccc{border:solid 1px #DDDDDD;background-color:#FFFFFF;clear:both}
 .bigbigword {font-size: 18px;line-height: 25px;font-weight: bold;}
+
+.boxregS {
+    background-color: #f1f1f1;
+    border-top: solid 1px #dddddd;
+    border-bottom: solid 1px #dddddd;
+}
+.boxregS ul {
+    height: 40px;
+    overflow: hidden;
+}
+.boxregS li {
+    float: left;
+    width: 50%;
+    background: url(image/xxx.gif) no-repeat 0 0;
+    margin-left: -1px;
+    text-align: center;
+}
+.boxregS #reg {
+    background: url(image/icoreg.png) no-repeat 8px center;
+}
+.boxregS a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.titles_small {
+    clear: both;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    border-bottom: solid 1px #dddddd;
+    background-color: #FFF;
+}
 
 .boxreg {height:40px;margin-bottom: 8px;}
 .boxreg li {height:42px;width:132px;float: left;display: inline;text-align: center;background: url(image/buttonregbg.gif) no-repeat 0px 0px;}
@@ -361,7 +401,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 #flzs {position:relative;z-index:4;top:0px;background-color:#FFF;width:99%;}
 #flzs a { display:inline;padding:0px;height:18px;line-height:18px;text-align:left;font-size:14px;color: #666666;text-shadow: 1px 1px 1px #FFF;}
 #flzs a:hover{color:#FF6600}
-.flzs_zhankai{background-color:#CCCCCC;zoom: 1; overflow:auto;padding:1px 0 0 1px}
+.flzs_zhankai{background-color:#CCCCCC;zoom: 1; overflow:auto;padding:0px 0 0 1px}
 .zsclass{color:#666666;overflow:hidden;}
 .zsclass label{padding:5px 0 0 15px;height:50px;line-height:23px;display:block;background: url(image/bigclassbg.gif) no-repeat 0 -55px;color:}
 .zsclass label:hover{background: url(image/bigclassbg.gif) no-repeat 0 0;background-color:#fff;color:}
@@ -382,7 +422,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 
 
 /*滚动图片效果*/
-#boxgd {background: #FFF;overflow:hidden;border: 1px dashed #CCC;width: 940px;padding:10px 0;height:141px;}
+#boxgd {background: #FFF;overflow:hidden;border: 1px dashed #CCC;width: 100%;padding:10px 0;height:141px;}
 #boxgd img {border: 0px solid #d7d7d7;}
 #inboxgd {float: left;width: 800%;}
 #boxgd1 {float: left;}

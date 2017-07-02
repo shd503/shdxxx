@@ -4,7 +4,7 @@ define('sqluser','root');//用户名
 define('sqlpwd','');//密码
 define('sqlhost','localhost');//连接服务器,本机填(local)，外地填IP地址
 define('zzcmsver','Powered By <a target=_blank style=font-weight:bold href=http://www.zzcms.net><font color=#FF6600 face=Arial>ZZ</font><font color=#025BAD face=Arial>CMS8.0</font></a>');//版本
-define('sitename','zzcms') ;//网站名称
+define('sitename','店家123') ;//网站名称
 define('siteurl','http://localhost') ;//网站地址
 define('logourl','http://localhost/image/dianjialogo.png') ;//Logo地址
 define('icp','豫icp备07007271号') ;//icp备案号
@@ -21,8 +21,8 @@ define('isaddinfo','Yes') ;//是否允许未审核的用户发布信息
 define('pagesize_ht','50');//管理员后台每页显示信息数
 define('pagesize_qt','20');//前台每页显示信息数
 define('whendlsave','No') ;//当有代理或求购留言是否打开在线发邮件功能
-define('whenuserreg','Yes') ;//当新用户注册时是否打开在线发邮件功能
-define('whenmodifypassword','Yes') ;//当用户修改密码时是否开发在线发邮件功能
+define('whenuserreg','No') ;//当新用户注册时是否打开在线发邮件功能
+define('whenmodifypassword','No') ;//当用户修改密码时是否开发在线发邮件功能
 define('smtpserver','smtp.126.com') ;//邮件服务器
 define('sender','ggyyxxcom@126.com') ;//发送邮件的地址
 define('smtppwd','') ;//email密码
@@ -79,6 +79,6 @@ define('qq_oauth_consumer_key','') ;//ID
 define('qq_oauth_consumer_secret','') ;//KEY
 define('qq_callback_url','') ;//返回页地址
 define('bbs_set','No') ;//是否开启同步论坛功能
-define('dl_liuyan_set','No') ;//是否显示代理留言页面
+define('dl_liuyan_set','Yes') ;//是否显示代理留言页面
 define('background_set','No') ;//是否显示页面背景设置(用户发商机页面)
 ?>
