@@ -101,6 +101,12 @@ include("admin.php");
     }else{
         $action="";
     }
+
+    /*if(checkadminhaspower("siteconfig") =="no") {
+        echo "没有操作权限！页面不显示！";
+        return;
+    }*/
+
     if ($action=="saveconfig") {
         checkadminisdo("siteconfig");
         saveconfig();

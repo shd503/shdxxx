@@ -259,7 +259,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .adStyle1 ul{padding:0px 0 0 1px;}
 .adStyle1 li{width:12.5%;float:left;text-align:center;}
 .adStyle1 li a{margin:0 1px 1px 0;display:block;background-color:#ffffff;padding:5px;transition:all 0.2s;}
-.adStyle1 li a:hover{background-color:#4d9b11;color:#FFFFFF;transform: scale(1.2); }
+.adStyle1 li a:hover{background-color:#DBCF6E;color:#FFFFFF;transform: scale(1.0);text-decoration: none }
 
 .adStyle2{background-color:#fff;zoom:1;overflow:hidden;}
 .adStyle2 ul{padding:0px;}
@@ -272,7 +272,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .adStyle3 ul{padding:0px 0 0 1px;}
 .adStyle3 li{width:12.5%;float:left;text-align:center;}
 .adStyle3 li a{margin:0 1px 1px 0;display:block;background-color:#ffffff;padding:5px;transition:all 0.2s;}
-.adStyle3 li a:hover{background-color:#4d9b11;color:#FFFFFF;transform: scale(1.2); }
+.adStyle3 li a:hover{background-color:#66B687;color:#FFFFFF; text-decoration: none}
 
 
 .bigword {font-size: 14px;line-height: 25px;}

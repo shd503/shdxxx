@@ -760,6 +760,13 @@ function checkadminisdo($str){
 	}
 }
 
+function checkadminhaspower($str){
+	$rs=mysql_query("select config from zzcms_admingroup where id=(select groupid from zzcms_admin where pass='".@$_SESSION["pass"]."' and admin='".@$_SESSION["admin"]."')");//只验证密码会出现，两个管理员密码相同的情况，导致出错,前加@防止SESSION失效后出错提示
+	$row=mysql_fetch_array($rs);
+	$config=$row["config"];
+	if (str_is_inarr($config,$str)=='yes'){return 'yes';}else{return 'no';}
+}
+
 function check_user_power($str){
 	global $username;
 	if (!isset($username)){
