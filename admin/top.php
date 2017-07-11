@@ -69,13 +69,8 @@ include("admin.php");
                     <li><a href="zs_manage.php" onClick="parent.frmleft.disp(1);" target="frmright"><span>信息</span></a></li>
                     <li><a href="zsclassmanage.php" onClick="parent.frmleft.disp(2);" target="frmright"><span>类别</span></a></li>
                     <li><a href="ad_manage.php" onClick="parent.frmleft.disp(3);" target="frmright"><span>广告</span></a></li>
+                    <li><a href="usermanage.php" onClick="parent.frmleft.disp(4);" target="frmright"><span>用户</span></a></li>
                     <?php
-                    if (checkadminhaspower("userreg") =="yes") {
-                        ?>
-                        <li><a href="usermanage.php" onClick="parent.frmleft.disp(4);" target="frmright"><span>用户</span></a></li>
-                        <?php
-                    }
-
                     if (checkadminhaspower("siteconfig") =="yes") {
                         ?>
                         <li><a href="databaseclear.php" onClick="parent.frmleft.disp(7);" target="frmright"><span>数据库</span></a></li>

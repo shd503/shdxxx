@@ -117,7 +117,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 .bgcolor3 {background-color: #dddddd;}
 .biaodan {border: 1px solid #dddddd;padding:2px 2px;width: 300px;}
 .biaodanfy {border: 1px solid #dddddd;padding:2px 2px;width: 100px;}
-.biaodan2{border:solid 1px #dddddd;width: 220px;}
+.biaodan2{border:solid 1px #dddddd;width: 220px; line-height: 19px;}
 .buttons_search{background:url(image/search3.gif);width:63px;height:20px;border-width:0px;cursor: hand;}
 .mainColor {background-color: #990000;color: #FFFFFF;}
 .hiddiv{float:left;position:absolute;Visibility:hidden;Filter:revealTrans(duration=0.5, transition=19);border: solid 1px #e8e8e8;margin:0px 0px 0px 138px;padding: 1px;background: url(image/loading.gif) no-repeat center center;background-color: #FFF;}

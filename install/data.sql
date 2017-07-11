@@ -343,6 +343,7 @@ CREATE TABLE `zzcms_user` (
   `passwordtrue` varchar(255) NOT NULL,
   `qqid` varchar(255) default NULL,
   `email` varchar(255) default NULL,
+  `agentadmin` varchar(255) default NULL,
   `sex` varchar(255) default NULL,
   `comane` varchar(255) default NULL,
   `content` longtext,

@@ -19,12 +19,6 @@ $kind=isset($_REQUEST["kind"])?$_REQUEST["kind"]:'username';
 $px=isset($_GET["px"])?$_GET["px"]:'id';
 $usersf=isset($_REQUEST["usersf"])?$_REQUEST["usersf"]:'';
 
-if(checkadminhaspower("userreg") =="no") {
-	echo "没有操作权限！页面不显示！";
-	return;
-}
-
-
 if ($action=="pass"){
 	checkadminisdo("userreg");
 	if(!empty($_POST['id'])){
@@ -46,7 +40,7 @@ if ($action=="pass"){
 }
 ?>
 <body>
-<div class="admintitle">本站用户管理</div>
+<div class="admintitle">代理管理员用户信息管理</div>
 <form name="form1" method="post" action="?">
 	<table width="100%" border="0" cellpadding="5" cellspacing="0">
 		<tr>
@@ -134,7 +128,7 @@ if(!$totlenum){
 			<tr>
 				<td>
 					<input name="submit"  type="submit" onClick="myform.action='?action=pass'" value="【取消/审核】选中的信息">
-					<input name="submit3" type="submit" onClick="deluser(this.form)"value="删除选中的信息">
+<!--					<input name="submit3" type="submit" onClick="deluser(this.form)"value="删除选中的信息">-->
 					<input name="pageurl" type="hidden"  value="usermanage.php?kind=<?php echo $kind?>&keyword=<?php echo $keyword?>&shenhe=<?php echo $shenhe?>&page=<?php echo $page ?>">      </td>
 			</tr>
 		</table>
@@ -152,7 +146,7 @@ if(!$totlenum){
 				<td width="2%" align="center" class="border">积分</td>
 				<td width="5%" align="center" class="border">邮箱</td>
 				<td width="3%" align="center" class="border">状态</td>
-				<td width="5%" align="center" class="border">操作</td>
+<!--				<td width="5%" align="center" class="border">操作</td>-->
 			</tr>
 			<?php
 			while($row = mysql_fetch_array($rs)){
@@ -163,14 +157,14 @@ if(!$totlenum){
 					<td align="left">
 						<?php
 						echo str_replace($keyword,"<font color=red>".$keyword."</font>",$row["username"]);
-						$rsn=mysql_query("select config from zzcms_admingroup where id=(select groupid from zzcms_admin where pass='".@$_SESSION["pass"]."' and admin='".@$_SESSION["admin"]."')");//只验证密码会出现，两个管理员密码相同的情况，导致出错,前加@防止SESSION失效后出错提示
+						/*$rsn=mysql_query("select config from zzcms_admingroup where id=(select groupid from zzcms_admin where pass='".@$_SESSION["pass"]."' and admin='".@$_SESSION["admin"]."')");//只验证密码会出现，两个管理员密码相同的情况，导致出错,前加@防止SESSION失效后出错提示
 						$rown=mysql_fetch_array($rsn);
 						echo "<br>密码：";
 						if(str_is_inarr($rown["config"],'userreg')=='no'){
 							echo "无【用户管理】权限，密码不于显示";
 						}else{
 							if ($row["passwordtrue"]!=''){ echo $row["passwordtrue"];}else{ echo $row["password"];}
-						}
+						}*/
 						?>
 					</td>
 					<td>
@@ -208,19 +202,19 @@ if(!$totlenum){
 						}
 						?>
 					</td>
-					<td align="center" class="docolor"><a href="usermodify.php?id=<?php echo $row["id"]?>">修改</a> |
+					<!--<td align="center" class="docolor"><a href="usermodify.php?id=<?php /*echo $row["id"]*/?>">修改</a> |
 
-						<?php if ($row["lockuser"]==0) { ?>
-							<a href="userlock.php?action=lock&id=<?php echo $row["id"]?>&page=<?php echo $page?>">锁定</a>
+						<?php /*if ($row["lockuser"]==0) { */?>
+							<a href="userlock.php?action=lock&id=<?php /*echo $row["id"]*/?>&page=<?php /*echo $page*/?>">锁定</a>
 							<?php
-						}else{
-							?>
-							<a href="userlock.php?action=cancellock&id=<?php echo $row["id"]?>&page=<?php echo $page?>">解锁</a>
+/*						}else{
+							*/?>
+							<a href="userlock.php?action=cancellock&id=<?php /*echo $row["id"]*/?>&page=<?php /*echo $page*/?>">解锁</a>
 							<?php
-						}
-						?>
-						| <a href="sendmail.php?tomail=<?php echo $row["email"]?>">发信</a>
-					</td>
+/*						}
+						*/?>
+						| <a href="sendmail.php?tomail=<?php /*echo $row["email"]*/?>">发信</a>
+					</td>-->
 				</tr>
 				<?php
 			}
@@ -232,7 +226,7 @@ if(!$totlenum){
 				<td><input name="chkAll" type="checkbox" id="chkAll" onClick="CheckAll(this.form)" value="checkbox">
 					<label for="chkAll" style="text-decoration: underline;cursor: hand;">全选</label>
 					<input name="submit2"  type="submit" onClick="myform.action='?action=pass'" value="【取消/审核】选中的信息">
-					<input name="submit4" type="submit" onClick="deluser(this.form)"value="删除选中的信息">
+<!--					<input name="submit4" type="submit" onClick="deluser(this.form)"value="删除选中的信息">-->
 					<input name="page" type="hidden" id="page" value="<?php echo $page?>"> </td>
 			</tr>
 		</table>
