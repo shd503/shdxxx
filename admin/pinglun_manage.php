@@ -47,7 +47,7 @@ echo "<script>location.href='?keyword=".$keyword."&page=".$page."'</script>";
 ?>
 <div class="admintitle">评论管理</div>
 <form name="form1" method="post" action="?">
-<div class="border"> 内容： <input name="keyword" type="text" id="keyword" value="<?php echo $keyword?>"> <input type="submit" name="Submit" value="查寻"> </div>
+<div class="border"> 内容： <input name="keyword" type="text" id="keyword" value="<?php echo $keyword?>"> <input type="submit" name="Submit" value="查询"> </div>
 </form>
 <?php
 $page_size=pagesize_ht;  //每页多少条数据

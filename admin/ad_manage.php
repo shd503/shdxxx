@@ -32,7 +32,7 @@ $s=isset($_REQUEST["s"])?$_REQUEST["s"]:'';
               <input name="kind" type="radio" value="title" id="kind_title"  <?php if ($kind=='title'){ echo 'checked';}?>>
               <label for="kind_title">按标题</label>
               <input name="keyword" type="text" id="keyword" value="<?php echo $keyword?>">
-              <input type="submit" name="Submit" value="查寻">
+              <input type="submit" name="Submit" value="查询">
               <a href="?action=showendtime">到期的广告</a> </form></td>
         </tr>
       </table></td>

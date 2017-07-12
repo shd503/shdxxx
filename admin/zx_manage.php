@@ -56,7 +56,7 @@ echo "<script>location.href='?b=".$b."&keyword=".$keyword."&page=".$page."'</scr
               <input type="radio" name="kind" value="title" <?php if ($kind=="title") { echo "checked";}?>>
               按标题 
               <input name="keyword" type="text" id="keyword" value="<?php echo $keyword?>"> 
-              <input type="submit" name="Submit" value="查寻">
+              <input type="submit" name="Submit" value="查询">
 			  </form>
             </td>
           </tr>

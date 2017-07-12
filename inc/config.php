@@ -7,11 +7,11 @@ define('zzcmsver','Powered By <a target=_blank style=font-weight:bold href=http:
 define('sitename','店家123') ;//网站名称
 define('siteurl','http://localhost') ;//网站地址
 define('logourl','http://localhost/image/dianjialogo.png') ;//Logo地址
-define('icp','豫icp备07007271号') ;//icp备案号
-define('webmasteremail','357856668@qq.com') ;//站长信箱
-define('kftel','0371-86137281') ;//联系电话
-define('kfmobile','13838064112') ;//手机
-define('kfqq','357856668') ;//QQ
+define('icp','陕icp备17012364号') ;//icp备案号
+define('webmasteremail','') ;//站长信箱
+define('kftel','') ;//联系电话
+define('kfmobile','') ;//手机
+define('kfqq','') ;//QQ
 define('sitecount','<script language=javascript type=text/javascript src=http://js.users.51.la/713776.js></script>') ;//网站统计代码
 define('opensite','Yes') ;//网站运行状态
 define('showwordwhenclose','网站正在维护中……') ;//关闭网站原因

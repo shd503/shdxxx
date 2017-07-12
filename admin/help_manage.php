@@ -51,7 +51,7 @@ echo "<script>location.href='?b=".$b."&keyword=".$keyword."&page=".$page."'</scr
 		  </td>
           <td align="right"> <form name="form1" method="post" action="?b=<?php echo $b?>">
               <input name="keyword" type="text" id="keyword" value="<?php echo $keyword?>">
-              <input type="submit" name="Submit" value="查寻">
+              <input type="submit" name="Submit" value="查询">
             </form></td>
         </tr>
       </table></td>

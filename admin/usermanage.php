@@ -63,7 +63,7 @@ if ($action=="pass"){
 				<input type="radio" name="kind" value="tel"  id="tel"<?php if ($kind=="tel") { echo "checked";}?>>
 				<label for="tel">按电话号</label>
 				<input name="keyword" type="text" id="keyword" value="<?php echo $keyword?>" size="30" maxlength="255">
-				<input type="submit" name="Submit2" value="查寻">      </td>
+				<input type="submit" name="Submit2" value="查询">      </td>
 		</tr>
 		<tr>
 			<td class="border">排序方式：<a href="?px=lastlogintime">按登录时间</a> | <a href="?px=logins">按登录次数</a>

@@ -14,13 +14,18 @@ $page=isset($_GET["page"])?$_GET["page"]:1;
 $shenhe=isset($_REQUEST["shenhe"])?$_REQUEST["shenhe"]:'';
 
 $keyword=isset($_REQUEST["keyword"])?$_REQUEST["keyword"]:'';
+$keyword2=isset($_REQUEST["keyword2"])?$_REQUEST["keyword2"]:'';
 $kind=isset($_REQUEST["kind"])?$_REQUEST["kind"]:'username';
 
 $px=isset($_GET["px"])?$_GET["px"]:'id';
 $usersf=isset($_REQUEST["usersf"])?$_REQUEST["usersf"]:'';
 
+if (isset($_SESSION["admin"])) {
+	$agentadmin=$_SESSION["admin"];
+}
+
 if ($action=="pass"){
-	checkadminisdo("userreg");
+//	checkadminisdo("userreg");
 	if(!empty($_POST['id'])){
 		for($i=0; $i<count($_POST['id']);$i++){
 			$id=$_POST['id'][$i];
@@ -46,18 +51,23 @@ if ($action=="pass"){
 		<tr>
 			<td class="border"> <input name="kind" id="username" type="radio" value="username" <?php if ($kind=="username") { echo "checked";}?> >
 				<label for="username">按用户名</label>
-				<input name="kind" type="radio" value="comane" id="comane" checked <?php if ($kind=="comane") { echo "checked";}?>>
+				<input name="kind" type="radio" value="comane" id="comane"  <?php if ($kind=="comane") { echo "checked";}?>>
 				<label for="comane">按公司名 </label>
-				<input type="radio" name="kind" value="id" id="id" <?php if ($kind=="id") { echo "checked";}?>>
+				<!--<input type="radio" name="kind" value="id" id="id" <?php /*if ($kind=="id") { echo "checked";}*/?>>
 				<label for="id">按用户ID </label>
-				<input type="radio" name="kind" value="email" id="email" <?php if ($kind=="email") { echo "checked";}?>>
-				<label for="email">按E-mail</label>
-				<input type="radio" name="kind" value="mobile" id="mobile"<?php if ($kind=="mobile") { echo "checked";}?>>
+				<input type="radio" name="kind" value="email" id="email" <?php /*if ($kind=="email") { echo "checked";}*/?>>
+				<label for="email">按E-mail</label>-->
+				<input type="radio" name="kind" value="mobile" id="mobile" <?php if ($kind=="mobile") { echo "checked";}?>>
 				<label for="mobile">按手机号</label>
-				<input type="radio" name="kind" value="tel"  id="tel"<?php if ($kind=="tel") { echo "checked";}?>>
-				<label for="tel">按电话号</label>
-				<input name="keyword" type="text" id="keyword" value="<?php echo $keyword?>" size="30" maxlength="255">
-				<input type="submit" name="Submit2" value="查寻">      </td>
+				<!--<input type="radio" name="kind" value="tel"  id="tel"<?php /*if ($kind=="tel") { echo "checked";}*/?>>
+				<label for="tel">按电话号</label>-->
+				<input type="radio" name="kind" value="regdate" id="regdate" <?php if ($kind=="regdate") { echo "checked";}?>>
+				<label for="regdate">按注册日期</label>
+
+				<input name="keyword" type="text" id="keyword" value="<?php echo $keyword?>" size="25" maxlength="255"> --
+				<input name="keyword2" type="text" id="keyword2" value="<?php echo $keyword2?>" size="25" maxlength="255">
+				<input type="submit" name="Submit2" value="查询">
+			</td>
 		</tr>
 		<tr>
 			<td class="border">排序方式：<a href="?px=lastlogintime">按登录时间</a> | <a href="?px=logins">按登录次数</a>
@@ -95,6 +105,13 @@ if ($keyword<>"") {
 		case "tel";
 			$sql2=$sql2. " and phone like '%".$keyword."%'";
 			break;
+		case "regdate";
+			if($keyword2<>"") {
+				$sql2=$sql2. " and regdate between '".$keyword."' and '".$keyword2."'";
+			}else{
+				$sql2=$sql2. " and regdate like '%".$keyword."%'";
+			}
+			break;
 		default:
 			$sql2=$sql2. " and username like '%".$keyword."%'";
 	}
@@ -115,7 +132,7 @@ $row = mysql_fetch_array($rs);
 $totlenum = $row['total'];
 $totlepage=ceil($totlenum/$page_size);
 
-$sql="select * from zzcms_user where id<>0 ";
+$sql="select * from zzcms_user where id<>0 and agentadmin='".$agentadmin."'";
 $sql=$sql .$sql2;
 $sql=$sql . " order by ".$px." desc limit $offset,$page_size";
 $rs = mysql_query($sql);
@@ -140,11 +157,11 @@ if(!$totlenum){
 				<td width="3%" align="center" class="border">用户组ID</td>
 				<td width="3%" align="center" class="border">登录次数</td>
 				<td width="6%" align="center" class="border">最后登录IP</td>
-				<td width="4%" align="center" class="border">最后登录</td>
+				<td width="4%" align="center" class="border">电话</td>
 				<td width="4%" align="center" class="border">注册时间</td>
 				<td width="3%" align="center" class="border">初始支付</td>
 				<td width="2%" align="center" class="border">积分</td>
-				<td width="5%" align="center" class="border">邮箱</td>
+				<td width="5%" align="center" class="border">代理管理员</td>
 				<td width="3%" align="center" class="border">状态</td>
 <!--				<td width="5%" align="center" class="border">操作</td>-->
 			</tr>
@@ -178,11 +195,12 @@ if(!$totlenum){
 					<td align="center"> <?php echo $row["groupid"]?> </td>
 					<td align="center"><?php echo $row["logins"]?></td>
 					<td align="center"><?php echo $row["loginip"]?></td>
-					<td align="center" title="<?php echo $row["lastlogintime"]?>"><?php echo date("Y-m-d",strtotime($row["lastlogintime"]))?></td>
+					<td align="center"><?php echo $row["phone"]?></td>
+<!--					<td align="center" title="--><?php //echo $row["lastlogintime"]?><!--">--><?php //echo date("Y-m-d",strtotime($row["lastlogintime"]))?><!--</td>-->
 					<td align="center" title="<?php echo $row["regdate"]?>"><?php echo date("Y-m-d",strtotime($row["regdate"]))?></td>
 					<td align="center"><?php echo $row["initRMB"]?></td>
 					<td align="center"><?php echo $row["totleRMB"]?></td>
-					<td align="center"><?php echo $row["email"]?></td>
+					<td align="center"><?php echo $row["agentadmin"]?></td>
 					<td align="center">
 						<?php
 						if ($row["lockuser"]==1) {

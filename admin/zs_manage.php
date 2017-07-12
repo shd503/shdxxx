@@ -48,7 +48,7 @@ echo "<script>location.href='?keyword=".$keyword."&page=".$page."'</script>";
         <input type="radio" name="kind" value="proname" <?php if ($kind=="proname") { echo "checked";}?>>
         按产品名称 
         <input name="keyword" type="text" id="keyword" size="25" value="<?php echo  $keyword?>">
-        <input type="submit" name="Submit" value="查寻">
+        <input type="submit" name="Submit" value="查询">
         <a href="?showwhat=elite">固顶的信息</a> <a href="?showwhat=vip">VIP会员的信息</a> 
          
       </form>
