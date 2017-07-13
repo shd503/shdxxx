@@ -211,6 +211,6 @@ background:url(image/backtotop.gif) no-repeat 0px 0px;
 
 .adStyle1{background-color:#ddd;zoom:1;overflow:hidden;}
 .adStyle1 ul{padding:1px 0 0 1px;}
-.adStyle1 li{width:50%;float:left;text-align:left;}
+.adStyle1 li{width:50%;float:left;text-align:center;}
 .adStyle1 li a{margin:0 1px 1px 0;display:block;background-color:#ffffff;padding:5px;transition:all 0.2s;}
-.adStyle1 li a:hover{background-color:#4d9b11;color:#FFFFFF;transform: scale(1.2); }
+.adStyle1 li a:hover{background-color:#4d9b11;color:#FFFFFF;transform: scale(1.0); text-decoration:none;}

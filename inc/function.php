@@ -197,7 +197,8 @@ function getimgincontent($content,$num=1){
 
 function cutstr($tempstr,$tempwid){
 	if (strlen($tempstr)>$tempwid*3){//汉字占三个字符长度
-		return mb_substr($tempstr,0,$tempwid,'utf8').".";
+//		return mb_substr($tempstr,0,$tempwid,'utf8').".";
+		return mb_substr($tempstr,0,$tempwid,'utf8');
 	}else{
 		return $tempstr;
 	}
