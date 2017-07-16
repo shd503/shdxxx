@@ -19,9 +19,11 @@ $("#getcode_math").click(function(){
 <body>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <table width="330" height="88" border="0" align="center" cellpadding="5" cellspacing="0">
   <tr> 
-    <td height="60" class="border" style="background:url('/image/zzcms-color.gif') 25px 0px no-repeat;background-color:#FFFFFF">&nbsp;</td>
+    <td height="50" class="border" style="background:url('/image/ground.png') 5px 0px no-repeat;background-color:#FFFFFF">&nbsp;</td>
   </tr>
   <tr> 
     <td align="right" class="border"> 
@@ -47,9 +49,9 @@ $("#getcode_math").click(function(){
             <td height="25">&nbsp;</td>
             <td height="25"><input type="submit" name="Submit" id="chk_math" value="登 录"></td>
           </tr>
-          <tr align="right"> 
-            <td height="25" colspan="2"><?php echo zzcmsver ?> </td>
-          </tr>
+          <!--<tr align="right">
+            <td height="25" colspan="2"><?php /*echo zzcmsver */?> </td>
+          </tr>-->
         </table>
       </form>
     </td>

@@ -11,7 +11,7 @@ define('icp','陕icp备17012364号') ;//icp备案号
 define('webmasteremail','') ;//站长信箱
 define('kftel','') ;//联系电话
 define('kfmobile','') ;//手机
-define('kfqq','') ;//QQ
+define('kfqq','457029260') ;//QQ
 define('sitecount','<script language=javascript type=text/javascript src=http://js.users.51.la/713776.js></script>') ;//网站统计代码
 define('opensite','Yes') ;//网站运行状态
 define('showwordwhenclose','网站正在维护中……') ;//关闭网站原因
