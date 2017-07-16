@@ -76,8 +76,8 @@
       <file leaf-file-name="uploadimg.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uploadimg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-146.19354">
-              <caret line="206" column="0" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+            <state vertical-scroll-proportion="-138.3871">
+              <caret line="195" column="0" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -287,7 +287,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="13" width="1932" height="1038" extended-state="1" />
+    <frame x="0" y="13" width="1932" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14178303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -329,7 +329,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/uploadimg.php</url>
-          <line>194</line>
+          <line>119</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -699,8 +699,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/uploadimg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-146.19354">
-          <caret line="206" column="0" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+        <state vertical-scroll-proportion="-138.3871">
+          <caret line="195" column="0" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
           <folding />
         </state>
       </provider>
