@@ -89,7 +89,7 @@ $initRMB=$rowu["initRMB"];
 		<ul>
 			<!--<li><a href="/3/alipay/" target="_blank"> 用支付宝充值</a></li>
 			<li><a href="/3/tenpay/" target="_blank"> 用财富通充值</a></li>-->
-			<li><a href="/codepay/index.php" target="_blank"> 用微信充值</a></li>
+			<li><a href="/codepay/index.php" target="_parent"> 用微信充值</a></li>
 			<li><a href="pay_manage.php" target="_self"> 我的财务记录</a></li>
 		</ul></div></div>
 

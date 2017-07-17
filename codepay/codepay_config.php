@@ -66,6 +66,8 @@ $codepay_config['qrcode_url'] = '';
  */
 $codepay_config['return_url'] = ($_SERVER['HTTPS'] === 'on' || $_SERVER['HTTPS'] === 1 || $_SERVER['SERVER_PORT'] == 443 ? 'https://' : 'http://') . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['REQUEST_URI']) . '/return.php';
 
+//$codepay_config['return_url'] = "http://localhost/user/zs.php";
+
 /**
  * 异步通知设置：
  * 设置异步通知也可以到软件或者码支付云端设置。 如留空则会启用云端默认的通知地址

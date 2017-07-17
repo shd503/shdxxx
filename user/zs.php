@@ -118,7 +118,7 @@ $initRMB=$rowu["initRMB"];
                         <tr>
                             <td align="right" class="border2" >支付：</td>
                             <td class="border2" >
-                                <input type="button" class="buttons" onclick="window.location.href='/codepay/index.php'" value="微信支付">
+                                <input type="button" class="buttons" onclick="location.href='/codepay/index.php'" value="微信支付">
                             </td>
                         </tr>
                         <?php

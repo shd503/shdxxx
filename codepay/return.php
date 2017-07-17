@@ -320,6 +320,7 @@ if ($verify_result) { //验证成功
 
 
         </div>
+        <input type="button" class="buttons" onclick="location.href='/user/pay_manage.php'" value="确定，查看我的财务记录">
 
         <div class="tip-text">
         </div>
