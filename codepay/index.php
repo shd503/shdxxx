@@ -78,8 +78,8 @@ if ((int)$codepay_config['id'] <= 1) { //未修改配置文件
             <ul id="ulOption">
                 <li money="0.01"><a href="javascript:;">0.01元<s></s></a></li>
                 <li money="10"><a href="javascript:;">10元<s></s></a></li>
-                <li money="20"><a href="javascript:;">20元<s></s></a></li>
-                <li money="50"><a href="javascript:;" class="z-sel">50元<s></s></a></li>
+                <li money="20"><a href="javascript:;" class="z-sel">20元<s></s></a></li>
+                <li money="50"><a href="javascript:;" >50元<s></s></a></li>
                 <li money="100"><a href="javascript:;">100元<s></s></a></li>
                 <li money="200"><a href="javascript:;">200元<s></s></a></li>
             </ul>
@@ -88,7 +88,7 @@ if ((int)$codepay_config['id'] <= 1) { //未修改配置文件
             <article class="clearfix mt10 m-round g-pay-ment g-bank-ct">
                 <ul id="ulBankList" >
                     <li class="gray6" style="width: 100%;padding: 0px 0px 0px 10px">您选择充值：<label class="input" style="border: 1px solid #EAEAEA;height: 15px;font-size:24px;">
-                            <input type="text" name="price" id="price" placeholder="如：50" value="50"
+                            <input type="text" name="price" id="price" placeholder="如：20" value="20"
                                    style="width: 72px;color: red;font-size:14px;">
                         </label> 元
                     </li>

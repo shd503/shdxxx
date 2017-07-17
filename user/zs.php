@@ -215,12 +215,12 @@ $initRMB=$rowu["initRMB"];
                                 <select name="xiancheng" id="xiancheng"></select>
                                 <script src="/js/area.js"></script>
                                 <?php
-                                $sqln="select province,city,xiancheng from zzcms_user where username='" .$username. "'";
+/*                                $sqln="select province,city,xiancheng from zzcms_user where username='" .$username. "'";
                                 $rsn=mysql_query($sqln);
                                 $rown=mysql_fetch_array($rsn);
-                                ?>
+                                */?>
                                 <script type="text/javascript">
-                                    new PCAS('province', 'city', 'xiancheng', '<?php echo $rown['province']?>', '<?php echo $rown["city"]?>', '<?php echo $rown["xiancheng"]?>');
+                                    new PCAS('province', 'city', 'xiancheng', '<?php echo $row['province']?>', '<?php echo $row["city"]?>', '<?php echo $row["xiancheng"]?>');
                                 </script></td>
 
                         </tr>
