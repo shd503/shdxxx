@@ -111,6 +111,8 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0;max-
 .textad4 a:link, .textad4 a:hover,.textad4 a:visited{color:#333333}
 .bigword {font-size: 14px;line-height: 20px;}
 .bordercccccc{border:solid 1px #DDDDDD;background-color:#FFFFFF;margin: 10px 0px;clear:both}
+.bordercc{border:solid 1px #DDDDDD;background-color:#FFFFFF;margin: 0px 0px 10px;clear:both}
+
 .boxin {border: 1px solid #dddddd;background-color: #FFFFFF;color:#666666;padding:8px}
 .bigbigword {font-size: 16px;line-height: 35px;font-family: "微软雅黑"}
 .bigbigword2 {font-size: 18px;line-height: 40px;font-family: "微软雅黑"}
@@ -167,7 +169,7 @@ POSITION: fixed; TEXT-ALIGN: center; LINE-HEIGHT: 30px; WIDTH: 56px; BOTTOM: 35p
 background:url(image/backtotop.gif) no-repeat 0px 0px;
 }
 
-#loginbg_box{position:relative;margin:10px 0px}
+#loginbg_box{position:relative;margin:0px 0px 10px}
 
 #loginbg_bigword{font-size:20px;line-height:25px;height:25px;color:#FFF;font-family: "微软雅黑";background-color:#2095d7;padding:15px}
 #loginbg_bigword span{float:right;}

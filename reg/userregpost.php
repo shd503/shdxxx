@@ -74,26 +74,93 @@ ob_start();//打开缓冲区，这样输出内容后还可以setcookie
 			$founderr=1;
 			$msg= "<li>联系人、电话、E-mail为必填项！</li>";
 		}
+	}
 
-		if ($founderr==1){
-			WriteErrMsg($msg);
-		}else{
+	if ($founderr==1){
+		WriteErrMsg($msg);
+	}else{
 
-			if (checkistrueemail=="Yes" ){
-				$emailsite="http://mail.".substr($email,strpos($email,"@")+1);
-				$checkcode=date("YmdHis").rand(100,999);
+		if (checkistrueemail=="Yes" ){
+			$emailsite="http://mail.".substr($email,strpos($email,"@")+1);
+			$checkcode=date("YmdHis").rand(100,999);
 
-				$sql="INSERT INTO zzcms_usernoreg (username,password,comane,somane,phone,email,checkcode,regdate)
+			$sql="INSERT INTO zzcms_usernoreg (username,password,comane,somane,phone,email,checkcode,regdate)
 VALUES('$username','$password','$comane','$somane','$phone','$email','$checkcode','".date('Y-m-d H:i:s')."')";
-				mysql_query($sql,$conn);
+			mysql_query($sql,$conn);
 //sendemail
+			$smtp=new smtp(smtpserver,25,true,sender,smtppwd,sender);//25:smtp服务器的端口一般是25
+			$to = $email; //收件人
+			$subject="成功注册".sitename."会员通知";
+
+			$body= "<table width='100%'><tr><td style='font-size:14px;line-height:25px'>亲爱的".$somane . "：<br>&nbsp;&nbsp;&nbsp;&nbsp;您好！<br>欢迎您注册成为<a href='".siteurl."' target='_blank'>".sitename."</a>会员，你的用户名：".$username." 密码：".$password." 请妥善保管。";
+			$body=$body."<br><br>点击下面的这段链接激活您的注册帐号<br><a href=".siteurl."/reg/userregcheckemail.php?username=".$username."&checkcode=".$checkcode.">".siteurl."/reg/userregcheckemail.php?username=".$username."&checkcode=".$checkcode."</a>";
+			$body=$body."<br>如果点击后没有任何反应，请把这段链接复制到地址栏里直接打开。";
+			$body=$body."<br><br>感谢您对本站的支持！</td></tr></table>";
+
+			$fp="../template/".$siteskin."/email.htm";
+			$f= fopen($fp,'r');
+			$strout = fread($f,filesize($fp));
+			fclose($f);
+			$strout=str_replace("{#body}",$body,$strout) ;
+			$strout=str_replace("{#siteurl}",siteurl,$strout) ;
+			$strout=str_replace("{#logourl}",logourl,$strout) ;
+			$body=$strout;
+
+			$send=$smtp->sendmail($to,sender,$subject,$body,"HTML");//邮件的类型可选值是 TXT 或 HTML
+			if($send){
+				?>
+				<div class="box" style="font-size:14px;margin:10px 0;text-align:center">
+					<ul style="background-color:#FFFFFF;padding:10px">
+						<li><b>注册成功！</b></li>
+						<li><form name="form1" method="post" action="/reg/sendmailagain.php">帐号需要激活后才能使用，激活邮件已发送到
+								<input type=text name="newemail" value="<?php echo $email?>">
+								<input type=hidden name=username value="<?php echo $username?>">
+								<input type=submit name=submit value="重发"> 请登录到您的邮箱查收 。</form></li>
+						<li style="padding:10px 0"><input type="button" class="button_big" value="点击登录您的邮箱"  onclick="window.open('<?php echo $emailsite?>')"/></li>
+					</ul>
+				</div>
+				<?php
+			}else{
+				echo "验证邮件发送失败。";
+			}
+
+		}else{
+			mysql_query("INSERT INTO zzcms_user (username,password,passwordtrue,comane,content,somane,sex,phone,email,agentadmin,img,totleRMB,regdate,lastlogintime)VALUES('$username','".md5($password)."','$password','$comane','该公司暂无简介信息','$somane','1','$phone','$email','$agentadmin','/image/nopic.gif','".jf_reg."','".date('Y-m-d H:i:s')."','".date('Y-m-d H:i:s')."')");
+			mysql_query("INSERT INTO zzcms_usersetting (username,skin,swf,daohang)VALUES('$username','1','6.swf','$daohang')");
+			setcookie("UserName",$username,time()+3600*24*365,"/");//直接登录
+			setcookie("PassWord",md5($password),time()+3600*24*365,"/");
+			session_write_close();
+//集成ucenter
+			if (bbs_set=='Yes'){
+				$uid = uc_user_register($_POST['username'], $_POST['password'], $_POST['email']);
+				if($uid <= 0) {
+					if($uid == -1) {
+						echo '用户名不合法';
+					} elseif($uid == -2) {
+						echo '包含要允许注册的词语';
+					} elseif($uid == -3) {
+						echo '用户名已经存在';
+					} elseif($uid == -4) {
+						echo 'Email 格式有误';
+					} elseif($uid == -5) {
+						echo 'Email 不允许注册';
+					} elseif($uid == -6) {
+						echo '该 Email 已经被注册';
+					} else {
+						echo '未定义';
+					}
+				} else {
+					//注册成功，设置 Cookie，加密直接用 uc_authcode 函数，用户使用自己的函数
+					setcookie('Example_auth', uc_authcode($uid."\t".$_POST['username'], 'ENCODE'));
+					echo '同时注册论坛成功';
+				}
+			}
+//end 
+			if (whenuserreg=="Yes"){
 				$smtp=new smtp(smtpserver,25,true,sender,smtppwd,sender);//25:smtp服务器的端口一般是25
 				$to = $email; //收件人
 				$subject="成功注册".sitename."会员通知";
-
 				$body= "<table width='100%'><tr><td style='font-size:14px;line-height:25px'>亲爱的".$somane . "：<br>&nbsp;&nbsp;&nbsp;&nbsp;您好！<br>欢迎您注册成为<a href='".siteurl."' target='_blank'>".sitename."</a>会员，你的用户名：".$username." 密码：".$password." 请妥善保管。";
-				$body=$body."<br><br>点击下面的这段链接激活您的注册帐号<br><a href=".siteurl."/reg/userregcheckemail.php?username=".$username."&checkcode=".$checkcode.">".siteurl."/reg/userregcheckemail.php?username=".$username."&checkcode=".$checkcode."</a>";
-				$body=$body."<br>如果点击后没有任何反应，请把这段链接复制到地址栏里直接打开。";
 				$body=$body."<br><br>感谢您对本站的支持！</td></tr></table>";
 
 				$fp="../template/".$siteskin."/email.htm";
@@ -107,82 +174,16 @@ VALUES('$username','$password','$comane','$somane','$phone','$email','$checkcode
 
 				$send=$smtp->sendmail($to,sender,$subject,$body,"HTML");//邮件的类型可选值是 TXT 或 HTML
 				if($send){
-					?>
-					<div class="box" style="font-size:14px;margin:10px 0;text-align:center">
-						<ul style="background-color:#FFFFFF;padding:10px">
-							<li><b>注册成功！</b></li>
-							<li><form name="form1" method="post" action="/reg/sendmailagain.php">帐号需要激活后才能使用，激活邮件已发送到
-									<input type=text name="newemail" value="<?php echo $email?>">
-									<input type=hidden name=username value="<?php echo $username?>">
-									<input type=submit name=submit value="重发"> 请登录到您的邮箱查收 。</form></li>
-							<li style="padding:10px 0"><input type="button" class="button_big" value="点击登录您的邮箱"  onclick="window.open('<?php echo $emailsite?>')"/></li>
-						</ul>
-					</div>
-					<?php
-				}else{
-					echo "验证邮件发送失败。";
-				}
-
-			}else{
-				mysql_query("INSERT INTO zzcms_user (username,password,passwordtrue,comane,content,somane,sex,phone,email,agentadmin,img,totleRMB,regdate,lastlogintime)VALUES('$username','".md5($password)."','$password','$comane','该公司暂无简介信息','$somane','1','$phone','$email','$agentadmin','/image/nopic.gif','".jf_reg."','".date('Y-m-d H:i:s')."','".date('Y-m-d H:i:s')."')");
-				mysql_query("INSERT INTO zzcms_usersetting (username,skin,swf,daohang)VALUES('$username','1','6.swf','$daohang')");
-				setcookie("UserName",$username,time()+3600*24*365,"/");//直接登录
-				setcookie("PassWord",md5($password),time()+3600*24*365,"/");
-				session_write_close();
-//集成ucenter
-				if (bbs_set=='Yes'){
-					$uid = uc_user_register($_POST['username'], $_POST['password'], $_POST['email']);
-					if($uid <= 0) {
-						if($uid == -1) {
-							echo '用户名不合法';
-						} elseif($uid == -2) {
-							echo '包含要允许注册的词语';
-						} elseif($uid == -3) {
-							echo '用户名已经存在';
-						} elseif($uid == -4) {
-							echo 'Email 格式有误';
-						} elseif($uid == -5) {
-							echo 'Email 不允许注册';
-						} elseif($uid == -6) {
-							echo '该 Email 已经被注册';
-						} else {
-							echo '未定义';
-						}
-					} else {
-						//注册成功，设置 Cookie，加密直接用 uc_authcode 函数，用户使用自己的函数
-						setcookie('Example_auth', uc_authcode($uid."\t".$_POST['username'], 'ENCODE'));
-						echo '同时注册论坛成功';
-					}
-				}
-//end 
-				if (whenuserreg=="Yes"){
-					$smtp=new smtp(smtpserver,25,true,sender,smtppwd,sender);//25:smtp服务器的端口一般是25
-					$to = $email; //收件人
-					$subject="成功注册".sitename."会员通知";
-					$body= "<table width='100%'><tr><td style='font-size:14px;line-height:25px'>亲爱的".$somane . "：<br>&nbsp;&nbsp;&nbsp;&nbsp;您好！<br>欢迎您注册成为<a href='".siteurl."' target='_blank'>".sitename."</a>会员，你的用户名：".$username." 密码：".$password." 请妥善保管。";
-					$body=$body."<br><br>感谢您对本站的支持！</td></tr></table>";
-
-					$fp="../template/".$siteskin."/email.htm";
-					$f= fopen($fp,'r');
-					$strout = fread($f,filesize($fp));
-					fclose($f);
-					$strout=str_replace("{#body}",$body,$strout) ;
-					$strout=str_replace("{#siteurl}",siteurl,$strout) ;
-					$strout=str_replace("{#logourl}",logourl,$strout) ;
-					$body=$strout;
-
-					$send=$smtp->sendmail($to,sender,$subject,$body,"HTML");//邮件的类型可选值是 TXT 或 HTML
-					if($send){
-						echo "<script>location.href='/user/login.php?username=".$username."&sendmail=ok'</script>";
-					}else{
-						echo "<script>location.href='/user/login.php?username=".$username."'</script>";
-					}
+					echo "<script>location.href='/user/login.php?username=".$username."&sendmail=ok'</script>";
 				}else{
 					echo "<script>location.href='/user/login.php?username=".$username."'</script>";
 				}
+			}else{
+				echo "<script>location.href='/user/login.php?username=".$username."'</script>";
+			}
 
-			}//end if(checkistrueemail=="Yes" )
-		}//end if($founderr==1)
+		}//end if(checkistrueemail=="Yes" )
+	}//end if($founderr==1)
 	}//end if($username!='' && $password!='')
 	mysql_close($conn);
 	?>
