@@ -288,6 +288,11 @@ if ($verify_result) { //验证成功
             border-radius: 4px;
 
         }
+        .buttons {
+            font-size:16px;
+
+            margin: 10px auto;
+        }
     </style>
 </head>
 
@@ -324,14 +329,14 @@ if ($verify_result) { //验证成功
         include("../inc/config.php");
         $agent = $_SERVER['HTTP_USER_AGENT'];
         if(strpos($agent,"NetFront") || strpos($agent,"iPhone") || strpos($agent,"MIDP-2.0") || strpos($agent,"Opera Mini") || strpos($agent,"UCWEB") || strpos($agent,"Android") || strpos($agent,"Windows CE") || strpos($agent,"SymbianOS")) {
-            $str=$str . "&nbsp;<input type='button' class='buttons' onclick='window.location.href=".siteurl."/user/zs_mobile.php' value='确定，查看我的财务记录'>";
+            $str=$str . "&nbsp;<input type='button' class='buttons' onclick=location.href='/user/zs_mobile.php' value='确定'>";
         }else{
-            $str=$str . "&nbsp;<input type='button' class='buttons' onclick='window.location.href=".siteurl."/user/zs.php' value='确定，查看我的财务记录'>";
+            $str=$str . "&nbsp;<input type='button' class='buttons' onclick=location.href='/user/zs.php' value='确定'>";
         }
 //        echo 'document.write ("'.$str.'");';
         echo $str;
         ?>
-        <input type="button" class="buttons" onclick="location.href='".siteurl."/user/zs_mobile.php'" value="确定，查看我的财务记录">
+<!--        <input type="button" class="buttons" onclick="location.href='/user/zs.php'" value="确定，查看我的财务记录">-->
 
         <div class="tip-text">
         </div>
