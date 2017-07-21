@@ -76,7 +76,7 @@ if ((int)$codepay_config['id'] <= 1) { //未修改配置文件
     <section class="clearfix g-member">
         <div class="g-Recharge">
             <ul id="ulOption">
-                <li money="0.01"><a href="javascript:;">0.01元<s></s></a></li>
+                <li money="1"><a href="javascript:;">1元<s></s></a></li>
                 <li money="10"><a href="javascript:;">10元<s></s></a></li>
                 <li money="20"><a href="javascript:;" class="z-sel">20元<s></s></a></li>
                 <li money="50"><a href="javascript:;" >50元<s></s></a></li>
