@@ -18,12 +18,12 @@
 	</div>
 </div>
 <!--<div style="clear:both"></div>-->
-<div class="userbar"> <span style="float:right"> [ <a href="/<?php echo getpageurl3("index")?>" target="_top"><img src="/image/home.gif" border="0">
+<div class="userbar"> <span style="float:right"> [ <a href="/<?php echo getpageurl3("index")?>" target="_parent"><img src="/image/home.gif" border="0">
   首页</a>
   <?php
-echo " | <a href='".getpageurlzs(@$username)."'  target='_blank'><img src='/image/pic.gif' border='0'> 商机</a>";
+echo " | <a href='".getpageurlzs(@$username)."'  target='_parent'><img src='/image/pic.gif' border='0'> 商机</a>";
 		?>
-        | <a href="logout.php" target="_top"><img src="/image/ding.gif" width="11" height="13" border="0">
+        | <a href="logout.php" target="_parent"><img src="/image/ding.gif" width="11" height="13" border="0">
         退出</a> ] </span>
 		您好！<strong><?php echo @$_COOKIE["UserName"];?></strong>
 <!--	( --><?php //echo ShowUserSf();?><!--)-->
