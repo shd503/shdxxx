@@ -1,6 +1,6 @@
 <?php
 //error_reporting(E_ALL & ~ E_NOTICE); //过滤脚本错误
-include("../inc/conn.php");
+
 ini_set("display_errors", "On");  //显示脚本错误提示
 error_reporting(E_ALL | E_STRICT); //开启全部脚本错误提示
 /**
@@ -22,6 +22,7 @@ error_reporting(E_ALL | E_STRICT); //开启全部脚本错误提示
  *2、商户帮助中心（https://codepay.fateqq.com/help/）
  *3、联系客服（https://codepay.fateqq.com/msg.html）
  */
+
 require_once("codepay_config.php"); //导入配置文件
 require_once("includes/MysqliDb.class.php");//导入mysqli连接
 require_once("includes/M.class.php");//导入mysqli操作类

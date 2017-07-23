@@ -11,7 +11,7 @@
  *
  * 注意：UTF-8编码不要在记事本下编辑 否则会出现一些奇葩的问题 正确方法应在开发工具打开编辑
  */
-
+include("../inc/config.php");
 //↓↓↓↓↓↓↓↓↓↓请在这里配置您的基本信息↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 //codepay平台的ID，由纯数字组成的字符串，查看地址：https://codepay.fateqq.com/admin/#/dataSet.html
 error_reporting(E_ALL & ~E_NOTICE); //过滤脚本提醒
@@ -37,7 +37,7 @@ $codepay_config['act'] = '0'; //认证版则开启
  * 3：自定义开发模式 (复杂 需要一定开发能力 手动升级)
  * 4：高级模式(复杂 需要较强的开发能力 手动升级)
  */
-$codepay_config['page'] = 2; //支付页面展示方式：GET框架云端支付 享受免集成 免升级
+$codepay_config['page'] = 3; //支付页面展示方式：GET框架云端支付 享受免集成 免升级
 
 //支付页面风格样式 仅针对$codepay_config['page'] 参数为 1或2 才会有用。
 $codepay_config['style'] = 1; //暂时保留的功能 后期会生效 留意官网发布的风格编号
@@ -54,7 +54,8 @@ $codepay_config['pay_type'] = 1;
 
 //二维码本地实现 传入http://baidu.com 会加载http://baidu.com/?money=1&tag=0&type=1
 // qrcode.php 为我们的演示控制二维码程序
-$codepay_config['qrcode_url'] = '';
+//$codepay_config['qrcode_url'] = "";
+$codepay_config['qrcode_url'] = siteurl."/codepay/qrcode.php";
 
 /**
  * 同步通知设置：

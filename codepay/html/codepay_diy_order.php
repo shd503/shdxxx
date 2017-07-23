@@ -70,7 +70,7 @@ $user_data["qrcode_url"] = !empty($codepay_config["qrcode_url"]) && (int)$codepa
 //中间那log 默认为10秒后隐藏
 //改为自己的替换img目录下的use_开头的图片 你要保证你的二维码遮挡不会影响扫码
 //二容错率决定你能遮挡多少部分维码
-$user_data["logShowTime"]=10000;
+$user_data["logShowTime"]=0;
 ?>
 <!DOCTYPE html>
 <html>
