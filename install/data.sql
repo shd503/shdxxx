@@ -193,6 +193,7 @@ CREATE TABLE `zzcms_ad` (
   `title` varchar(255) default NULL,
   `titlecolor` varchar(255) default NULL,
   `link` varchar(255) default NULL,
+  `agentadmin` varchar(255) default NULL,
   `sendtime` datetime default NULL,
   `bigclassname` varchar(50) default NULL,
   `smallclassname` varchar(50) default NULL,

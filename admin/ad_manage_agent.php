@@ -11,16 +11,19 @@ include("../inc/fy.php");
 </head>
 <body>
 <?php
-if(checkadminhaspower("adv") =="no") {
-    echo "没有操作权限！页面不显示！";
-    return;
-}
 $action=isset($_REQUEST["action"])?$_REQUEST["action"]:'';
 $page=isset($_GET["page"])?$_GET["page"]:1;
 $keyword=isset($_REQUEST["keyword"])?$_REQUEST["keyword"]:'';
 $kind=isset($_REQUEST["kind"])?$_REQUEST["kind"]:'';
 $b=isset($_REQUEST["b"])?$_REQUEST["b"]:'';
 $s=isset($_REQUEST["s"])?$_REQUEST["s"]:'';
+
+if (isset($_SESSION["admin"])){
+    $agentadmin=$_SESSION["admin"];
+}else{
+    $agentadmin="";
+}
+
 ?>
 <div class="admintitle">广告管理</div>
 <table width="100%" border="0" cellspacing="0" cellpadding="5">
@@ -31,8 +34,6 @@ $s=isset($_REQUEST["s"])?$_REQUEST["s"]:'';
                     <td><input name="submit3" type="submit" class="buttons" onClick="javascript:location.href='ad_add.php'" value="添加广告"></td>
                     <td align="right">
                         <form name="form1" method="post" action="?">
-                            <input name="kind" type="radio" id="kind_gly" value="gly"  <?php if ($kind=='gly'){ echo 'checked';}?>>
-                            <label for="kind_gly">按管理员</label>
                             <input name="kind" type="radio" id="kind_ggz" value="ggz"  <?php if ($kind=='ggz'){ echo 'checked';}?>>
                             <label for="kind_ggz">按广告主</label>
                             <input name="kind" type="radio" value="title" id="kind_title"  <?php if ($kind=='title'){ echo 'checked';}?>>
@@ -102,7 +103,7 @@ $s=isset($_REQUEST["s"])?$_REQUEST["s"]:'';
 <?php
 $page_size=pagesize_ht;  //每页多少条数据
 $offset=($page-1)*$page_size;
-$sql="select * from zzcms_ad where id<>0 ";
+$sql="select * from zzcms_ad where id<>0 AND agentadmin='".$agentadmin."'";
 if ($b<>"") {
     $sql=$sql." and bigclassname='".$b."' ";
 }
@@ -113,9 +114,6 @@ if ($s<>"") {
 
 if ($keyword<>"") {
     switch ($kind){
-        case "gly";
-            $sql=$sql. " and agentadmin='".$keyword."' ";
-            break;
         case "ggz";
             $sql=$sql. " and username like '%".$keyword."%' ";
             break;
@@ -142,7 +140,7 @@ if(!$totlenum){
     ?>
     <form name="myform" id="myform" method="post" action="">
         <div class="border">
-            <input type="submit" onClick="myform.action='del.php';myform.target='_self';return ConfirmDel()" value="删除选中的信息">
+<!--            <input type="submit" onClick="myform.action='del.php';myform.target='_self';return ConfirmDel()" value="删除选中的信息">-->
             <input name="pagename" type="hidden"  value="ad_manage.php?b=<?php echo $b?>&page=<?php echo $page ?>">
             <input name="tablename" type="hidden"  value="zzcms_ad">
         </div>
@@ -207,8 +205,8 @@ if(!$totlenum){
             ?>
         </table>
         <div class="border">
-            <input name="chkAll" type="checkbox" id="chkAll" onClick="CheckAll(this.form)" value="checkbox">
-            全选 <input type="submit" onClick="myform.action='del.php';myform.target='_self';return ConfirmDel()" value="删除选中的信息">
+            <input name="chkAll" type="checkbox" id="chkAll" onClick="CheckAll(this.form)" value="checkbox">全选
+<!--            <input type="submit" onClick="myform.action='del.php';myform.target='_self';return ConfirmDel()" value="删除选中的信息">-->
         </div>
     </form>
     <div class="border center"><?php echo showpage_admin()?></div>

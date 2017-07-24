@@ -67,6 +67,7 @@ include("admin.php");
 				<a href="ad_manage.php" target="frmright">广告管理</a>
 				<a href="adclass.php" target="frmright">类别设置</a>
 				<a href="siteconfig.php?#qiangad" target="frmright">广告设置</a>
+				<a href="ad_manage_agent.php" target="frmright">代理广告管理</a>
 			</div>
 
 

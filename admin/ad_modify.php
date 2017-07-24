@@ -141,6 +141,11 @@ $row=mysql_fetch_array($rs);
             </td>
         </tr>
         <tr>
+            <td align="right" class="border">代理管理员：</td>
+            <td class="border"> <input name="agentadmin" type="text" id="agentadmin" value="<?php echo $agentadmin?>" size="50">
+            </td>
+        </tr>
+        <tr>
             <td align="right" class="border">&nbsp;</td>
             <td class="border"><input name="newsid" type="hidden" id="newsid3" value="<?php echo $row["id"]?>">
                 <input name="action" type="hidden" id="action3" value="modify"> <input name="page" type="hidden" id="action" value="<?php echo $page?>">
