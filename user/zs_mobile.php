@@ -93,139 +93,139 @@ $initRMB=$rowu["initRMB"];
     include("top_mobile.php");
     ?>
     <div class="pagebody">
-<!--        <div class="left">-->
-            <?php
-            $sql="select * from zzcms_main where editor='" .$username. "'";
-            $rs = mysql_query($sql);
-            $row = mysql_fetch_array($rs);
-            ?>
-            <div class="content">
-<!--                <div class="admintitle">发商机</div>-->
-                <form action="zssave_mobile.php" method="post" name="myform" id="myform" onSubmit="return CheckForm();">
-                    <table width="100%" border="0" cellpadding="3" cellspacing="1">
-                        <?php
-                        if ((int)$initRMB == 0 ) {
-                            ?>
-                            <tr>
-                                <td colspan="2" class="admintitle" >支付(首次发布请先支付)</td>
-                            </tr>
-                            <tr>
-                                <td align="right" class="border2" >支付：</td>
-                                <td class="border2" >
-                                    <input type="button" class="buttons" onclick="window.location.href='/codepay/index.php'" value="微信支付">
-                                </td>
-                            </tr>
-                            <?php
-                        }
+        <!--        <div class="left">-->
+        <?php
+        $sql="select * from zzcms_main where editor='" .$username. "'";
+        $rs = mysql_query($sql);
+        $row = mysql_fetch_array($rs);
+        ?>
+        <div class="content">
+            <!--                <div class="admintitle">发商机</div>-->
+            <form action="zssave_mobile.php" method="post" name="myform" id="myform" onSubmit="return CheckForm();">
+                <table width="100%" border="0" cellpadding="3" cellspacing="1">
+                    <?php
+                    if ((int)$initRMB == 0 ) {
                         ?>
                         <tr>
-                            <td colspan="2" class="admintitle" >发商机</td>
+                            <td colspan="2" class="admintitle" >支付(首次发布请先支付)</td>
                         </tr>
                         <tr>
-                            <td width="20%" align="right" class="border2" >项目<font color="#FF0000">*</font>：</td>
-                            <td  class="border" > <input name="name" type="text" id="name" class="biaodan" value="<?php echo $row["proname"]?>" size="25" maxlength="40" >
-                                <br>
-                                (只能写产品名称)</td>
+                            <td align="right" class="border2" >支付：</td>
+                            <td class="border2" >
+                                <input type="button" class="buttons" onclick="window.location.href='/codepay/index.php'" value="微信支付">
+                            </td>
                         </tr>
-                        <tr>
-                            <td align="right"  class="border2" ><br>类别<font color="#FF0000">*</font>：</td>
-                            <td class="border2" > <table width="100%" border="0" cellpadding="0" cellspacing="1">
-                                    <tr>
-                                        <td> <fieldset class="fieldsetstyle">
-                                                <legend>所属大类</legend>
-                                                <?php
-                                                $sqlB = "select * from zzcms_zsclass where parentid='A' order by xuhao asc";
-                                                $rsB = mysql_query($sqlB,$conn);
-                                                $n=0;
-                                                while($rowB= mysql_fetch_array($rsB)){
-                                                    $n ++;
-                                                    if ($row['bigclasszm']==$rowB['classzm']){
-                                                        echo "<input name='bigclassid' type='radio' id='E$n'  onclick='javascript:doClick_E(this)' value='$rowB[classzm]' checked/><label for='E$n'>$rowB[classname]</label>";
-                                                    }else{
-                                                        echo "<input name='bigclassid' type='radio' id='E$n'  onclick='javascript:doClick_E(this)' value='$rowB[classzm]' /><label for='E$n'>$rowB[classname]</label>";
-                                                    }
-                                                }
-                                                ?>
-                                            </fieldset></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
+                        <?php
+                    }
+                    ?>
+                    <tr>
+                        <td colspan="2" class="admintitle" >发商机</td>
+                    </tr>
+                    <tr>
+                        <td width="20%" align="right" class="border2" >项目<font color="#FF0000">*</font>：</td>
+                        <td  class="border" > <input name="name" type="text" id="name" class="biaodan" value="<?php echo $row["proname"]?>" size="25" maxlength="40" >
+                            <br>
+                            (只能写产品名称)</td>
+                    </tr>
+                    <tr>
+                        <td align="right"  class="border2" ><br>类别<font color="#FF0000">*</font>：</td>
+                        <td class="border2" > <table width="100%" border="0" cellpadding="0" cellspacing="1">
+                                <tr>
+                                    <td> <fieldset class="fieldsetstyle">
+                                            <legend>所属大类</legend>
                                             <?php
-                                            $sqlB="select * from zzcms_zsclass where parentid='A' order by xuhao asc";
+                                            $sqlB = "select * from zzcms_zsclass where parentid='A' order by xuhao asc";
                                             $rsB = mysql_query($sqlB,$conn);
                                             $n=0;
                                             while($rowB= mysql_fetch_array($rsB)){
                                                 $n ++;
-                                                if ($row["bigclasszm"]==$rowB["classzm"]) {
-                                                    echo "<div id='E_con$n' style='display:block;'>";
+                                                if ($row['bigclasszm']==$rowB['classzm']){
+                                                    echo "<input name='bigclassid' type='radio' id='E$n'  onclick='javascript:doClick_E(this)' value='$rowB[classzm]' checked/><label for='E$n'>$rowB[classname]</label>";
                                                 }else{
-                                                    echo "<div id='E_con$n' style='display:none;'>";
+                                                    echo "<input name='bigclassid' type='radio' id='E$n'  onclick='javascript:doClick_E(this)' value='$rowB[classzm]' /><label for='E$n'>$rowB[classname]</label>";
                                                 }
-                                                echo "<fieldset class='fieldsetstyle'><legend>所属小类</legend>";
-                                                $sqlS="select * from zzcms_zsclass where parentid='$rowB[classzm]' order by xuhao asc";
-                                                $rsS = mysql_query($sqlS,$conn);
-                                                $nn=0;
-                                                while($rowS= mysql_fetch_array($rsS)){
-                                                    $nn ++;
-                                                    if ($row['smallclasszm']==$rowS['classzm']){
-                                                        echo "<input name='smallclassid' id='radio$nn$n' type='radio' value='$rowS[classzm]' checked/>";
-                                                    }else{
-                                                        echo "<input name='smallclassid' id='radio$nn$n' type='radio' value='$rowS[classzm]' />";
-                                                    }
-                                                    echo "<label for='radio$nn$n'>$rowS[classname]</label>";
-                                                    if ($nn % 10==0) {
-                                                        echo "<br/>";
-                                                    }
-
-                                                }
-                                                echo "</fieldset>";
-                                                echo "</div>";
                                             }
-                                            ?>                  </td>
-                                    </tr>
-                                </table></td>
-                        </tr>
-                        <tr>
-                            <td align="right" class="border2" >简介<font color="#FF0000">*</font>：</td>
-                            <td class="border2" > <textarea name="gnzz" cols="32" rows="4" id="gnzz"><?php echo $row["prouse"]?></textarea>            </td>
-                        </tr>
+                                            ?>
+                                        </fieldset></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <?php
+                                        $sqlB="select * from zzcms_zsclass where parentid='A' order by xuhao asc";
+                                        $rsB = mysql_query($sqlB,$conn);
+                                        $n=0;
+                                        while($rowB= mysql_fetch_array($rsB)){
+                                            $n ++;
+                                            if ($row["bigclasszm"]==$rowB["classzm"]) {
+                                                echo "<div id='E_con$n' style='display:block;'>";
+                                            }else{
+                                                echo "<div id='E_con$n' style='display:none;'>";
+                                            }
+                                            echo "<fieldset class='fieldsetstyle'><legend>所属小类</legend>";
+                                            $sqlS="select * from zzcms_zsclass where parentid='$rowB[classzm]' order by xuhao asc";
+                                            $rsS = mysql_query($sqlS,$conn);
+                                            $nn=0;
+                                            while($rowS= mysql_fetch_array($rsS)){
+                                                $nn ++;
+                                                if ($row['smallclasszm']==$rowS['classzm']){
+                                                    echo "<input name='smallclassid' id='radio$nn$n' type='radio' value='$rowS[classzm]' checked/>";
+                                                }else{
+                                                    echo "<input name='smallclassid' id='radio$nn$n' type='radio' value='$rowS[classzm]' />";
+                                                }
+                                                echo "<label for='radio$nn$n'>$rowS[classname]</label>";
+                                                if ($nn % 10==0) {
+                                                    echo "<br/>";
+                                                }
 
-                        <tr>
-                            <td align="right" class="border2">地区：</td>
-                            <td class="border2"><select name="province" id="province"></select>
-                                <select name="city" id="city"></select>
-                                <select name="xiancheng" id="xiancheng"></select>
-                                <script src="/js/area_mobile.js"></script>
-                                <?php
-                               /* $sqln="select province,city,xiancheng from zzcms_user where username='" .$username. "'";
-                                $rsn=mysql_query($sqln);
-                                $rown=mysql_fetch_array($rsn);*/
-                                ?>
-                                <script type="text/javascript">
-                                    new PCAS('province', 'city', 'xiancheng', '<?php echo $row['province']?>', '<?php echo $row["city"]?>', '<?php echo $row["xiancheng"]?>');
-                                </script></td>
+                                            }
+                                            echo "</fieldset>";
+                                            echo "</div>";
+                                        }
+                                        ?>                  </td>
+                                </tr>
+                            </table></td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="border2" >简介<font color="#FF0000">*</font>：</td>
+                        <td class="border2" > <textarea name="gnzz" cols="32" rows="4" id="gnzz"><?php echo $row["prouse"]?></textarea>            </td>
+                    </tr>
 
-                        </tr>
-                        <tr>
-                            <td align="right" class="border2">地址：</td>
-                            <td class="border2"> <input name="address" type="text" id="address"  class="biaodan" value="<?php echo $row["address"]?>" size="25" maxlength="40" ></tr>
-                        <?php
-/*                        if (shuxing_name!=''){
-                            $shuxing_name = explode("|",shuxing_name);
-                            $shuxing_value = explode("|||",$row["shuxing_value"]);
-                            for ($i=0; $i< count($shuxing_name);$i++){
-                                */?><!--
+                    <tr>
+                        <td align="right" class="border2">地区：</td>
+                        <td class="border2"><select name="province" id="province"></select>
+                            <select name="city" id="city"></select>
+                            <select name="xiancheng" id="xiancheng"></select>
+                            <script src="/js/area_mobile.js"></script>
+                            <?php
+                            /* $sqln="select province,city,xiancheng from zzcms_user where username='" .$username. "'";
+                             $rsn=mysql_query($sqln);
+                             $rown=mysql_fetch_array($rsn);*/
+                            ?>
+                            <script type="text/javascript">
+                                new PCAS('province', 'city', 'xiancheng', '<?php echo $row['province']?>', '<?php echo $row["city"]?>', '<?php echo $row["xiancheng"]?>');
+                            </script></td>
+
+                    </tr>
+                    <tr>
+                        <td align="right" class="border2">地址：</td>
+                        <td class="border2"> <input name="address" type="text" id="address"  class="biaodan" value="<?php echo $row["address"]?>" size="25" maxlength="40" ></tr>
+                    <?php
+                    /*                        if (shuxing_name!=''){
+                                                $shuxing_name = explode("|",shuxing_name);
+                                                $shuxing_value = explode("|||",$row["shuxing_value"]);
+                                                for ($i=0; $i< count($shuxing_name);$i++){
+                                                    */?><!--
                                 <tr>
                                     <td align="right" class="border" ><?php /*echo $shuxing_name[$i]*/?>：</td>
                                     <td class="border" ><input name="sx[]" type="text" value="<?php /*echo @$shuxing_value[$i]*/?>" size="40" class="biaodan"></td>
                                 </tr>
                                 --><?php
-/*                            }
-                        }
-                        */?>
-                        <tr>
-                            <td align="right" class="border" >说明<font color="#FF0000">*</font>：</td>
-                            <td class="border" >
+                    /*                            }
+                                            }
+                                            */?>
+                    <tr>
+                        <td align="right" class="border" >说明<font color="#FF0000">*</font>：</td>
+                        <td class="border" >
 			
 <textarea name="sm"  id="sm">
 <?php
@@ -239,64 +239,64 @@ if (file_exists($fp)) {
     echo $row["sm"];
 }
 ?></textarea>
-                                <script type="text/javascript" src="/3/kindeditor-4.1.10/kindeditor.js" ></script>
-                                <script type="text/javascript" src="/3/kindeditor-4.1.10/lang/zh_CN.js" ></script>
-                                <script type="text/javascript">
-                                    KindEditor.ready(function(K) {
-                                        window.editor = K.create('#sm', {
-                                            designMode:true,
-                                            cssPath : '.3/kindeditor-4.1.10/plugins/code/prettify.css',
-                                            uploadJson : '/3/kindeditor-4.1.10/php/upload_json.php',
-                                            fileManagerJson : '/3/kindeditor-4.1.10/php/file_manager_json.php',
-                                            allowFileManager : true,
-                                            resizeType : 0,
-                                            allowImageRemote : false,
-                                            width : '100%',
-                                            height : '100%',
-                                            items : ['source','bold','italic','underline','forecolor','image','|', 'undo', 'redo', 'baidumap','fullscreen' ],
+                            <script type="text/javascript" src="/3/kindeditor-4.1.10/kindeditor.js" ></script>
+                            <script type="text/javascript" src="/3/kindeditor-4.1.10/lang/zh_CN.js" ></script>
+                            <script type="text/javascript">
+                                KindEditor.ready(function(K) {
+                                    window.editor = K.create('#sm', {
+                                        designMode:true,
+                                        cssPath : '.3/kindeditor-4.1.10/plugins/code/prettify.css',
+                                        uploadJson : '/3/kindeditor-4.1.10/php/upload_json.php',
+                                        fileManagerJson : '/3/kindeditor-4.1.10/php/file_manager_json.php',
+                                        allowFileManager : true,
+                                        resizeType : 0,
+                                        allowImageRemote : false,
+                                        width : '100%',
+                                        height : '100%',
+                                        items : ['source','bold','italic','underline','forecolor','image','|', 'undo', 'redo', 'baidumap','fullscreen' ],
 
-                                            afterCreate:function() {this.sync();},
-                                            afterBlur : function(){this.sync();}//需要添加的
-
-                                        });
-                                        prettyPrint();
+                                        afterCreate:function() {this.sync();},
+                                        afterBlur : function(){this.sync();}//需要添加的
 
                                     });
+                                    prettyPrint();
 
-                                </script>	</td>
-                        </tr>
-                        <tr>
-                            <td align="right" class="border" >封面：
-                                <input name="oldimg" type="hidden" id="oldimg" value="<?php echo $row["img"] ?>">
-                                <input name="img"type="hidden" id="img" value="<?php echo $row["img"] ?>">            </td>
-                            <td class="border" > <table height="120" border="0" cellpadding="5" cellspacing="1" bgcolor="#999999">
-                                    <tr>
-                                        <td width="120" align="center" bgcolor="#FFFFFF" id="showimg" onClick="openwindow('/uploadimg_form.php',400,300)">
-                                            <?php
-                                            if($row["img"]<>""){
-                                                echo "<img src='".$row["img"]."' border=0 width=120 /><br>点击更换";
-                                            }else{
-                                                echo "<input name='Submit2' type='button'  value='上传图片'/>";
-                                            }
-                                            ?>                  </td>
-                                    </tr>
-                                </table></td>
-                        </tr>
+                                });
 
-                        <tr>
-                            <td align="center" class="border2" >&nbsp;</td>
-                            <td class="border2" >
-                                <input name="cpid" type="hidden" id="cpid" value="<?php echo $row["id"] ?>">
-                                <input name="Submit" type="submit" class="buttons" value="保存修改结果">
-                                <input type='hidden' name="pay" id="pay" value='<?php echo $initRMB;?>' />
-                            </td>
-                        </tr>
+                            </script>	</td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="border" >封面：
+                            <input name="oldimg" type="hidden" id="oldimg" value="<?php echo $row["img"] ?>">
+                            <input name="img"type="hidden" id="img" value="<?php echo $row["img"] ?>">            </td>
+                        <td class="border" > <table height="120" border="0" cellpadding="5" cellspacing="1" bgcolor="#999999">
+                                <tr>
+                                    <td width="120" align="center" bgcolor="#FFFFFF" id="showimg" onClick="openwindow('/uploadimg_form.php',300,200)">
+                                        <?php
+                                        if($row["img"]<>""){
+                                            echo "<img src='".$row["img"]."' border=0 width=120 /><br>点击更换";
+                                        }else{
+                                            echo "<input name='Submit2' type='button'  value='上传图片'/>";
+                                        }
+                                        ?>                  </td>
+                                </tr>
+                            </table></td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" class="border2" >&nbsp;</td>
+                        <td class="border2" >
+                            <input name="cpid" type="hidden" id="cpid" value="<?php echo $row["id"] ?>">
+                            <input name="Submit" type="submit" class="buttons" value="保存修改结果">
+                            <input type='hidden' name="pay" id="pay" value='<?php echo $initRMB;?>' />
+                        </td>
+                    </tr>
 
 
-                    </table>
-                </form>
-            </div>
-<!--        </div>-->
+                </table>
+            </form>
+        </div>
+        <!--        </div>-->
     </div>
 </div>
 </body>

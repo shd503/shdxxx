@@ -161,7 +161,7 @@ if ($action=="modify"){
 												<?php
 											}else{
 												?>
-												<div><input name="Submit" type="button"  disabled value="<?php echo (24*3600*showadvdate-(time()-strtotime($row['sendtime'])))/(24*3600) ?>天后可抢占"></div>
+												<div><input name="Submit" type="button"  disabled value="<?php echo sprintf("%.2f",((24*3600*showadvdate-(time()-strtotime($row['sendtime'])))/(24*3600))) ?>天后可抢占"></div>
 												<?php
 											}
 										}
