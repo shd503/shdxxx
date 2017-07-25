@@ -2,6 +2,12 @@
 error_reporting(0); //加新参数后配置文件中，不用加同名空参数了
 define ("checkadminlogin",1);//当关网站时，如果是管理员登录时使链接正常打开。
 include("admin.php");
+
+if(checkadminhaspower("siteconfig") =="no") {
+    echo "没有操作权限！页面不显示！";
+    return;
+}
+
 ?>
     <html>
     <head>
@@ -101,11 +107,6 @@ include("admin.php");
     }else{
         $action="";
     }
-
-    /*if(checkadminhaspower("siteconfig") =="no") {
-        echo "没有操作权限！页面不显示！";
-        return;
-    }*/
 
     if ($action=="saveconfig") {
         checkadminisdo("siteconfig");

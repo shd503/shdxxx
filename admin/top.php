@@ -59,13 +59,9 @@ include("admin.php");
         <td>
             <div id="tabs">
                 <ul>
-                    <?php
-                    if (checkadminhaspower("siteconfig") =="yes") {
-                        ?>
-                        <li><a href="siteconfig.php" onClick="parent.frmleft.disp(6);" target="frmright"><span>网站设置</span></a></li>
-                        <?php
-                    }
-                    ?>
+
+                    <li><a href="siteconfig.php" onClick="parent.frmleft.disp(6);" target="frmright"><span>网站设置</span></a></li>
+
                     <li><a href="zs_manage.php" onClick="parent.frmleft.disp(1);" target="frmright"><span>信息</span></a></li>
                     <li><a href="zsclassmanage.php" onClick="parent.frmleft.disp(2);" target="frmright"><span>类别</span></a></li>
                     <li><a href="ad_manage.php" onClick="parent.frmleft.disp(3);" target="frmright"><span>广告</span></a></li>

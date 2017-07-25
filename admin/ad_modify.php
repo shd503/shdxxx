@@ -142,7 +142,7 @@ $row=mysql_fetch_array($rs);
         </tr>
         <tr>
             <td align="right" class="border">代理管理员：</td>
-            <td class="border"> <input name="agentadmin" type="text" id="agentadmin" value="<?php echo $agentadmin?>" size="50">
+            <td class="border"> <input name="agentadmin" type="text" id="agentadmin" value="<?php echo $row["agentadmin"]?>" size="50">
             </td>
         </tr>
         <tr>

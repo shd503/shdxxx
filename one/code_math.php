@@ -1,5 +1,5 @@
 <?php
-if(!isset($_SESSION)){session_start();} 
+if(!isset($_SESSION)){session_start();}
 getCode(100, 20);
 function getCode($w, $h) {
 	$im = imagecreate($w, $h);
@@ -8,8 +8,8 @@ function getCode($w, $h) {
 	$black1 = imagecolorallocate($im, 0, 0, 0);
 	$white = imagecolorallocate($im, 255, 255, 255);
 
-	$num1 = rand(1, 20);
-	$num2 = rand(1, 20);
+	$num1 = rand(1, 30);
+	$num2 = rand(1, 30);
 
 	$_SESSION['yzm_math'] = $num1 + $num2;
 

@@ -25,7 +25,7 @@ if (isset($_SESSION["admin"])){
 }
 
 ?>
-<div class="admintitle">广告管理</div>
+<div class="admintitle">代理员广告管理</div>
 <table width="100%" border="0" cellspacing="0" cellpadding="5">
     <tr>
         <td align="center" class="border">
