@@ -58,7 +58,7 @@ include("check.php");
                 }
             }
             if (document.myform.pay.value =="0"){
-                alert('请先支付，再发布！');
+                alert('请先支付，再发布！支付金额不少于' + userinitpay);
                 return false;
             }
         }
@@ -110,7 +110,7 @@ $initRMB=$rowu["initRMB"];
                 <form action="zssave.php" method="post" name="myform" id="myform" onSubmit="return CheckForm();">
                     <table width="100%" border="0" cellpadding="3" cellspacing="1">
                         <?php
-                        if ((int)$initRMB == 0 ) {
+                        if ((int)$initRMB < (int)userinitpay ) {
                         ?>
                         <tr>
                             <td colspan="2" class="admintitle" >支付(首次发布请先支付)</td>

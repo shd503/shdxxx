@@ -706,6 +706,10 @@ if(checkadminhaspower("siteconfig") =="no") {
                     否</td>
             </tr>
             <tr>
+                <td align="right" class="border">用户初始支付金额</td>
+                <td class="border"><input name="userinitpay" type="text" id="userinitpay" value="<?php echo userinitpay?>" size="10" maxlength="10"></td>
+            </tr>
+            <tr>
                 <td align="right" class="border">&nbsp;</td>
                 <td class="border"><input name="cmdSave523" type="submit" class="buttons" id="cmdSave523" value="保存设置" ></td>
             </tr>
@@ -804,6 +808,7 @@ function SaveConfig(){
     $fcontent=$fcontent. "define('bbs_set','". trim($_POST['bbs_set'])."') ;//是否开启同步论坛功能\r\n";
     $fcontent=$fcontent. "define('dl_liuyan_set','". trim($_POST['dl_liuyan_set'])."') ;//是否显示代理留言页面\r\n";
     $fcontent=$fcontent. "define('background_set','". trim($_POST['background_set'])."') ;//是否显示页面背景设置(用户发商机页面)\r\n";
+    $fcontent=$fcontent. "define('userinitpay','". trim($_POST['userinitpay'])."') ;//用户注册后首次支付金额\r\n";
     $fcontent=$fcontent. "?" . ">";
     fputs($fp,$fcontent);//把替换后的内容写入文件
     fclose($fp);
