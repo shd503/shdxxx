@@ -91,9 +91,9 @@ define('DB_PREFIX', 'codepay');  //测试数据表前缀 主要是订单记录�
  *
  * 以下为MYSQL数据库的配置 主要用于测试数据充值业务demo 不是必要安装。相关参数在安装后自动生成。
  */
-define('DB_HOST', 'localhost'); //数据库服务器地址
+define('DB_HOST', 'dianjia123.com'); //数据库服务器地址
 define('DB_USER', 'root');  //数据库用户名
-define('DB_PWD', '');//数据库密码
+define('DB_PWD', 'wodemysql123');//数据库密码
 define('DB_NAME', 'zzcms8');  //数据库名称
 define('DB_PORT', '3306');  //数据库端口
 

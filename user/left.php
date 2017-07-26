@@ -36,18 +36,7 @@ $initRMB=$rowu["initRMB"];
 	<div class="lefttitle"><img src="image/ico/ico4.gif" border=0> 商机管理</div>
 	<div>
 		<ul>
-			<?php
-			if ((int)$initRMB == 0 ) {
-				?>
-				<li><a href="zs.php" target="_self" onClick="return ConfirmPay();">商机管理</a></li>
-				<?php
-			}else{
-				?>
-				<li><a href="zs.php" target="_self">商机管理</a></li>
-				<?php
-			}
-			?>
-
+			<li><a href="zs.php" target="_self">商机管理</a></li>
 			<li><a href="dls_message_manage.php" target="_self" >代理留言</a>
 				<?php
 				$sql_left="select id from zzcms_dl where saver='".@$username."' and looked=0 and del=0 and passed=1";

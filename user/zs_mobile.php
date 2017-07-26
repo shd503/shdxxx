@@ -58,10 +58,6 @@ include("check.php");
                     return false;
                 }
             }
-            if (document.myform.pay.value =="0"){
-                alert('请先支付，再发布！');
-                return false;
-            }
         }
         function doClick_E(o){
             var id;
@@ -79,9 +75,28 @@ include("check.php");
                 document.getElementById("E_con1").style.display = "block";
             }
         }
+        function formdisable(){
+            var payRMB = document.myform.pay.value;
+            var initPay = "<?php echo userinitpay?>";
+            if (parseInt(payRMB) <= parseInt(initPay)) {
+                document.myform.name.disabled = true;
+                document.myform.name.value = "请先支付，已支付"+payRMB+"元，至少支付"+initPay+"元";
+                document.myform.gnzz.disabled = true;
+                document.myform.gnzz.value = "请先支付，已支付"+payRMB+"元，至少支付"+initPay+"元";
+                document.myform.sm.disabled = true;
+                document.myform.sm.style.backgroundColor = "#ccc";
+                document.myform.Submit.disabled = true;
+                document.myform.Submit.style.backgroundColor = "#ccc";
+            }else{
+                document.myform.name.disabled = false;
+                document.myform.gnzz.disabled = false;
+                document.myform.sm.disabled = false;
+                document.myform.Submit.disabled = false;
+            }
+        }
     </script>
 </head>
-<body>
+<body onload="formdisable()">
 <?php
 $sqlu="select initRMB from zzcms_user where username='" .$username. "'";
 $rsu=mysql_query($sqlu);
@@ -113,6 +128,7 @@ $initRMB=$rowu["initRMB"];
                             <td align="right" class="border2" >支付：</td>
                             <td class="border2" >
                                 <input type="button" class="buttons" onclick="window.location.href='/codepay/index.php'" value="微信支付">
+                                <input type='hidden' name="pay" id="pay" value='<?php echo $initRMB;?>' />
                             </td>
                         </tr>
                         <?php
@@ -288,7 +304,6 @@ if (file_exists($fp)) {
                         <td class="border2" >
                             <input name="cpid" type="hidden" id="cpid" value="<?php echo $row["id"] ?>">
                             <input name="Submit" type="submit" class="buttons" value="保存修改结果">
-                            <input type='hidden' name="pay" id="pay" value='<?php echo $initRMB;?>' />
                         </td>
                     </tr>
 
