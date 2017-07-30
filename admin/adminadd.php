@@ -7,6 +7,10 @@ include("admin.php");
 <title></title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <?php
+if(checkadminhaspower("adminmanage") =="no") {
+    echo "没有操作权限！页面不显示！";
+    return;
+}
 checkadminisdo("adminmanage");
 $action=@$_GET["action"];
 $founderr=0;

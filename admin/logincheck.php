@@ -17,7 +17,7 @@ $pass=trim($_POST["pass"]);
 $pass=md5($pass);
 
 $ip=getip();
-define('trytimes',20);//可尝试登录次数
+define('trytimes',6);//可尝试登录次数
 define('jgsj',15*60);//间隔时间，秒
 $sql="select * from zzcms_login_times where ip='$ip' and count>=".trytimes." and unix_timestamp()-unix_timestamp(sendtime)<".jgsj." ";
 $rs = mysql_query($sql); 

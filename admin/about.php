@@ -1,5 +1,9 @@
 <?php
 include("admin.php");
+if(checkadminhaspower("bottomlink") =="no") {
+    echo "没有操作权限！页面不显示！";
+    return;
+}
 checkadminisdo("bottomlink");
 $go=0;
 if (isset($_REQUEST['action'])){

@@ -10,6 +10,10 @@ include("admin.php");
 </head>
 <body>
 <?php
+if(checkadminhaspower("advtext") =="no") {
+    echo "没有操作权限！页面不显示！";
+    return;
+}
 checkadminisdo("advtext");
 if (isset($_REQUEST["id"])){
     $id=$_REQUEST["id"];

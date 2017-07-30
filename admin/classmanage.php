@@ -35,6 +35,11 @@ if (document.form1.bigclassname.value=="")
 </head>
 <body>
 <?php
+if(checkadminhaspower("userclass") =="no") {
+    echo "没有操作权限！页面不显示！";
+    return;
+}
+
 checkadminisdo("userclass");
 if (isset($_REQUEST['dowhat'])){
 $dowhat=$_REQUEST['dowhat'];

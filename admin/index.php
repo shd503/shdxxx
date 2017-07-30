@@ -5,6 +5,16 @@ include("admin.php");
 if (opensite=='No' ){
     echo "<script>location.href='siteconfig.php#SiteOpen'</script>";
 }
+
+if(isset($_SESSION['last_access']) && (time()-$_SESSION['last_access'])>60*60) {
+    echo "<script>location.href='login.php';</script>";
+    unset($_SESSION['admin']);
+    unset($_SESSION['pass']);
+    unset($_SESSION['last_access']);
+}
+if(isset($_SESSION['last_access']) || (time()-$_SESSION['last_access'])>10) {
+    $_SESSION['last_access'] = time();
+}
 ?>
 
 <html>

@@ -45,6 +45,12 @@ if (isset($_REQUEST['action'])){
 }else{
     $action="";
 }
+
+if(checkadminhaspower("zsclass") =="no") {
+    echo "没有操作权限！页面不显示！";
+    return;
+}
+
 if ($action=="px"){
     checkadminisdo("zsclass");
     $sqlb="Select * From zzcms_zsclass where parentid='A'";

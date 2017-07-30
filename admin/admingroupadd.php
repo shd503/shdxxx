@@ -6,6 +6,10 @@ include("admin.php");
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title></title>
 <?php
+if(checkadminhaspower("admingroup") =="no") {
+  echo "没有操作权限！页面不显示！";
+  return;
+}
 checkadminisdo("admingroup");
 ?>
 </head>
