@@ -276,14 +276,14 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
 
 
 .bigword {font-size: 14px;line-height: 25px;}
-.bigword {font-size: 14px;line-height: 25px;}
 .bordercccccc{border:solid 1px #DDDDDD;background-color:#FFFFFF;clear:both}
 .bigbigword {font-size: 18px;line-height: 25px;font-weight: bold;}
+
 
 .boxregS {
     background-color: #f1f1f1;
     border-top: solid 1px #dddddd;
-    border-bottom: solid 1px #dddddd;
+    border-bottom: solid 0px #dddddd;
 }
 .boxregS ul {
     height: 40px;
@@ -307,6 +307,7 @@ img{vertical-align:bottom;vertical-align:middle;vertical-align:top;border:0}
     font-size: 14px;
     text-align: center;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .titles_small {
