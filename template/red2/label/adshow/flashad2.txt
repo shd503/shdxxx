@@ -1,8 +1,8 @@
-flashad|||首页|||轮显广告|||6|||20|||0|||<script language='javascript'> 
+flashad2|||首页|||轮显广告|||6|||20|||0|||<script language='javascript'> 
 linkarr = new Array();
 picarr = new Array();
 textarr = new Array();
-var swf_width=340;
+var swf_width=341;
 var swf_height=190;
 var files = "";
 var links = "";
