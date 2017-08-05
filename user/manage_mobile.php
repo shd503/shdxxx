@@ -176,7 +176,7 @@ if ($action=="modify") {
                                     女</td>
                             </tr>
                             <tr>
-                                <td align="right" class="border2">E-mail：</td>
+                                <td align="right" class="border2">邮箱：</td>
                                 <td class="border2"> <INPUT name="email" class="biaodan" value="<?php echo $row["email"]?>" size="25" maxLength="50">
                                 </td>
                             </tr>
@@ -201,6 +201,11 @@ if ($action=="modify") {
                                 <td align="right" class="border2">手机：</td>
                                 <td class="border2">
                                     <INPUT name="mobile" id="mobile" class="biaodan" value="<?php echo $row["mobile"]?>" size="25" maxLength="50"></td>
+                            </tr>
+                            <tr >
+                                <td align="right" class="border2">推广员：</td>
+                                <td class="border2">
+                                    <INPUT name="agentadmin" id="agentadmin" class="biaodan" value="<?php echo $row["agentadmin"]?>" size="25" maxLength="50"  disabled="disabled"></td>
                             </tr>
                             <tr >
                                 <td align="right" class="border">&nbsp;</td>

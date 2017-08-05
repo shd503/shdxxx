@@ -220,7 +220,7 @@ function showannounce($cs){
 //			$str=$str ."<div id='gonggao'><span onclick=\"gonggao.style.display='none'\"><a href=javascript:delCookie('closegg')>×</a></span>";
 			$str=$str ."<div id='gonggao'><span onclick=\"gonggao.style.display='none'\"></span>";
 			while ($row=mysql_fetch_array($rs)){
-				$str=$str ."【公告". $n ."】<a href=javascript:openwindow('/one/announce_show.php?id=".$row["id"]."',700,300)>".cutstr(strip_tags($row["title"]),$titlelong)."</a>&nbsp;&nbsp;";
+				$str=$str ."【公告". $n ."】<a href=javascript:openwindow('/one/announce_show.php?id=".$row["id"]."',700,300)>".cutstr(strip_tags($row["title"]),$titlelong)."</a>&nbsp;&nbsp;<br>";
 				$n++;
 			}
 			$str=$str ."</div>";

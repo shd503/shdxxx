@@ -45,7 +45,7 @@ if ($action=="pass"){
 }
 ?>
 <body>
-<div class="admintitle">代理管理员用户信息管理</div>
+<div class="admintitle">推广员用户信息管理</div>
 <form name="form1" method="post" action="?">
 	<table width="100%" border="0" cellpadding="5" cellspacing="0">
 		<tr>

@@ -132,7 +132,7 @@ $initRMB=$rowu["initRMB"];
                         if ((int)$initRMB < (int)userinitpay ) {
                         ?>
                         <tr>
-                            <td colspan="2" class="admintitle" >支付(首次发布请先支付)</td>
+                            <td colspan="2" class="admintitle" >支付(首次发布请先支付，至少支付<?php echo userinitpay?>元)</td>
                         </tr>
                         <tr>
                             <td align="right" class="border2" >支付：</td>
@@ -145,7 +145,7 @@ $initRMB=$rowu["initRMB"];
                         }
                         ?>
                         <tr>
-                            <td colspan="2" class="admintitle" >发商机</td>
+                            <td colspan="2" class="admintitle" >发布信息</td>
                         </tr>
                         <tr>
                             <td align="right" class="border" >项目名称<font color="#FF0000">（必填）</font>：</td>

@@ -1,4 +1,4 @@
-new|||0|||15|||id|||14|||30|||0|||<script language="javascript">
+new|||0|||15|||timefororder|||14|||30|||0|||<script language="javascript">
 $(function(){
 //多行应用@Mr.Think
 var _wrap=$('ul.mulitline');//定义滚动区域

@@ -81,5 +81,5 @@ define('qq_callback_url','') ;//返回页地址
 define('bbs_set','No') ;//是否开启同步论坛功能
 define('dl_liuyan_set','Yes') ;//是否显示代理留言页面
 define('background_set','No') ;//是否显示页面背景设置(用户发商机页面)
-define('userinitpay','1') ;//用户注册后首次支付金额
+define('userinitpay','10') ;//用户注册后首次支付金额
 ?>

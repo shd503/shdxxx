@@ -17,7 +17,7 @@ case "H";
 
 	}else{		
 		$str="<img src='".siteurl."/image/user.gif'> ";
-		$str=$str ."您好！客人 [<a href='".siteurl."/user/".getpageurl3("login")."'>请登陆</a>]&nbsp;[<a href='".siteurl."/reg/".getpageurl3("userreg")."' target='_blank'>免费注册</a>]&nbsp;";
+		$str=$str ."您好！客人 [<a href='".siteurl."/user/".getpageurl3("login")."'>请登陆</a>]&nbsp;[<a href='".siteurl."/reg/".getpageurl3("userreg")."' target='_blank'>请注册</a>]&nbsp;";
 		if (qqlogin=="Yes") {
 		$str=$str ."<a href='".siteurl."/3/qq_connect2.0/index.php'><img src='".siteurl."/image/Connect_logo_2.png' border='0'></a>";
 		}

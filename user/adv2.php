@@ -126,7 +126,7 @@ if ($action=="modify"){
 					<div class="admintitle">抢占首页文字广告位置</div>
 					<div class="box"> 注：抢占方式：先抢先得；每个用户只限抢占一个广告位。抢占成功后，广告位占用期限为 <b><?php echo showadvdate?></b> 天。到期后可重新参与抢占。
 					</div>
-					<div class="admintitle">火爆店家A区</div>
+					<div class="admintitle">广告抢占A区</div>
 					<?php
 					$n=1;
 					$rs=mysql_query("select * from zzcms_ad where bigclassname='首页' and smallclassname='A' order by xuhao asc,id asc");
