@@ -18,6 +18,9 @@ CREATE TABLE `zzcms_admin` (
   `lastlogintime` datetime default NULL,
   `showloginip` varchar(255) default NULL,
   `showlogintime` datetime default NULL,
+  `idcard` varchar(255) default NULL,
+  `name` varchar(100) default NULL,
+  `parent` varchar(255) default NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
@@ -366,6 +369,7 @@ CREATE TABLE `zzcms_user` (
   `lastlogintime` datetime default NULL,
   `lockuser` tinyint(4) NOT NULL default '0',
   `groupid` int(11) NOT NULL default '1',
+  `paytime` datetime default NULL,
   `initRMB` int(11) NOT NULL default '0',
   `totleRMB` int(11) NOT NULL default '0',
   `startdate` datetime default NULL,

@@ -141,15 +141,16 @@ if(!$totlenum){
 		<table width="100%" border="0" cellpadding="2" cellspacing="1">
 			<tr class="title">
 				<td width="2%" align="center" class="border">  <label for="chkAll" style="text-decoration: underline;cursor: hand;">全选</label></td>
-				<td width="8%" align="center" class="border">用户名</td>
-				<td width="10%" align="center" class="border">公司名称</td>
-				<td width="3%" align="center" class="border">用户组ID</td>
+				<td width="7%" align="center" class="border">用户名</td>
+				<td width="9%" align="center" class="border">公司名称</td>
+				<td width="3%" align="center" class="border">用户组</td>
 				<td width="3%" align="center" class="border">登录次数</td>
 				<td width="6%" align="center" class="border">最后登录IP</td>
 				<td width="4%" align="center" class="border">最后登录</td>
 				<td width="4%" align="center" class="border">注册时间</td>
 				<td width="3%" align="center" class="border">初始支付</td>
 				<td width="2%" align="center" class="border">积分</td>
+				<td width="5%" align="center" class="border">推广员</td>
 				<td width="5%" align="center" class="border">邮箱</td>
 				<td width="3%" align="center" class="border">状态</td>
 				<td width="5%" align="center" class="border">操作</td>
@@ -188,6 +189,7 @@ if(!$totlenum){
 					<td align="center" title="<?php echo $row["regdate"]?>"><?php echo date("Y-m-d",strtotime($row["regdate"]))?></td>
 					<td align="center"><?php echo $row["initRMB"]?></td>
 					<td align="center"><?php echo $row["totleRMB"]?></td>
+					<td align="center"><?php echo $row["agentadmin"]?></td>
 					<td align="center"><?php echo $row["email"]?></td>
 					<td align="center">
 						<?php

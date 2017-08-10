@@ -164,7 +164,10 @@ function DemoHandle($data)
         } else {
             $userData = $rs->fetch_assoc();
             if ((int)$userData["initRMB"] == 0) {
-                $sql = "update `" . DB_USERTABLE . "` set " . DB_INITMONEY . "= {$money}  where " . DB_USERNAME . "=?";
+                $sql = "update `" . DB_USERTABLE . "` set " . DB_INITMONEY . "= {$money}, ".DB_PAYTIME."='".date('Y-m-d H:i:s')."' where " . DB_USERNAME . "=?";
+                print $sql;
+//                $sql = "update `" . DB_USERTABLE . "` set " . DB_INITMONEY . "= {$money}   where " . DB_USERNAME . "=?";
+
                 $stmt = $m->prepare($sql); //预编译SQL语句
 
                 if ($stmt->error != '') { //捕获错误 这一般是数据表不存在造成

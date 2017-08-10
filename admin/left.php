@@ -74,7 +74,7 @@ include("admin.php");
 			<div id="left4" style="display:none"> <a href="usermanage.php" target="frmright">用户管理</a>
 				<a href="usergroupmanage.php" target="frmright">用户组管理</a> <a href="usernotreg.php" target="frmright">未进行邮箱验证的用户管理</a>
 				<a href="licence.php" target="frmright">用户资质证书管理</a> <a href="showbad.php" target="frmright">用户不良操作记录</a>
-				<a href="adminlist.php" target="frmright">管理员管理</a> <a href="admingroupmanage.php" target="frmright">管理员组管理</a>
+				<a href="adminlist.php" target="frmright">管理员(推广员)管理</a> <a href="admingroupmanage.php" target="frmright">管理员组管理</a>
 				<a href="agentusermanage.php" target="frmright">推广员用户信息管理</a>
 				<a href="agentadminlist.php" target="frmright">推广员管理</a>
 			</div>

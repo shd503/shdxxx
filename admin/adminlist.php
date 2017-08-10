@@ -32,8 +32,8 @@ include("admin.php");
     <script language="JavaScript" src="/js/gg.js"></script>
 </head>
 <body>
-<div class="admintitle">管理员信息管理</div>
-<div class="border center"><input name="submit3" type="submit" class="buttons" onClick="javascript:location.href='adminadd.php'" value="添加管理员"></div>
+<div class="admintitle">管理员(推广员)信息管理</div>
+<div class="border center"><input name="submit3" type="submit" class="buttons" onClick="javascript:location.href='adminadd.php'" value="添加管理员(推广员)"></div>
 <table width="100%" border="0" cellpadding="5" cellspacing="1">
     <tr>
         <td width="5%" align="center" class="border">ID</td>

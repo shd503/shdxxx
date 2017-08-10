@@ -79,7 +79,7 @@ if ($action=="pass"){
 <?php
 $page_size=pagesize_ht;  //每页多少条数据
 $offset=($page-1)*$page_size;
-$sql="select count(*) as total from zzcms_user where id<>0  ";
+$sql="select count(*) as total from zzcms_user where id<>0 and agentadmin='".$agentadmin."'";
 $sql2='';
 if ($shenhe=="no") {
 	$sql2=$sql2." and passed=0 ";
@@ -161,7 +161,7 @@ if(!$totlenum){
 				<td width="4%" align="center" class="border">注册时间</td>
 				<td width="3%" align="center" class="border">初始支付</td>
 				<td width="2%" align="center" class="border">积分</td>
-				<td width="5%" align="center" class="border">代理管理员</td>
+				<td width="5%" align="center" class="border">推广员</td>
 				<td width="3%" align="center" class="border">状态</td>
 <!--				<td width="5%" align="center" class="border">操作</td>-->
 			</tr>
