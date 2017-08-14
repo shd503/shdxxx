@@ -129,7 +129,7 @@ if ($action=="modify"){
 					<div class="admintitle">广告抢占A区</div>
 					<?php
 					$n=1;
-					$rs=mysql_query("select * from zzcms_ad where bigclassname='首页' and smallclassname='A' order by xuhao asc,id asc");
+					$rs=mysql_query("select * from zzcms_ad where bigclassname='首页' and smallclassname='抢占' order by xuhao asc,id asc");
 					$row=mysql_num_rows($rs);
 					if (!$row){
 						echo "暂无信息";
