@@ -93,6 +93,7 @@ if (!$row){
 	$xiancheng=$row["xiancheng"];
 	$address=$row["address"];
 	$proname=$row["proname"];
+	$prouse=$row["prouse"];
 	//$img=$row["img"];
 
 	$tz=$row["tz"];
@@ -205,6 +206,7 @@ if (!$row){
 	$strout=str_replace("{#xiancheng}",$xiancheng,$strout);
 	$strout=str_replace("{#address}",$address,$strout);
 	$strout =str_replace("{#proname}",$proname,$strout) ;
+	$strout =str_replace("{#prouse}",$prouse,$strout) ;
 	//$strout =str_replace("{#img}",$img,$strout) ;
 	$strout=str_replace("{#tz}",$tz,$strout);
 	for ($i=0; $i< count($shuxing_value);$i++){
