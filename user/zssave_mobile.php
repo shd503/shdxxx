@@ -30,6 +30,7 @@ $province=trim($_POST["province"]);
 $city=trim($_POST["city"]);
 $xiancheng=trim($_POST["xiancheng"]);
 $address=trim($_POST["address"]);
+$jiameng=trim($_POST["jiameng"]);
 $tz=$_POST["tz"];
 $shuxing_value="";
 if(!empty($_POST['sx'])){
@@ -61,13 +62,13 @@ $oldflv=trim($_POST["oldflv"]);
 $rs=mysql_query("SELECT id FROM zzcms_main where editor ='".$username."'");//长内容无法保存的情况，可以不用SM字段入库，会直接存到Web文件中，但文件清理功能不要用，否则会删除上传的图片
 $row=mysql_num_rows($rs);
 if (!$row){
-	$isok=mysql_query("insert into zzcms_main (proname,bigclasszm,smallclasszm,prouse,tz,shuxing_value,sm,img,bodybg,bodybgrepeat,swf,flv,province,city,xiancheng,address,title,keywords,description,sendtime,
+	$isok=mysql_query("insert into zzcms_main (proname,bigclasszm,smallclasszm,prouse,jiameng,tz,shuxing_value,sm,img,bodybg,bodybgrepeat,swf,flv,province,city,xiancheng,address,title,keywords,description,sendtime,
 userid,comane,renzheng,qq,phone,mobile,passed,editor
 )values(
-'$cp_name','$bigclassid','$smallclassid','$gnzz','$tz','$shuxing_value','$sm','$img','$img2','$bodybgrepeat','$swf','$flv','$province','$city','$xiancheng','$address','$title','$keyword','$discription','".date('Y-m-d H:i:s')."',
+'$cp_name','$bigclassid','$smallclassid','$gnzz','$jiameng','$tz','$shuxing_value','$sm','$img','$img2','$bodybgrepeat','$swf','$flv','$province','$city','$xiancheng','$address','$title','$keyword','$discription','".date('Y-m-d H:i:s')."',
 '$userid','$comane','$renzheng','$qq','$phone','$mobile',0,'".$username."')");
 }else{
-	$isok=mysql_query("update zzcms_main set proname='$cp_name',bigclasszm='$bigclassid',smallclasszm='$smallclassid',prouse='$gnzz',tz='$tz',shuxing_value='$shuxing_value',sm='$sm',img='$img',bodybg='$img2',bodybgrepeat='$bodybgrepeat',swf='$swf',flv='$flv',province='$province',city='$city',xiancheng='$xiancheng',address='$address',title='$title',keywords='$keyword',description='$discription',sendtime='".date('Y-m-d H:i:s')."',userid='$userid',comane='$comane',renzheng='$renzheng',qq='$qq',phone='$phone',mobile='$mobile',passed=0 where id='$cpid'");
+	$isok=mysql_query("update zzcms_main set proname='$cp_name',bigclasszm='$bigclassid',smallclasszm='$smallclassid',prouse='$gnzz',jiameng='$jiameng',tz='$tz',shuxing_value='$shuxing_value',sm='$sm',img='$img',bodybg='$img2',bodybgrepeat='$bodybgrepeat',swf='$swf',flv='$flv',province='$province',city='$city',xiancheng='$xiancheng',address='$address',title='$title',keywords='$keyword',description='$discription',sendtime='".date('Y-m-d H:i:s')."',userid='$userid',comane='$comane',renzheng='$renzheng',qq='$qq',phone='$phone',mobile='$mobile',passed=0 where id='$cpid'");
 }
 
 if ($oldimg<>$img && $oldimg<>"image/nopic.gif") {

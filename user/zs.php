@@ -217,6 +217,13 @@ $initRMB=$rowu["initRMB"];
                             <td class="border2" > <textarea name="gnzz" cols="60" rows="4" id="gnzz"><?php echo $row["prouse"]?></textarea>            </td>
                         </tr>
                         <tr>
+                            <td align="right" class="border2">是否招加盟：</td>
+                            <td class="border2"> <input name="jiameng" type="radio" tabindex="9" value="1" <?php if ($row["jiameng"]==1) { echo 'checked';}?>/>
+                                是
+                                <input name="jiameng" type="radio" tabindex="10" value="0" <?php if ($row["jiameng"]==0) { echo 'checked';}?> />
+                                否</td>
+                        </tr>
+                        <tr>
                             <td align="right" class="border2" >投资额度：</td>
                             <td class="border2" >
                                 <select name="tz" id="tz" class="biaodan">

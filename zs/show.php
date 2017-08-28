@@ -95,7 +95,7 @@ if (!$row){
 	$proname=$row["proname"];
 	$prouse=$row["prouse"];
 	//$img=$row["img"];
-
+	$jiameng=$row["jiameng"];
 	$tz=$row["tz"];
 	$shuxing_value = explode("|||",$row["shuxing_value"]);
 	function showflv($flv){
@@ -225,8 +225,13 @@ if (!$row){
 		$strout = str_replace("{#starthtmlnotes}", '<!--', $strout);
 		$strout = str_replace("{#endhtmlnotes}", '-->', $strout);
 	}elseif(dl_liuyan_set == "Yes") {
-		$strout = str_replace("{#starthtmlnotes}", "", $strout);
-		$strout = str_replace("{#endhtmlnotes}", "", $strout);
+		if ($jiameng == '1') {
+			$strout = str_replace("{#starthtmlnotes}", "", $strout);
+			$strout = str_replace("{#endhtmlnotes}", "", $strout);
+		}else{
+			$strout = str_replace("{#starthtmlnotes}", '<!--', $strout);
+			$strout = str_replace("{#endhtmlnotes}", '-->', $strout);
+		}
 	}
 	$strout=showlabel($strout);
 	mysql_close($conn);

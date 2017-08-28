@@ -144,6 +144,7 @@ CREATE TABLE `zzcms_main` (
   `proname` varchar(255) NOT NULL,
   `prouse` text,
   `procompany` varchar(255) default NULL,
+  `jiameng` varchar(5) default NULL,
   `tz` varchar(255) default NULL,
   `shuxing_value` text,
   `sm` text,
