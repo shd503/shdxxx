@@ -40,10 +40,15 @@ include("check.php");
                 return false;
             }
 
-            if (document.myform.sm.value==""){
+            /*if (document.myform.sm.value==""){
                 alert('说明不能为空');
                 return false;
-            }
+            }*/
+
+            if (CKEDITOR.instances.sm.getData()==""){
+                 alert('说明不能为空');
+                 return false;
+             }
 
             if (document.myform.flv.value != "")//这里输入框不为空
             {
