@@ -43,6 +43,7 @@ $fox=$row["fox"];
 $user_mobile=$row["mobile"];
 $qq=$row["qq"];
 $email=$row["email"];
+$personalpage=$row["personalpage"];
 
 if($editor<>""){
 	$sql="select * from zzcms_main where editor='$editor'";
@@ -207,6 +208,7 @@ if (!$row){
 	$strout=str_replace("{#address}",$address,$strout);
 	$strout =str_replace("{#proname}",$proname,$strout) ;
 	$strout =str_replace("{#prouse}",$prouse,$strout) ;
+	$strout =str_replace("{#personalpage}",$personalpage,$strout) ;
 	//$strout =str_replace("{#img}",$img,$strout) ;
 	$strout=str_replace("{#tz}",$tz,$strout);
 	for ($i=0; $i< count($shuxing_value);$i++){

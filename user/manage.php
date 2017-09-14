@@ -14,22 +14,22 @@ include("check.php");
     <script>
         function CheckForm(){
             if (document.myform.province.value==""){
-                alert("请选择公司所在省份！");
+                alert("请选择店家所在省份！");
                 document.myform.province.focus();
                 return false;
             }
             if (document.myform.city.value==""){
-                alert("请选择公司所在城市！");
+                alert("请选择店家所在城市！");
                 document.myform.city.focus();
                 return false;
             }
             if (document.myform.content.value=="") {
-                alert("请填写公司简介！");
+                alert("请填写店家简介！");
                 document.myform.content.focus();
                 return false;
             }
-            if (document.myform.content.value=="该公司暂无简介信息"){
-                alert("请填写公司简介！");
+            if (document.myform.content.value=="该店家暂无简介信息"){
+                alert("请填写店家简介！");
                 document.myform.content.focus();
                 return false;
             }
@@ -81,6 +81,7 @@ if ($action=="modify") {
     }
 
     $homepage=trim($_POST["homepage"]);
+    $personalpage=$_POST["personalpage"];
     //comane=trim($_POST["qomane"])
     $content=rtrim($_POST["content"]);
     $img=trim($_POST["img"]);
@@ -106,7 +107,7 @@ if ($action=="modify") {
 
     if ($content==""){//为防止输入空格
         $founderr=1;
-        $errmsg=$errmsg . "<li>公司简介不能为空</li>";
+        $errmsg=$errmsg . "<li>店家简介不能为空</li>";
     }
 
     $phone=trim($_POST["phone"]);
@@ -122,7 +123,7 @@ if ($action=="modify") {
     if ($founderr==1){
         WriteErrMsg($errmsg);
     }else{
-        mysql_query("update zzcms_user set content='$content',img='$img',flv='$flv',province='$province',city='$city',xiancheng='$xiancheng',somane='$somane',sex='$sex',phone='$phone',mobile='$mobile',fox='$fox',address='$address',email='$email',qq='$qq',qqid='$qqid',homepage='$homepage' where username='".$username."'");
+        mysql_query("update zzcms_user set content='$content',img='$img',flv='$flv',province='$province',city='$city',xiancheng='$xiancheng',somane='$somane',sex='$sex',phone='$phone',mobile='$mobile',fox='$fox',address='$address',email='$email',qq='$qq',qqid='$qqid',homepage='$homepage',personalpage='$personalpage' where username='".$username."'");
         if ($oldimg<>$img && $oldimg<>"/image/nopic.gif"){
             $f="../".$oldimg;
             if (file_exists($f)){
@@ -213,10 +214,10 @@ if ($action=="modify") {
                             </tr>
 
                         </table>
-                        <div class="admintitle">修改公司信息</div>
+                        <div class="admintitle">修改店家信息</div>
                         <table width="100%" border="0" cellpadding="3" cellspacing="1">
                             <tr>
-                                <td width="15%" align="right" class="border2">公司名称：</td>
+                                <td width="15%" align="right" class="border2">店家名称：</td>
                                 <td width="85%" class="border2"><?php echo $row["comane"]?></td>
                             </tr>
                             <tr class="border" >
@@ -233,29 +234,33 @@ if ($action=="modify") {
                                     </script></td>
                             </tr>
                             <tr>
-                                <td align="right" class="border">公司地址：</td>
-                                <td class="border"> <input name="address" id="address" class="biaodan" value="<?php echo $row["address"]?>" size="30" maxlength="50">
+                                <td align="right" class="border2">店家地址：</td>
+                                <td class="border"> <input name="address" id="address" class="biaodan" value="<?php echo $row["address"]?>" size="50" maxlength="50">
                                 </td>
                             </tr>
                             <tr >
-                                <td align="right" class="border2">公司网站：</td>
-                                <td class="border2"> <INPUT name="homepage" id="homepage" class="biaodan" value="<?php echo $row["homepage"]?>" size="30" maxLength="100"></td>
+                                <td align="right" class="border2">本站地址：</td>
+                                <td class="border2"> <INPUT name="homepage" id="homepage" class="biaodan" value="<?php echo $row["homepage"]?>" size="50" maxLength="100"></td>
                             </tr>
                             <tr >
-                                <td align="right" class="border">公司电话：</td>
+                                <td align="right" class="border2">店家网址：</td>
+                                <td class="border2"> <INPUT name="personalpage" id="personalpage" class="biaodan" value="<?php echo $row["personalpage"]?>" size="50" maxLength="100"></td>
+                            </tr>
+                            <tr >
+                                <td align="right" class="border2">店家电话：</td>
                                 <td class="border"> <INPUT name="phone" class="biaodan" value="<?php echo $row["phone"]?>" size="30" maxLength="50"></td>
                             </tr>
                             <tr >
-                                <td align="right" class="border2">公司传真：</td>
+                                <td align="right" class="border2">店家传真：</td>
                                 <td class="border2"> <INPUT name="fox" class="biaodan" value="<?php echo $row["fox"]?>" size="30" maxLength="50"></td>
                             </tr>
                             <tr>
-                                <td align="right" class="border2">公司简介：</td>
+                                <td align="right" class="border2">店家简介：</td>
                                 <td class="border2"> <textarea name="content" cols="80" rows="10" id="content" class="biaodan" style="height:auto"><?php echo $row["content"]?></textarea>
                                 </td>
                             </tr>
                             <tr>
-                                <td height="50" align="right" class="border"> 公司形象图片：<br> <font color="#666666">
+                                <td height="50" align="right" class="border"> 店家形象图片：<br> <font color="#666666">
                                         <input name="img" type="hidden" id="img" value="<?php echo $row["img"]?>">
                                         <input name="oldimg" type="hidden" id="oldimg" value="<?php echo $row["img"]?>">
                                     </font></td>
@@ -274,7 +279,7 @@ if ($action=="modify") {
                                     </table></td>
                             </tr>
                             <tr>
-                                <td align="right" class="border2" >公司形象视频上传：<font color="#666666">
+                                <td align="right" class="border2" >店家形象视频上传：<font color="#666666">
 
                                         <input name="flv" type="hidden" id="flv" value="<?php echo $row["flv"]?>" />
                                         <input name="oldflv" type="hidden" id="oldflv" value="<?php echo $row["flv"]?>">
