@@ -367,6 +367,7 @@ CREATE TABLE `zzcms_user` (
   `loginip` varchar(255) default NULL,
   `logins` int(11) NOT NULL default '0',
   `homepage` varchar(255) default NULL,
+  `personalpage` varchar(255) default NULL,
   `lastlogintime` datetime default NULL,
   `lockuser` tinyint(4) NOT NULL default '0',
   `groupid` int(11) NOT NULL default '1',

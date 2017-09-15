@@ -208,7 +208,8 @@ if (!$row){
 	$strout=str_replace("{#address}",$address,$strout);
 	$strout =str_replace("{#proname}",$proname,$strout) ;
 	$strout =str_replace("{#prouse}",$prouse,$strout) ;
-	$strout =str_replace("{#personalpage}",$personalpage,$strout) ;
+
+
 	//$strout =str_replace("{#img}",$img,$strout) ;
 	$strout=str_replace("{#tz}",$tz,$strout);
 	for ($i=0; $i< count($shuxing_value);$i++){
@@ -223,6 +224,15 @@ if (!$row){
 	$strout=str_replace("{#sitetop}",sitetop(),$strout);
 	$strout=str_replace("{#sitebottom}",sitebottom(),$strout);
 
+	$strout =str_replace("{#personalpage}",$personalpage,$strout) ;
+	if ($personalpage == "") {
+		$strout = str_replace("{#startpage}", "<!--", $strout);
+		$strout = str_replace("{#endpage}", '-->', $strout);
+	}
+	else {
+		$strout = str_replace("{#startpage}", "", $strout);
+		$strout = str_replace("{#endpage}", "", $strout);
+	}
 	if (dl_liuyan_set == "No") {
 		$strout = str_replace("{#starthtmlnotes}", '<!--', $strout);
 		$strout = str_replace("{#endhtmlnotes}", '-->', $strout);
