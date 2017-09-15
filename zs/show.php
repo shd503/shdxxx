@@ -89,10 +89,19 @@ if (!$row){
 	$phone=$row["phone"];
 	$mobile=$row["mobile"];
 	$qq=$row["qq"];
-	$province=$row["province"];
-	$city=$row["city"];
-	$xiancheng=$row["xiancheng"];
+	$province=trim($row["province"]);
+	$city=trim($row["city"]);
+	$xiancheng=trim($row["xiancheng"]);
 	$address=$row["address"];
+	if ($province == "请选择省份") {
+		$province = "";
+	}
+	if ($city == "请选择城区") {
+		$city = "";
+	}
+	if ($xiancheng == "请选择县城") {
+		$xiancheng = "";
+	}
 	$proname=$row["proname"];
 	$prouse=$row["prouse"];
 	//$img=$row["img"];
